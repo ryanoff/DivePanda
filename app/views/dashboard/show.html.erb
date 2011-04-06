@@ -1,0 +1,25 @@
+<section class='dashboard'>
+  <h1>Aloha <fb:name uid='<%= current_user.identifier %>' useyou='false'></fb:name>!</h1>
+  <article>
+    <h3>Your profile</h3>
+	<div class="avatar">
+		<fb:profile-pic uid="<%= current_user.try(:identifier) %>" size="normal" facebook-logo="true"></fb:profile-pic>
+	</div>
+    <dl>
+	    <dt>Name</dt>
+	    <dd><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></dd>
+	    <dt>Email</dt>
+	    <dd><%= current_user.profile.email %></dd>
+	</dl>
+    <p><%= link_to 'See your full profile details', profile_path %></p>
+    <p><%= link_to 'See your facebook timeline', timeline_path %></p>
+    <p><%= link_to 'View your dive logs', logs_path %></p>
+
+  </article>
+  
+  <article>
+    <h3>Your recent log entries</h3>
+	<p></p>
+  </article>
+  
+</section>

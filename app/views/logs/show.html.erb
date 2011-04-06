@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @log.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @log.description %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @log.comments %>
+</p>
+
+<p>
+  <b>Directions:</b>
+  <%= @log.directions %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @log.city %>
+</p>
+
+<p>
+  <b>Weather:</b>
+  <%= @log.weather %>
+</p>
+
+<p>
+  <b>Equipment:</b>
+  <%= @log.equipment %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @log.date %>
+</p>
+
+<p>
+  <b>Starttime:</b>
+  <%= @log.starttime %>
+</p>
+
+<p>
+  <b>Endtime:</b>
+  <%= @log.endtime %>
+</p>
+
+<p>
+  <b>Bottomtime:</b>
+  <%= @log.bottomtime %>
+</p>
+
+<p>
+  <b>Units:</b>
+  <%= @log.units %>
+</p>
+
+<p>
+  <b>Depth:</b>
+  <%= @log.depth %>
+</p>
+
+<p>
+  <b>Temperature:</b>
+  <%= @log.temperature %>
+</p>
+
+<p>
+  <b>Watertemp:</b>
+  <%= @log.watertemp %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>

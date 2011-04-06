@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <title>Divelog</title>
+    <meta property="fb:app_id" content="<%= Facebook.config[:app_id] %>">
+    <!--[if IE]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <%= stylesheet_link_tag 'base', 'layout', 'gritter', controller_name %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <%= javascript_include_tag 'rails', 'jquery.gritter' %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+	
+	<header>
+		<nav>
+			<div id="logo">Divelog</div>
+			<ul>
+				<li><%= link_to 'Home', root_path %></li>
+				<li><%= link_to 'Logs', logs_path %></li>
+				<li>About</li>
+				<li>Contact</li>
+				<% if authenticated? %>
+					<li><%= link_to "Sign out", facebook_path, :method => :delete %></li>
+				<% end %>				
+			</ul>
+		</nav>
+	</header>
+    
+    <div class="container">
+      <div class="main">
+        <%= yield %>
+      </div>
+      <aside class="sidebar">
+        <%= render :partial => 'layouts/sidebar' %>
+      </aside>
+    </div>
+    <footer>
+    		<ul>
+			<li class="copytight">&copy; 2010 Divelog</li>
+			<li>Terms and Conditions</li>
+			<li>Privacy</li>
+		</ul>
+    </footer>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script>
+      FB.init({
+        appId: "<%= Facebook.config[:app_id] %>",
+        cookie: true,
+        xfbml: true
+      });
+    </script>
+    <script type="text/javascript">
+      $(function () {
+        <% if flash[:error] %>
+          $.gritter.add({
+            title: "<%= flash[:error][:title] %>",
+            text : "<%= flash[:error][:message] %>",
+            image: "<%= flash[:error][:image] %>",
+            time : 5000
+          });
+        <% elsif flash[:notice] %>
+          $.gritter.add({
+            title: "<%= flash[:notice][:title] %>",
+            text : "<%= flash[:notice][:message] %>",
+            image: "<%= flash[:notice][:image] %>",
+            time : 3000
+          });
+        <% end %>
+      });
+    </script>
+  </body>
+</html>

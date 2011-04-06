@@ -1,0 +1,41 @@
+/*-----------------]: layout :[---------------------*/
+
+body > h1 {}
+
+body > h1 a, body > h1 a:hover {}
+
+body > .container {
+    margin: 10px auto;
+    overflow: hidden;
+    width: 960px;
+}
+
+body > .container .main {
+    float: left;
+    min-height: 400px;
+    width: 660px;
+}
+
+body > .container .sidebar {
+  float: right;
+  text-align: center;
+  width: 300px;
+}
+
+body > .container img {
+  border: 1px solid #ddd;
+}
+
+body > .container .sidebar p, body > .container .sidebar dl {
+  text-align: left;
+  padding-left: 50px;
+}
+
+body > footer {
+  clear: both;
+  text-align: center;
+}
+
+body > footer a {
+  color: #AEDEE4;
+}

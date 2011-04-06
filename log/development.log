@@ -1,0 +1,1178 @@
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:39:36 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered top/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 75ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Wed Apr 06 16:40:03 +0100 2011
+  Processing by FacebooksController#show as HTML
+Completed   in 38ms
+
+ActiveRecord::StatementInvalid (Could not find table 'facebooks'):
+  app/models/facebook.rb:30:in `identify'
+  app/controllers/facebooks_controller.rb:7:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:40:17 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.2ms)
+Rendered top/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 115ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateFacebooks (20100805043508)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "facebooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "identifier" varchar(20), "access_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100805043508')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("facebooks")
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:41:32 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.4ms)
+Rendered top/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 33ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Wed Apr 06 16:41:39 +0100 2011
+  Processing by FacebooksController#show as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "facebooks" ("access_token", "created_at", "identifier", "updated_at") VALUES ('189368391107072|b66d50153b0e1f91893e468e-652920847|B0r_37ekHiWFg0dsIQ0vQuS67pM', '2011-04-06 15:41:39.848969', '652920847', '2011-04-06 15:41:39.848969')[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 172ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:41:39 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered dashboard/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 39ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:48:40 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 65ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:48:41 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered dashboard/show.html.erb within layouts/application (26.9ms)
+Completed   in 73ms
+
+ActionView::Template::Error (undefined local variable or method `logs_path' for #<#<Class:0x1041519b8>:0x10414fcd0>):
+    18: 		<nav>
+    19: 			<ul>
+    20: 				<li>Home</li>
+    21: 				<li><%= link_to "Logs", logs_path %></li>
+    22: 				<li>About</li>
+    23: 				<li>Contact</li>
+    24: 			</ul>
+  app/views/layouts/application.html.erb:21:in `_app_views_layouts_application_html_erb___414780052_2181718820_0'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:49:05 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 42ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:49:33 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 43ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:50:18 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 129ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:51:04 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered layouts/_sidebar.html.erb (3.1ms)
+Rendered dashboard/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 45ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 16:53:29 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (105.2ms)
+Completed 200 OK in 133ms (Views: 112.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Wed Apr 06 16:53:38 +0100 2011
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yA6S+c0nmGTpK6mVVQZL7q/hWXrCajrzRvyQJILwOJU="}
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:53:39 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered top/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 30ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:58:10 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 130ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 16:59:19 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.6ms)
+Rendered top/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:00:34 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.6ms)
+Rendered top/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:02:04 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered top/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 36ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:03:28 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 33ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:05:58 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.4ms)
+Rendered top/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 118ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:06:37 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.7ms)
+Rendered top/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 31ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:06:53 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.7ms)
+Rendered top/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 31ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:07:43 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered top/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 32ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Wed Apr 06 17:07:49 +0100 2011
+  Processing by FacebooksController#show as HTML
+  [1m[35mFacebook Load (1.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (1.5ms)[0m  [1mINSERT INTO "facebooks" ("identifier", "access_token", "created_at", "updated_at") VALUES ('652920847', '189368391107072|b66d50153b0e1f91893e468e-652920847|B0r_37ekHiWFg0dsIQ0vQuS67pM', '2011-04-06 16:07:49.727469', '2011-04-06 16:07:49.727469')[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 71ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:07:49 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.6ms)
+Rendered dashboard/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 39ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Wed Apr 06 17:08:00 +0100 2011
+  Processing by ProfilesController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered profiles/show.html.erb within layouts/application (2699.2ms)
+Completed 200 OK in 2725ms (Views: 2707.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/profiles.css" for 127.0.0.1 at Wed Apr 06 17:08:04 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/profiles.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:10:03 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.6ms)
+Rendered dashboard/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 42ms (Views: 20.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subscription" for 127.0.0.1 at Wed Apr 06 17:11:08 +0100 2011
+  Processing by SubscriptionsController#show as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/subscription" for 127.0.0.1 at Wed Apr 06 17:11:23 +0100 2011
+  Processing by SubscriptionsController#show as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/timeline" for 127.0.0.1 at Wed Apr 06 17:11:34 +0100 2011
+  Processing by TimelineController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_timeline_show_html_erb___2130623670_2180566420_0 at /Users/ryanoff/Sites/divelog/app/views/timeline/show.html.erb:2)
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered timeline/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 4263ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:11:38 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (1.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 70ms (Views: 46.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/timeline" for 127.0.0.1 at Wed Apr 06 17:13:00 +0100 2011
+  Processing by TimelineController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+DEPRECATION WARNING: <% %> style block helpers are deprecated. Please use <%= %>. (called from _app_views_timeline_show_html_erb___2130623670_2180536100_0 at /Users/ryanoff/Sites/divelog/app/views/timeline/show.html.erb:2)
+Rendered layouts/_sidebar.html.erb (93.0ms)
+Rendered timeline/show.html.erb within layouts/application (106.0ms)
+Completed 200 OK in 3646ms (Views: 113.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:13:14 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:13:14 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 38ms (Views: 19.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Wed Apr 06 17:13:44 +0100 2011
+  Processing by ProfilesController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered profiles/show.html.erb within layouts/application (1568.9ms)
+Completed 200 OK in 1598ms (Views: 1578.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/profiles.css" for 127.0.0.1 at Wed Apr 06 17:13:45 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/profiles.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:14:19 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1105.6ms)
+Completed 200 OK in 1132ms (Views: 1112.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:15:20 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (2528.3ms)
+Completed 200 OK in 2556ms (Views: 2536.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:15:45 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1146.6ms)
+Completed 200 OK in 1173ms (Views: 1154.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:18:35 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (1496.1ms)
+Completed 200 OK in 1525ms (Views: 1503.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:19:51 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (2435.9ms)
+Completed 200 OK in 2462ms (Views: 2442.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:21:37 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1383.9ms)
+Completed 200 OK in 1411ms (Views: 1391.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:22:17 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1450.2ms)
+Completed 200 OK in 1476ms (Views: 1458.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Wed Apr 06 17:22:44 +0100 2011
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yA6S+c0nmGTpK6mVVQZL7q/hWXrCajrzRvyQJILwOJU="}
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 2 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 2[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:22:44 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Wed Apr 06 17:22:52 +0100 2011
+  Processing by FacebooksController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (0.6ms)[0m  [1mINSERT INTO "facebooks" ("identifier", "access_token", "updated_at", "created_at") VALUES ('652920847', '189368391107072|b66d50153b0e1f91893e468e-652920847|B0r_37ekHiWFg0dsIQ0vQuS67pM', '2011-04-06 16:22:52.187903', '2011-04-06 16:22:52.187903')[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 27ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:22:52 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1363.0ms)
+Completed 200 OK in 1388ms (Views: 1370.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:23:15 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (913.6ms)
+Completed 200 OK in 939ms (Views: 920.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:23:34 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:23:34 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (1484.3ms)
+Completed 200 OK in 1509ms (Views: 1491.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:25:43 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (1497.6ms)
+Completed 200 OK in 1525ms (Views: 1504.8ms | ActiveRecord: 0.2ms)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateFacebooks (20100805043508)
+Migrating to CreateLogs (20110406162702)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "logs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "comments" text, "directions" text, "city" varchar(255), "weather" varchar(255), "equipment" varchar(255), "date" date, "starttime" time, "endtime" time, "bottomtime" integer, "units" varchar(255), "depth" integer, "temperature" varchar(255), "watertemp" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110406162702')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("facebooks")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("logs")[0m
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:28:23 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered dashboard/show.html.erb within layouts/application (1818.5ms)
+Completed 200 OK in 1941ms (Views: 1826.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:28:30 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (0.5ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 49ms (Views: 39.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:28:30 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Wed Apr 06 17:28:36 +0100 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (125.8ms)
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/new.html.erb within layouts/application (157.7ms)
+Completed 200 OK in 270ms (Views: 164.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:28:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:29:27 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/index.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 52ms (Views: 41.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:29:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:29:42 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 49ms (Views: 38.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:29:43 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Wed Apr 06 17:29:48 +0100 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (58.9ms)
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (180.8ms)
+Completed 200 OK in 199ms (Views: 188.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:29:48 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:30:31 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (0.5ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 50ms (Views: 38.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:30:31 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:30:36 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:30:36 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1357.2ms)
+Completed 200 OK in 1382ms (Views: 1364.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:30:49 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1005.3ms)
+Completed 200 OK in 1032ms (Views: 1012.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:30:58 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 48ms (Views: 38.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:30:58 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:32:05 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 49ms (Views: 37.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:32:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:32:21 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 52ms (Views: 41.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:32:22 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:32:39 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 50ms (Views: 39.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:32:39 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Wed Apr 06 17:33:15 +0100 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (56.0ms)
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (90.0ms)
+Completed 200 OK in 108ms (Views: 97.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:33:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started POST "/logs" for 127.0.0.1 at Wed Apr 06 17:35:17 +0100 2011
+  Processing by LogsController#create as HTML
+  Parameters: {"commit"=>"Create Log", "log"=>{"name"=>"Coral Canyons ", "directions"=>"Across from some restaurant.", "city"=>"Malibu", "weather"=>"Clear, night", "endtime(4i)"=>"20", "watertemp"=>"55", "date(1i)"=>"2011", "endtime(5i)"=>"20", "comments"=>"California, Night dive, 6/10 rating. Many small octopus (~8), a few lobster, Chris attempted to bring home a halibut, but has not yet learned how to capture one.", "date(2i)"=>"4", "bottomtime"=>"50", "date(3i)"=>"6", "depth"=>"15", "starttime(1i)"=>"2011", "units"=>"F", "starttime(2i)"=>"4", "starttime(3i)"=>"6", "equipment"=>"Gloves, Hat, Wetstuit", "starttime(4i)"=>"19", "description"=>"Great dive location. We went looking for lobster, but ended up having a great time with other fish. ", "starttime(5i)"=>"30", "endtime(1i)"=>"2011", "endtime(2i)"=>"4", "temperature"=>"65", "endtime(3i)"=>"6"}, "authenticity_token"=>"yA6S+c0nmGTpK6mVVQZL7q/hWXrCajrzRvyQJILwOJU=", "utf8"=>"✓"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "logs" ("starttime", "updated_at", "bottomtime", "name", "temperature", "description", "date", "endtime", "units", "depth", "directions", "watertemp", "equipment", "created_at", "weather", "comments", "city") VALUES ('2011-04-06 19:30:00.000000', '2011-04-06 16:35:17.304783', 50, 'Coral Canyons ', '65', 'Great dive location. We went looking for lobster, but ended up having a great time with other fish. ', '2011-04-06', '2011-04-06 20:20:00.000000', 'F', 15, 'Across from some restaurant.', '55', 'Gloves, Hat, Wetstuit', '2011-04-06 16:35:17.304783', 'Clear, night', 'California, Night dive, 6/10 rating. Many small octopus (~8), a few lobster, Chris attempted to bring home a halibut, but has not yet learned how to capture one.', 'Malibu')
+Redirected to http://localhost:3000/logs/1
+Completed 302 Found in 46ms
+
+
+Started GET "/logs/1" for 127.0.0.1 at Wed Apr 06 17:35:17 +0100 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mLog Load (0.5ms)[0m  SELECT "logs".* FROM "logs" WHERE "logs"."id" = 1 LIMIT 1
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/show.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 72ms (Views: 58.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:35:17 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:35:47 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.6ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 71ms (Views: 60.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stylesheets/logs.css" for 127.0.0.1 at Wed Apr 06 17:35:48 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/logs.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:37:45 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.6ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 77ms (Views: 63.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:38:19 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.7ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/index.html.erb within layouts/application (144.0ms)
+Completed 200 OK in 165ms (Views: 151.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 17:39:45 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.7ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered logs/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 76ms (Views: 62.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:40:21 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:40:21 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (1513.8ms)
+Completed 200 OK in 1539ms (Views: 1521.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:42:42 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (4925.3ms)
+Completed 200 OK in 4952ms (Views: 4932.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:43:17 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (920.4ms)
+Completed 200 OK in 948ms (Views: 929.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:43:52 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1549.8ms)
+Completed 200 OK in 1578ms (Views: 1557.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:44:00 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:44:01 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (1247.2ms)
+Completed 200 OK in 1272ms (Views: 1254.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:46:10 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1616.8ms)
+Completed 200 OK in 1643ms (Views: 1624.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:47:26 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered dashboard/show.html.erb within layouts/application (1619.7ms)
+Completed 200 OK in 1648ms (Views: 1628.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:47:34 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:47:35 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1111.0ms)
+Completed 200 OK in 1137ms (Views: 1117.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:48:31 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1569.3ms)
+Completed 200 OK in 1595ms (Views: 1576.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:48:43 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1134.2ms)
+Completed 200 OK in 1159ms (Views: 1141.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:52:08 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (1365.6ms)
+Completed 200 OK in 1393ms (Views: 1374.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:53:21 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1442.7ms)
+Completed 200 OK in 1469ms (Views: 1449.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 17:54:24 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 17:54:24 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1432.0ms)
+Completed 200 OK in 1458ms (Views: 1439.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:11:41 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.5ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered dashboard/show.html.erb within layouts/application (1516.6ms)
+Completed 200 OK in 1598ms (Views: 1548.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:12:30 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1357.2ms)
+Completed 200 OK in 1385ms (Views: 1364.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Wed Apr 06 18:12:41 +0100 2011
+  Processing by ProfilesController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered profiles/show.html.erb within layouts/application (1098.1ms)
+Completed 200 OK in 1128ms (Views: 1107.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stylesheets/profiles.css" for 127.0.0.1 at Wed Apr 06 18:12:42 +0100 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/profiles.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:19:44 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (21.7ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (2457.1ms)
+Completed 200 OK in 2509ms (Views: 2466.5ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:20:18 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (961.8ms)
+Completed 200 OK in 988ms (Views: 969.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:20:49 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (4358.5ms)
+Completed 200 OK in 4387ms (Views: 4366.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:21:10 +0100 2011
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 22ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:21:10 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered dashboard/show.html.erb within layouts/application (1460.0ms)
+Completed 200 OK in 1486ms (Views: 1466.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Wed Apr 06 18:21:15 +0100 2011
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yA6S+c0nmGTpK6mVVQZL7q/hWXrCajrzRvyQJILwOJU="}
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 3[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:21:15 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 58ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:23:36 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (22.3ms)
+Rendered top/index.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 53ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:24:03 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 128ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:25:28 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 32ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:27:31 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 34ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:28:05 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 56ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:29:16 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 33ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:30:43 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 128ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:30:53 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 31ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:31:12 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 31ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:31:32 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 33ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:31:48 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 33ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:32:07 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 127ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:32:18 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 32ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Wed Apr 06 18:32:33 +0100 2011
+  Processing by FacebooksController#show as HTML
+  [1m[35mFacebook Load (28.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (0.9ms)[0m  [1mINSERT INTO "facebooks" ("created_at", "updated_at", "identifier", "access_token") VALUES ('2011-04-06 17:32:33.530026', '2011-04-06 17:32:33.530026', '652920847', '189368391107072|b66d50153b0e1f91893e468e-652920847|B0r_37ekHiWFg0dsIQ0vQuS67pM')[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 57ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Wed Apr 06 18:32:33 +0100 2011
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 4 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered dashboard/show.html.erb within layouts/application (1399.6ms)
+Completed 200 OK in 1518ms (Views: 1408.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Wed Apr 06 18:32:46 +0100 2011
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yA6S+c0nmGTpK6mVVQZL7q/hWXrCajrzRvyQJILwOJU="}
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 4 LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  DELETE FROM "facebooks" WHERE "facebooks"."id" = 4
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 06 18:32:46 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.7ms)
+Rendered top/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 37ms (Views: 23.2ms | ActiveRecord: 0.0ms)

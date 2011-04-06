@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  comments: MyText
+  directions: MyText
+  city: MyString
+  weather: MyString
+  equipment: MyString
+  date: 2011-04-06
+  starttime: 2011-04-06 17:27:02
+  endtime: 2011-04-06 17:27:02
+  bottomtime: 1
+  units: MyString
+  depth: 1
+  temperature: MyString
+  watertemp: MyString
+
+two:
+  name: MyString
+  description: MyText
+  comments: MyText
+  directions: MyText
+  city: MyString
+  weather: MyString
+  equipment: MyString
+  date: 2011-04-06
+  starttime: 2011-04-06 17:27:02
+  endtime: 2011-04-06 17:27:02
+  bottomtime: 1
+  units: MyString
+  depth: 1
+  temperature: MyString
+  watertemp: MyString

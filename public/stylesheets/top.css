@@ -1,0 +1,16 @@
+.top ul {
+  padding-left: 10px;
+}
+
+.top h1 {
+	margin-bottom: 0;
+}
+
+.top p.weak {
+    color: #999999;
+    margin-top: 0;
+}
+
+.top p.blue {
+	padding: 10px;
+}

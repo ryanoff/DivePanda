@@ -1,0 +1,27 @@
+<h1>Logbook Entries</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Name</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @logs.each do |log| %>
+  <tr>
+    <td><%= log.date %></td>
+    <td><%= log.name %></td>
+    <td><%= log.city %></td>
+    <td class="action"><%= link_to 'Show', log %></td>
+    <td class="action"><%= link_to 'Edit', edit_log_path(log) %></td>
+    <td class="action"><%= link_to 'Destroy', log, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add a new dive log', new_log_path %>

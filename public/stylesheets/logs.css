@@ -1,0 +1,15 @@
+/*-----------------]: logs :[---------------------*/
+
+th {
+	text-align: left;
+}
+
+td {
+	padding-right: 30px;
+}
+
+td.action {
+    font-size: 14px;
+    padding-right: 5px;
+    vertical-align: bottom;
+}

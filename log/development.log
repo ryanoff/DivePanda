@@ -1176,3 +1176,31 @@ Started GET "/" for 127.0.0.1 at Wed Apr 06 18:32:46 +0100 2011
 Rendered layouts/_sidebar.html.erb (1.7ms)
 Rendered top/index.html.erb within layouts/application (13.6ms)
 Completed 200 OK in 37ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 18:48:07 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (0.7ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 124ms (Views: 56.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 18:51:24 +0100 2011
+  Processing by LogsController#index as HTML
+Completed   in 3ms
+
+NameError (undefined local variable or method `login_required' for #<LogsController:0x104094840>):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.5ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Wed Apr 06 18:57:45 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.7ms)[0m  SELECT "logs".* FROM "logs"
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 83ms (Views: 69.4ms | ActiveRecord: 0.7ms)

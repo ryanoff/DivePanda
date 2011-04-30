@@ -1204,3 +1204,1958 @@ Started GET "/logs" for 127.0.0.1 at Wed Apr 06 18:57:45 +0100 2011
 Rendered layouts/_sidebar.html.erb (0.9ms)
 Rendered logs/index.html.erb within layouts/application (44.9ms)
 Completed 200 OK in 83ms (Views: 69.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 12:18:34 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 131ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Thu Apr 07 12:18:43 +0100 2011
+  Processing by FacebooksController#show as HTML
+Completed   in 57ms
+Redirected to http://localhost:3000/
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 12:18:44 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 29ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Thu Apr 07 12:18:54 +0100 2011
+  Processing by FacebooksController#show as HTML
+Completed   in 9ms
+Redirected to http://localhost:3000/
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 12:18:54 +0100 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Thu Apr 07 12:19:00 +0100 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (3.9ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/index.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 97ms (Views: 71.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Thu Apr 07 12:19:04 +0100 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (161.5ms)
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (196.1ms)
+Completed 200 OK in 264ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 19:09:52 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.2ms)
+Rendered top/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 140ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 19:10:10 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 19:10:13 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 31ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Tue Apr 12 19:10:15 -0700 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (5.5ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/index.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 101ms (Views: 74.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Tue Apr 12 19:10:18 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (165.1ms)
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (200.0ms)
+Completed 200 OK in 239ms (Views: 226.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 19:11:18 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 19:11:56 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered top/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 30ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 13:31:53 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered top/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 132ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Thu Apr 14 13:33:02 -0700 2011
+  Processing by FacebooksController#show as HTML
+Completed   in 95ms
+Redirected to http://localhost:3000/
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 13:33:02 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered top/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 112ms (Views: 99.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Thu Apr 14 13:33:08 -0700 2011
+  Processing by FacebooksController#show as HTML
+Completed   in 14ms
+Redirected to http://localhost:3000/
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 13:33:08 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.2ms)
+Rendered top/index.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 121ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Thu Apr 14 13:33:11 -0700 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (38.9ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (1.5ms)
+Rendered logs/index.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 224ms (Views: 119.4ms | ActiveRecord: 38.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 25 13:25:03 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered top/index.html.erb within layouts/application (77.3ms)
+Completed 200 OK in 173ms (Views: 101.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Mon Apr 25 13:25:08 -0700 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (5.3ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 112ms (Views: 72.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:25:11 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (184.3ms)
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (223.1ms)
+Completed 200 OK in 419ms (Views: 405.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:26:50 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (128.7ms)
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (169.0ms)
+Completed 200 OK in 190ms (Views: 176.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:33:23 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2181687180_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:18: syntax error, unexpected kENSURE, expecting kEND
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_logs_new_html_erb___1743584827_2181687180_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+  ');@output_buffer.append= ( @log.name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( render 'form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Back', logs_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (23.7ms)
+Completed   in 45ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:18: syntax error, unexpected kENSURE, expecting kEND
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20: syntax error, unexpected $end, expecting kEND):
+    15: 
+    16: <%= link_to 'Back', logs_path %>
+  app/views/logs/new.html.erb:20:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.9ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:33:50 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2183618240_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: invalid regular expression; there's no previous pattern, to which '*' would define cardinality at 1: /* render 'form' */
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:18: syntax error, unexpected kENSURE, expecting kEND
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20: syntax error, unexpected $end, expecting kEND
+Function body:           def _app_views_logs_new_html_erb___1743584827_2183618240_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+  ');@output_buffer.append= ( @log.name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( /* render 'form' */ );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Back', logs_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.3ms)
+Completed   in 104ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: invalid regular expression; there's no previous pattern, to which '*' would define cardinality at 1: /* render 'form' */
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:18: syntax error, unexpected kENSURE, expecting kEND
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:20: syntax error, unexpected $end, expecting kEND):
+    11:   <%= @log.name %>
+    12: </p>
+    13: 
+    14: <%= /* render 'form' */ %>
+    15: 
+    16: <%= link_to 'Back', logs_path %>
+  app/views/logs/new.html.erb:20:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.1ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:35:22 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2181678480_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:15: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_logs_new_html_erb___1743584827_2181678480_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+  ');@output_buffer.append= ( @log.name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+');@output_buffer.append= ( -# render 'form' );@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Back', logs_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.4ms)
+Completed   in 22ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:15: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected $end, expecting ')'):
+    12: </p>
+    13: 
+    14: <%= -# render 'form' -%>
+    15: 
+    16: <%= link_to 'Back', logs_path %>
+  app/views/logs/new.html.erb:16:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.3ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:35:35 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2180274620_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_logs_new_html_erb___1743584827_2180274620_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+
+');@output_buffer.append= ( -# render 'form' );@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Back', logs_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.3ms)
+Completed   in 22ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:14: syntax error, unexpected $end, expecting ')'):
+    10: 
+    11: 
+    12: <%= -# render 'form' -%>
+    13: 
+    14: <%= link_to 'Back', logs_path %>
+  app/views/logs/new.html.erb:14:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (93.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (103.2ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:36:07 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2182386380_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_logs_new_html_erb___1743584827_2182386380_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+
+');@output_buffer.append= ( -# render 'form' );@output_buffer.safe_concat('
+');@output_buffer.append= ( -# link_to 'Back', logs_path );@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.2ms)
+Completed   in 22ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13: syntax error, unexpected $end, expecting ')'):
+    10: 
+    11: 
+    12: <%= -# render 'form' -%>
+    13: 
+    14: <%= -# link_to 'Back', logs_path -%>
+  app/views/logs/new.html.erb:13:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:37:53 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2180899500_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_logs_new_html_erb___1743584827_2180899500_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<div>
+	');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+	');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+
+');@output_buffer.append= ( -# render 'form' );@output_buffer.safe_concat('
+');@output_buffer.append= ( -# link_to 'Back', logs_path );@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.4ms)
+Completed   in 22ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:16: syntax error, unexpected $end, expecting ')'):
+    13: 
+    14: 
+    15: <%= -# render 'form' -%>
+    16: 
+    17: <%= -# link_to 'Back', logs_path -%>
+  app/views/logs/new.html.erb:16:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:38:04 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2183057260_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_logs_new_html_erb___1743584827_2183057260_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<div>
+	');@output_buffer.append= ( f.label :name );@output_buffer.safe_concat(':
+	');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+
+<div>
+	<label>Dive site name</label>
+</div>
+
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.append= ( -# render 'form' );@output_buffer.safe_concat('
+');@output_buffer.append= ( -# link_to 'Back', logs_path );@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.5ms)
+Completed   in 23ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( -# link_to 'Back', logs_path );@output_buffer....
+                              ^
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: unterminated string meets end of file
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:17: syntax error, unexpected $end, expecting ')'):
+    14: <% end %>
+    15: 
+    16: <%= -# render 'form' -%>
+    17: 
+    18: <%= -# link_to 'Back', logs_path -%>
+  app/views/logs/new.html.erb:17:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:38:11 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 63ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:39:19 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 63ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:39:24 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 62ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:39:36 -0700 2011
+  Processing by LogsController#new as HTML
+ERROR: compiling _app_views_logs_new_html_erb___1743584827_2183331300_0 RAISED compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...r.append= ( f.label :Dive site name );@output_buffer.safe_co...
+                              ^
+Function body:           def _app_views_logs_new_html_erb___1743584827_2183331300_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "logs/new";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>Log a new dive</h1>
+
+');@output_buffer.append=  form_for @log do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<div>
+	');@output_buffer.append= ( f.label :Dive site name );@output_buffer.safe_concat(':
+	');@output_buffer.append= ( f.text_field :name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:13:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+/Users/ryanoff/Sites/divelog/app/controllers/logs_controller.rb:29:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:435:in `_run__1149216596__process_action__943997142__callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/handler/webrick.rb:13:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.2.2/lib/rack/server.rb:213:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+/usr/local/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered logs/new.html.erb within layouts/application (1.2ms)
+Completed   in 21ms
+
+ActionView::Template::Error (compile error
+/Users/ryanoff/Sites/divelog/app/views/logs/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+...r.append= ( f.label :Dive site name );@output_buffer.safe_co...
+                              ^):
+    3: <%= form_for @log do |f| %>
+    4: 
+    5: <div>
+    6: 	<%= f.label :Dive site name %>:
+    7: 	<%= f.text_field :name %>
+    8: </div>
+    9: 
+  app/views/logs/new.html.erb:13:in `compile'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.9ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 25 13:39:43 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered logs/new.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 63ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 29 23:51:13 -0700 2011
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.5ms)
+Rendered top/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 127ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Fri Apr 29 23:51:21 -0700 2011
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (34.6ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/index.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 942ms (Views: 857.9ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Fri Apr 29 23:51:35 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 121ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/add" for 127.0.0.1 at Fri Apr 29 23:56:58 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"add"}
+  [1m[35mSQL (0.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mLog Load (0.3ms)[0m  [1mSELECT "logs".* FROM "logs" WHERE "logs"."id" = 0 LIMIT 1[0m
+Completed   in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Log with ID=add):
+  app/controllers/logs_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.3ms)
+
+
+Started GET "/logs/add" for 127.0.0.1 at Fri Apr 29 23:57:57 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"add"}
+  [1m[35mLog Load (0.2ms)[0m  SELECT "logs".* FROM "logs" WHERE "logs"."id" = 0 LIMIT 1
+Completed   in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Log with ID=add):
+  app/controllers/logs_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/logs/add" for 127.0.0.1 at Fri Apr 29 23:58:00 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"add"}
+  [1m[36mLog Load (0.3ms)[0m  [1mSELECT "logs".* FROM "logs" WHERE "logs"."id" = 0 LIMIT 1[0m
+Completed   in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Log with ID=add):
+  app/controllers/logs_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/logs/add" for 127.0.0.1 at Fri Apr 29 23:58:58 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"add"}
+  [1m[35mLog Load (0.3ms)[0m  SELECT "logs".* FROM "logs" WHERE "logs"."id" = 0 LIMIT 1
+Completed   in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Log with ID=add):
+  app/controllers/logs_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (96.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (106.6ms)
+
+
+Started GET "/logs/add" for 127.0.0.1 at Fri Apr 29 23:58:59 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"add"}
+  [1m[36mLog Load (0.3ms)[0m  [1mSELECT "logs".* FROM "logs" WHERE "logs"."id" = 0 LIMIT 1[0m
+Completed   in 14ms
+
+ActiveRecord::RecordNotFound (Couldn't find Log with ID=add):
+  app/controllers/logs_controller.rb:16:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.4ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Fri Apr 29 23:59:41 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/_form.html.erb (116.9ms)
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (185.1ms)
+Completed 200 OK in 206ms (Views: 192.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:00:45 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 83ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:02:48 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (132.9ms)
+Completed 200 OK in 153ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:09:39 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.3ms)
+Rendered logs/new.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 87ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:10:05 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (154.3ms)
+Completed 200 OK in 175ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:14:03 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (174.2ms)
+Completed 200 OK in 212ms (Views: 199.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:14:05 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 81ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:14:14 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (65.8ms)
+Completed 200 OK in 87ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:15:04 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 83ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:15:53 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (82.6ms)
+Rendered logs/new.html.erb within layouts/application (140.9ms)
+Completed 200 OK in 165ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:16:06 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 85ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:16:08 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (147.6ms)
+Completed 200 OK in 168ms (Views: 154.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:18:51 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 79ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:24:00 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered logs/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 174ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:24:29 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/new.html.erb within layouts/application (88.7ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `country' for #<Log:0x10408d428>):
+    10: 
+    11: 		<div>
+    12: 			<%= f.label :country %>:
+    13: 			<%= f.text_field :country %>
+    14: 		</div>
+    15: 	
+    16: 		<div>
+  app/views/logs/new.html.erb:13:in `_app_views_logs_new_html_erb___1743584827_2181293300_0'
+  app/views/logs/new.html.erb:3:in `_app_views_logs_new_html_erb___1743584827_2181293300_0'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.4ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:24:39 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (57.7ms)
+Completed 200 OK in 78ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:26:37 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 80ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:29:04 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 76ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:29:32 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (59.8ms)
+Completed 200 OK in 82ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:32:33 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (58.4ms)
+Completed 200 OK in 81ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:34:07 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (141.2ms)
+Completed 200 OK in 162ms (Views: 148.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:35:29 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (72.8ms)
+Completed 200 OK in 120ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:36:36 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 177ms (Views: 163.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:38:00 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (59.5ms)
+Completed 200 OK in 80ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:44:25 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 79ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:44:41 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.1ms)
+Rendered logs/new.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 83ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:47:44 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (59.4ms)
+Completed 200 OK in 82ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:48:24 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (143.4ms)
+Completed 200 OK in 164ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:48:34 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (65.2ms)
+Completed 200 OK in 87ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:49:23 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (151.9ms)
+Completed 200 OK in 173ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logs" for 127.0.0.1 at Sat Apr 30 00:49:44 -0700 2011
+  Processing by LogsController#create as HTML
+  Parameters: {"commit"=>"Create Log", "units"=>"F", "log"=>{"name"=>"Test dive 2", "city"=>"Test dive 2", "weather"=>"Test dive 2", "watertemp"=>"Test dive 2", "directions"=>"Test dive 2", "bottomtime"=>"Test dive 2", "comments"=>"Test dive 2", "depth"=>"Test dive 2", "equipment"=>"Test dive 2", "description"=>"Test dive 2", "temperature"=>"Test dive 2"}, "authenticity_token"=>"ee3okgqX62ag/vQ3lK3oMcu9YK2KtDkfgi7Gkta+UT4=", "utf8"=>"✓"}
+  [1m[35mAREL (8.9ms)[0m  INSERT INTO "logs" ("equipment", "depth", "updated_at", "directions", "endtime", "watertemp", "comments", "created_at", "units", "name", "starttime", "description", "date", "bottomtime", "city", "temperature", "weather") VALUES ('Test dive 2', 0, '2011-04-30 07:49:44.593387', 'Test dive 2', NULL, 'Test dive 2', 'Test dive 2', '2011-04-30 07:49:44.593387', NULL, 'Test dive 2', NULL, 'Test dive 2', NULL, 0, 'Test dive 2', 'Test dive 2', 'Test dive 2')
+Redirected to http://localhost:3000/logs/2
+Completed 302 Found in 131ms
+
+
+Started GET "/logs/2" for 127.0.0.1 at Sat Apr 30 00:49:44 -0700 2011
+  Processing by LogsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLog Load (0.4ms)[0m  [1mSELECT "logs".* FROM "logs" WHERE "logs"."id" = 2 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.4ms)
+Rendered logs/show.html.erb within layouts/application (153.0ms)
+Completed 200 OK in 191ms (Views: 174.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Sat Apr 30 00:50:49 -0700 2011
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.8ms)[0m  SELECT "logs".* FROM "logs"
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 89ms (Views: 75.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:52:51 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 186ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:53:23 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 82ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:54:19 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 81ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:54:46 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (62.1ms)
+Completed 200 OK in 92ms (Views: 75.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:55:17 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.8ms)
+Rendered logs/new.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 80ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 00:55:58 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/new.html.erb within layouts/application (24.5ms)
+Completed   in 46ms
+
+ActionView::Template::Error (undefined method `country' for #<Log:0x103f51690>):
+    15: 
+    16: 		<div class="input text">
+    17: 			<%= f.label :country %>
+    18: 			<%= f.text_field :country %>
+    19: 		</div>
+    20: 				
+    21: 		<div class="input text">
+  app/views/logs/new.html.erb:18:in `_app_views_logs_new_html_erb___1743584827_2180599860_0'
+  app/views/logs/new.html.erb:3:in `_app_views_logs_new_html_erb___1743584827_2180599860_0'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.6ms)
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateFacebooks (20100805043508)
+Migrating to CreateLogs (20110406162702)
+Migrating to AddDetailsToLogs (20110430081121)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (13.0ms)[0m  [1mALTER TABLE "logs" ADD "country" varchar(255)[0m
+  [1m[35mSQL (0.3ms)[0m  ALTER TABLE "logs" ADD "state" varchar(255)
+  [1m[36mSQL (0.2ms)[0m  [1mALTER TABLE "logs" ADD "rating" decimal[0m
+  [1m[35mSQL (0.2ms)[0m  ALTER TABLE "logs" ADD "longitude" decimal
+  [1m[36mSQL (0.2ms)[0m  [1mALTER TABLE "logs" ADD "latitude" decimal[0m
+  [1m[35mSQL (11.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110430081121')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("facebooks")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("logs")[0m
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 01:13:15 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 87ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 01:14:28 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (0.9ms)
+Rendered logs/new.html.erb within layouts/application (156.9ms)
+Completed 200 OK in 178ms (Views: 164.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 01:15:29 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/new.html.erb within layouts/application (51.8ms)
+Completed   in 75ms
+
+ActionView::Template::Error (undefined method `latidu' for #<Log:0x1040e85f8>):
+    102: 			
+    103: 		<div class="input text">
+    104: 			<%= f.label :latidude %>
+    105: 			<%= f.text_field :latidu %>
+    106: 		</div>
+    107: 
+    108: 	</fieldset>
+  app/views/logs/new.html.erb:105:in `_app_views_logs_new_html_erb___1743584827_2181468260_0'
+  app/views/logs/new.html.erb:3:in `_app_views_logs_new_html_erb___1743584827_2181468260_0'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.2ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 01:15:38 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered logs/new.html.erb within layouts/application (46.9ms)
+Completed   in 68ms
+
+ActionView::Template::Error (undefined method `latidu' for #<Log:0x10444ac28>):
+    102: 			
+    103: 		<div class="input text">
+    104: 			<%= f.label :latitude %>
+    105: 			<%= f.text_field :latidu %>
+    106: 		</div>
+    107: 
+    108: 	</fieldset>
+  app/views/logs/new.html.erb:105:in `_app_views_logs_new_html_erb___1743584827_2183159580_0'
+  app/views/logs/new.html.erb:3:in `_app_views_logs_new_html_erb___1743584827_2183159580_0'
+  app/controllers/logs_controller.rb:29:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Sat Apr 30 01:15:42 -0700 2011
+  Processing by LogsController#new as HTML
+Rendered layouts/_sidebar.html.erb (1.0ms)
+Rendered logs/new.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 95ms (Views: 81.6ms | ActiveRecord: 0.0ms)

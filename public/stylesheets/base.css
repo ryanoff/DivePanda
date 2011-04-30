@@ -234,3 +234,42 @@ footer ul li {
 	padding-right: 30px;
     font-size: 11px;
 }
+
+/* Forms */
+fieldset {
+	border-top: none;
+	border-right: none;
+	border-bottom: 4px solid #F1F1F1;
+	border-left: none;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset legend {
+  color:#333333;
+  font-size:1.5em;
+  font-weight:bold;
+  margin: 0;
+}
+
+form div.input {
+	color:#333333;
+	font-weight:bold;
+	margin-top: 15px;
+}
+
+form label {
+	font-size: 14px;
+}
+
+form input {
+    clear: left;
+    display: block;
+    padding: 5px;
+}
+
+form textarea {
+    clear: left;
+    display: block;
+    padding: 5px;
+}

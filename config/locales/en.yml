@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+
+helpers:
+  label:
+    log:
+      name: "Write your entire text here"

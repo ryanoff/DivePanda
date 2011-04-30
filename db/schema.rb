@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110406162702) do
+ActiveRecord::Schema.define(:version => 20110430081121) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -37,6 +37,11 @@ ActiveRecord::Schema.define(:version => 20110406162702) do
     t.string   "watertemp"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "country"
+    t.string   "state"
+    t.decimal  "rating"
+    t.decimal  "longitude"
+    t.decimal  "latitude"
   end
 
 end

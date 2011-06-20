@@ -2,7 +2,7 @@
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
     <title>Divelog</title>
-    <meta property="fb:app_id" content="<%= Facebook.config[:app_id] %>">
+    <meta property="fb:app_id" content="<%= Facebook.config[:client_id] %>">
     <!--[if IE]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="fb-root"></div>
-	
+
 	<header>
 		<nav>
 			<div id="logo">Divelog</div>
@@ -28,7 +28,9 @@
 			</ul>
 		</nav>
 	</header>
-    
+	
+    <h1><%= link_to "FbGraph Sample", root_path %></h1>
+
     <div class="container">
       <div class="main">
         <%= yield %>
@@ -37,17 +39,13 @@
         <%= render :partial => 'layouts/sidebar' %>
       </aside>
     </div>
-    <footer>
-    		<ul>
-			<li class="copytight">&copy; <%= Date.today.year %> Divelog</li>
-			<li>Terms and Conditions</li>
-			<li>Privacy</li>
-		</ul>
-    </footer>
+    
+    <%= render 'layouts/footer' %>
+    
     <script src="http://connect.facebook.net/en_US/all.js"></script>
     <script>
       FB.init({
-        appId: "<%= Facebook.config[:app_id] %>",
+        appId: "<%= Facebook.config[:client_id] %>",
         cookie: true,
         xfbml: true
       });

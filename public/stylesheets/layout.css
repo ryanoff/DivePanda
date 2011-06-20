@@ -31,11 +31,17 @@ body > .container .sidebar p, body > .container .sidebar dl {
   padding-left: 50px;
 }
 
-body > footer {
-  clear: both;
-  text-align: center;
-}
-
 body > footer a {
   color: #AEDEE4;
+
+
+body > footer, body > footer small {
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+}
+
+body > footer li {
+  display: inline-block;
+  margin: 0 10px;
 }

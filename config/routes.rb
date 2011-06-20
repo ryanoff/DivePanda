@@ -1,6 +1,5 @@
 FbGraphSample::Application.routes.draw do
   resources :logs
-
   resource :facebook, :except => :create do
     get :callback, :to => :create
   end

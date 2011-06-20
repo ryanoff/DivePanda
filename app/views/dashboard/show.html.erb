@@ -13,6 +13,9 @@
 	</dl>
     <p><%= link_to 'See your full profile details', profile_path %></p>
     <p><%= link_to 'See your facebook timeline', timeline_path %></p>
+    <p><%= link_to 'See your App Request', '#', :id => :app_request %></p>
+    <p><%= link_to 'See your Subscriptions', subscription_path %></p>
+
     <p><%= link_to 'View your dive logs', logs_path %></p>
 
   </article>
@@ -22,26 +25,6 @@
 	<p></p>
   </article>
 
-  <article>
-    <h3><%= link_to 'App Request', '#', :id => :app_request %></h3>
-    <p>Send application requests to your friends.</p>
-    <p>This functionality is for iframe applications running on apps.facebook.com domain.</p>
-  </article>
-  
-    <article>
-    <h3><%= link_to 'Profile Details', profile_path %></h3>
-    <p>User profile.</p>
-  </article>
-  <article>
-    <h3><%= link_to 'Timeline (News Feed)', timeline_path %></h3>
-    <p>Show your timeline and update status.</p>
-  </article>
-  <article>
-    <h3><%= link_to 'Subscription', subscription_path %></h3>
-    <p>Subscribe your user's activity.</p>
-    <p>This functionality is for developers, not for end-users.</p>
-    <p>This page won't return any content to your browsers, since this endpoint is designed to respond to subscription verification request from facebook.com</p>
-  </article>
   
   <script>
 $(function () {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
-    <title>Divelog</title>
+    <title>DivePanda</title>
     <meta property="fb:app_id" content="<%= Facebook.config[:client_id] %>">
     <!--[if IE]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +16,7 @@
 
 	<header>
 		<nav>
-			<div id="logo">Divelog</div>
+			<div id="logo">DivePanda</div>
 			<ul>
 				<li><%= link_to 'Home', root_path %></li>
 				<li><%= link_to 'Logs', logs_path %></li>
@@ -29,8 +29,6 @@
 		</nav>
 	</header>
 	
-    <h1><%= link_to "FbGraph Sample", root_path %></h1>
-
     <div class="container">
       <div class="main">
         <%= yield %>

@@ -5,10 +5,9 @@
   padding: 0;
 }
 body {
-<<<<<<< HEAD
 	background-color: #fff;
 	color: #333; 
-	border-top: 4px solid #222;
+	border-top: 2px solid #333333;
 	/*
 	font-family: arial, helvetica, sans-serif;
 	font-family: georgia, arial, helvetica, sans-serif;
@@ -118,6 +117,10 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 
+#logo a {
+    color: #222222;
+}
+
 #notice {
   color: green;
 }
@@ -167,30 +170,36 @@ div.field, div.actions {
 
 /* Header */
 header {
-    background: none repeat scroll 0 0 #C52F24;
-    height: 80px;
+    background-color: #FAFAFA;
+    background: -webkit-linear-gradient(top, #FAFAFA, #EAEAEA);
+    background: -moz-linear-gradient(#FAFAFA, #EAEAEA) repeat scroll 0 0 transparent;
+    
+    height: 35px;
     width: 100%;
+    border-bottom-color:#CACACA;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
 }
 
 #logo {
     float: left;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 24px;
     padding-right: 100px;
     padding-top: 5px;
 }
 
 nav {
-    color: #FFFFFF;
+    color: #222222;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 2px;
     width: 960px;
 }
 
 nav ul {
     list-style: none outside none;
     overflow: hidden;
-    padding: 10px 0;
+    padding: 5px 0 0 0;
 }
 
 nav ul li {
@@ -201,11 +210,13 @@ nav ul li {
 }
 
 nav ul li a, nav ul li a:visited {
-	color: #FFF;
+	color: #222222;
 }
 
 nav ul li a:hover {
-	background-color: #980905;
+	color: #4183C4;
+	text-decoration: none;
+	background: transparent;
 }
 
 /* Section */

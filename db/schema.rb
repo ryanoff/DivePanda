@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110430081121) do
+ActiveRecord::Schema.define(:version => 20120326052206) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20110430081121) do
     t.decimal  "rating"
     t.decimal  "longitude"
     t.decimal  "latitude"
+    t.string   "weight"
   end
 
 end

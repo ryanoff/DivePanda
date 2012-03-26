@@ -1,57 +1,30 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
-  <%= @log.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @log.description %>
-</p>
-
-<p>
-  <b>Comments:</b>
-  <%= @log.comments %>
-</p>
-
-<p>
-  <b>Directions:</b>
-  <%= @log.directions %>
-</p>
-
-<p>
-  <b>City:</b>
-  <%= @log.city %>
-</p>
-
-<p>
-  <b>Weather:</b>
-  <%= @log.weather %>
-</p>
-
-<p>
-  <b>Equipment:</b>
-  <%= @log.equipment %>
-</p>
-
-<p>
   <b>Date:</b>
   <%= @log.date %>
 </p>
 
 <p>
-  <b>Starttime:</b>
+  <b>Dive Location:</b> <%= @log.name %>
+  <br />
+  <small>In <%= @log.city %>, <%= @log.state %>, <%= @log.country %></small>
+</p>
+
+
+<h3>Dive Stats</h3>
+<p>
+  <b>Start Ttime:</b>
   <%= @log.starttime %>
 </p>
 
 <p>
-  <b>Endtime:</b>
+  <b>End Time:</b>
   <%= @log.endtime %>
 </p>
 
 <p>
-  <b>Bottomtime:</b>
+  <b>Bottom Time:</b>
   <%= @log.bottomtime %>
 </p>
 
@@ -65,16 +38,54 @@
   <%= @log.depth %>
 </p>
 
+
+
+
+<h3>Attributes</h3>
+<p>
+  <b>Weather:</b>
+  <%= @log.weather %>
+</p>
+
+
+
+
 <p>
   <b>Temperature:</b>
   <%= @log.temperature %>
 </p>
 
 <p>
-  <b>Watertemp:</b>
+  <b>Water Temperature:</b>
   <%= @log.watertemp %>
 </p>
 
+<p>
+  <b>Equipment:</b>
+  <%= @log.equipment %>
+</p>
 
-<%= link_to 'Edit', edit_log_path(@log) %> |
-<%= link_to 'Back', logs_path %>
+
+<h3>Details</h3>
+<p>
+  <b>Dive Location Description:</b>
+  <%= @log.description %>
+</p>
+
+<p>
+  <b>Dive Comments:</b>
+  <%= @log.comments %>
+</p>
+
+<p>
+  <b>Directions to dive location:</b>
+  <%= @log.directions %>
+</p>
+
+
+
+
+
+
+<%= link_to 'Edit Log', edit_log_path(@log) %> |
+<%= link_to 'All Logs', logs_path %>

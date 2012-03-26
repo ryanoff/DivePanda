@@ -34,8 +34,20 @@
 
 	<fieldset>
 		<legend>Dive Stats</legend>
+        <div class="field">
+            <%= f.label :date %><br />
+            <%= f.date_select :date %>
+        </div>
+        <div class="field">
+            <%= f.label :starttime %><br />
+            <%= f.time_select :starttime %>
+        </div>
+        <div class="field">
+            <%= f.label :endtime %><br />
+            <%= f.time_select :endtime %>
+        </div>
 		<div class="input text">
-			<%= f.label :bottomtime %>
+			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
 			<%= f.text_field :bottomtime %>
 		</div>	
 		
@@ -53,42 +65,53 @@
 		</div>
 		
 		<div class="input text">
-			<%= f.label :temperature %>
+			<%= f.label :temperature, "Outside Temperature" %>
 			<%= f.text_field :temperature %>
 		</div>
 		
 		<div class="input text">
-			<%= f.label :watertemp %>
+			<%= f.label :watertemp, "Water Temperature" %>
 			<%= f.text_field :watertemp %>
 		</div>
 	
 		<div class="input text">
-			<%= f.label :equipment %>
+			<%= f.label :equipment, "Equipment (e.g. wetsuit, hood)" %>
 			<%= f.text_field :equipment %>
 		</div>
+
+		<div class="input text">
+			<%= f.label :weight, "Weight (e.g. 14 lbs)" %>
+			<%= f.text_field :weight %>
+		</div>
+
+            <%#= #Add weight %>
+            <%#= #Add Log number %>
+
+
+            		
 	</fieldset>	
 
 	<fieldset>
 		<legend>Details</legend>	
 		<div class="input textarea">
-			<%= f.label :description %>
+			<%= f.label :description, "Dive Location Description (public)"%>
 			<%= f.text_area :description %>
 		</div>
 	
 		<div class="input textarea">
-			<%= f.label :comments %>
+			<%= f.label :comments, "Dive Comments (private)" %>
 			<%= f.text_area :comments %>
 		</div>
 		
 		<div class="input textarea">
-			<%= f.label :directions %>
+			<%= f.label :directions, "Directions to dive location (how to get there)" %>
 			<%= f.text_area :directions %>
 		</div>
 
 
 	
 		<div class="input text">
-			<%= f.label :rating %>
+			<%= f.label :rating, "Overall rating" %>
 			<%= f.text_field :rating %>
 		</div>
 		

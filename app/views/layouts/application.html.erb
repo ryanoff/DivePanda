@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:fb="http://www.facebook.com/2008/fbml">
   <head>
-    <title>DivePanda</title>
+    <title>Dive Panda</title>
     <meta property="fb:app_id" content="<%= Facebook.config[:client_id] %>">
     <!--[if IE]>
     <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,11 +16,10 @@
 
 	<header>
 		<nav>
-			<div id="logo">DivePanda</div>
+			<div id="logo"><%= link_to 'Dive Panda', root_path %></div>
 			<ul>
-				<li><%= link_to 'Home', root_path %></li>
-				<li><%= link_to 'Logs', logs_path %></li>
-				<li>About</li>
+				<li><%= link_to 'Logs', logs_path %></li>		
+				<li><%= link_to "About", :controller => "pages", :action => "about" %></li>
 				<li>Contact</li>
 				<% if authenticated? %>
 					<li><%= link_to "Sign out", facebook_path, :method => :delete %></li>

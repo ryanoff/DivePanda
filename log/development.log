@@ -7402,3 +7402,47 @@ Rendered layouts/_sidebar.html.erb (0.7ms)
 Rendered layouts/_footer.html.erb (0.5ms)
 Rendered logs/index.html.erb within layouts/application (115.5ms)
 Completed 200 OK in 192ms (Views: 121.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Mon Mar 26 00:50:48 -0700 2012
+  Processing by LogsController#index as HTML
+  [1m[35mLog Load (0.6ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered logs/index.html.erb within layouts/application (203.7ms)
+Completed 200 OK in 224ms (Views: 216.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 00:50:51 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 97ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Mar 26 00:50:51 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered dashboard/show.html.erb within layouts/application (291.4ms)
+Completed 200 OK in 309ms (Views: 297.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 26 10:02:13 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 11ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Mar 26 10:02:13 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (0.7ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered dashboard/show.html.erb within layouts/application (556.5ms)
+Completed 200 OK in 579ms (Views: 562.0ms | ActiveRecord: 0.4ms)

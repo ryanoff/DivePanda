@@ -1,10 +1,5 @@
 .top ul {
   padding-left: 10px;
-<<<<<<< HEAD
-}
-
-.top h1 {
-	margin-bottom: 0;
 }
 
 .top p.weak {
@@ -14,6 +9,20 @@
 
 .top p.blue {
 	padding: 10px;
-=======
->>>>>>> 0db31fc5412258c7bf66ddc4af7f2f6f73fa7e6b
+}
+
+.top h1 {
+	background: url('/images/cloud_app.png');
+	background-repeat: no-repeat;
+    padding-left:135px;
+    margin: 0;
+}
+
+.top #intro {
+    margin-bottom:60px;
+    margin-top:60px;    
+}
+
+.top #intro p.weak {
+    padding-left:135px;
 }

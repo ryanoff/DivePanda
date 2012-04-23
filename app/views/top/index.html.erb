@@ -1,14 +1,19 @@
 <section class="top">
   <article>
-	<h1>Your scuba diving log book in the cloud</h1>
 	
-	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
+    <%# link_to image_tag("cloud_app.png", :border => 0), root_path, {:class => 'logo-icon'} %>
+	
+	<div id="intro">
+    	<h1>Your scuba diving log book in the cloud</h1>
+    	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
+	</div>
 	
 	<p class="blue">This system is currently in beta with limited availability. If you would like access, please sign up here.</p>
 	
-	<p><fb:login-button length="long" onlogin="location.href = '<%= facebook_path %>'" perms="<%= Facebook.config[:perms] %>"></fb:login-button></p>
-
-    <footer>Learn how to use <%= link_to "fb_graph", fb_graph_url %></footer>
+	<!-- <p><fb:login-button length="long" onlogin="location.href = '<%= facebook_path %>'" perms="<%= Facebook.config[:perms] %>"></fb:login-button></p>
+     -->
+ 
+    <%# Learn how to use <%= link_to "fb_graph", fb_graph_url %>
     
   </article>
 

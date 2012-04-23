@@ -1,7 +1,10 @@
-FbGraphSample::Application.routes.draw do
+DivePanda::Application.routes.draw do
   get "pages/home"
   get "pages/contact"
   get "pages/about"
+  get "pages/terms"
+  get "pages/privacy"
+
 
   resources :logs
   resource :facebook, :except => :create do

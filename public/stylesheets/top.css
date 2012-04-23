@@ -26,3 +26,7 @@
 .top #intro p.weak {
     padding-left:135px;
 }
+
+.top #fb_login {
+    text-align: center;
+}

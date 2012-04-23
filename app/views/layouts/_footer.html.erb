@@ -1,7 +1,7 @@
 <footer>
   <ul>
     <li>&copy; <%= Time.now.year %> <a href="http://divepanda.com">Dive Panda</a></li>
-	<li>Terms and Conditions</li>
-	<li>Privacy</li>
+	<li><%= link_to 'Terms and Conditions', :controller => "pages", :action => "terms" %></li>
+	<li><%= link_to 'Privacy', :controller => "pages", :action => "privacy" %></li>
   </ul>
 </footer>

@@ -8,12 +8,15 @@
     	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
 	</div>
 	
-	<p class="blue">This system is currently in beta with limited availability. If you would like access, please sign up here.</p>
+	<p class="blue">This system is currently in beta with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
 	
-	<!-- <p><fb:login-button length="long" onlogin="location.href = '<%= facebook_path %>'" perms="<%= Facebook.config[:perms] %>"></fb:login-button></p>
-     -->
- 
-    <%# Learn how to use <%= link_to "fb_graph", fb_graph_url %>
+    <p id="fb_login">
+    <% if authenticated? %>
+        <%= link_to "Logout", facebook_path, :method => :delete %>
+    <% else %>
+        <fb:login-button length="long" size="xlarge" onlogin="location.href = '<%= facebook_path %>'" scope="<%= Facebook.config[:scope] %>"></fb:login-button>
+    <% end %>
+    </p>
     
   </article>
 

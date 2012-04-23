@@ -41,11 +41,15 @@ h4 {
 }
 
 a { 
-	color: #980905;
+	/* color: #980905; */
+	color: #4183C4;
 	text-decoration: none;
 }
 
-a:visited { color: #980905; }
+a:visited { 
+	/* color: #980905; */
+	color: #4183C4;
+}
 
 a:hover { 
 	color: #fff; 
@@ -202,6 +206,7 @@ nav {
     margin: 0 auto;
     padding-top: 10px;
     width: 960px;
+    overflow: visible;
 }
 
 nav ul {
@@ -210,7 +215,6 @@ nav ul {
     margin: 0;
     overflow: hidden;
     padding: 5px 0 0;
-    width: 300px;
 }
 
 nav ul li {
@@ -231,6 +235,9 @@ nav ul li a:hover {
 
 /* Section */
 section {}
+section.with_sidebar {
+    float: left;
+}
 
 
 /* Sidebar - Aside */

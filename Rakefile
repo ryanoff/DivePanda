@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-FbGraphSample::Application.load_tasks
+DivePanda::Application.load_tasks

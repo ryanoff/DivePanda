@@ -21,12 +21,17 @@
                 <%= link_to 'DivePanda', root_path, {:class => 'logo'} %>
 			</div>
 			<ul>
-				<li><%= link_to 'Logs', logs_path %></li>		
-				<li><%= link_to "About", :controller => "pages", :action => "about" %></li>
-				<li>Contact</li>
-				<% if authenticated? %>
-					<li><%= link_to "Sign out", facebook_path, :method => :delete %></li>
-				<% end %>				
+    			
+    			<% if authenticated? %>
+    				<li>Hello <%= current_user.profile.first_name %> <%= current_user.profile.last_name %></li>
+                <% else %>
+                    <li><fb:login-button size="small" onlogin="location.href = '<%= facebook_path %>'" scope="<%= Facebook.config[:scope] %>"></fb:login-button></li>
+    			<% end %>
+    							
+                <% if authenticated? %><li><%= link_to 'Dives', logs_path %></li><% end %>
+    			<li><%= link_to "About", :controller => "pages", :action => "about" %></li>
+    			<li><%= link_to 'Contact', :controller => "pages", :action => "contact" %></li>
+    			<% if authenticated? %><li><%= link_to "Sign out", facebook_path, :method => :delete %></li><% end %>				
 			</ul>
 		</nav>
 	</header>
@@ -35,9 +40,6 @@
       <div class="main">
         <%= yield %>
       </div>
-      <aside class="sidebar">
-        <%= render :partial => 'layouts/sidebar' %>
-      </aside>
     </div>
     
     <%= render 'layouts/footer' %>

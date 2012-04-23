@@ -10540,3 +10540,1516 @@ Rendered layouts/_sidebar.html.erb (2.8ms)
 Rendered layouts/_footer.html.erb (1.2ms)
 Rendered top/index.html.erb within layouts/application (66.2ms)
 Completed 200 OK in 140ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 19:16:59 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered top/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 118ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 19:17:18 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered top/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 36ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:17:29 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (0.6ms)
+Rendered pages/contact.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:17:29 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:18:26 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (1.6ms)
+Rendered pages/contact.html.erb within layouts/application (154.0ms)
+Completed   in 164ms
+
+ActionView::Template::Error (No route matches {:controller=>"pages", :action=>"terms"}):
+    1: <footer>
+    2:   <ul>
+    3:     <li>&copy; <%= Time.now.year %> <a href="http://divepanda.com">Dive Panda</a></li>
+    4: 	<li><%= link_to 'Terms and Conditions', :controller => "pages", :action => "terms" %></li>
+    5: 	<li><%= link_to 'Privacy', :controller => "pages", :action => "privacy" %></li>
+    6:   </ul>
+    7: </footer>
+  app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb__2145135020_2180818180_1994110'
+  app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb___1577900385_2178220860_0'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:18:41 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/contact.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:18:41 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:21:13 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered pages/contact.html.erb within layouts/application (155.9ms)
+Completed   in 164ms
+
+ActionView::Template::Error (No route matches {:controller=>"pages", :action=>"terms"}):
+    1: <footer>
+    2:   <ul>
+    3:     <li>&copy; <%= Time.now.year %> <a href="http://divepanda.com">Dive Panda</a></li>
+    4: 	<li><%= link_to 'Terms and Conditions', :controller => "pages", :action => "terms" %></li>
+    5: 	<li><%= link_to 'Privacy', :controller => "pages", :action => "privacy" %></li>
+    6:   </ul>
+    7: </footer>
+  app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb__2145135020_2180787340_1994110'
+  app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb___1577900385_2178014480_0'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.9ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:22:25 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/contact.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:26 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (91.7ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Sun Apr 22 19:22:34 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_sidebar.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered pages/contact.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:34 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/pages/terms" for 127.0.0.1 at Sun Apr 22 19:22:39 -0700 2012
+  Processing by PagesController#terms as HTML
+Rendered layouts/_sidebar.html.erb (2.5ms)
+Rendered layouts/_footer.html.erb (1.3ms)
+Rendered pages/terms.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:39 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/pages/terms" for 127.0.0.1 at Sun Apr 22 19:22:44 -0700 2012
+  Processing by PagesController#terms as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/terms.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:45 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/pages/privacy" for 127.0.0.1 at Sun Apr 22 19:22:47 -0700 2012
+  Processing by PagesController#privacy as HTML
+Rendered layouts/_sidebar.html.erb (3.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/privacy.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 56ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:47 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/pages/terms" for 127.0.0.1 at Sun Apr 22 19:22:48 -0700 2012
+  Processing by PagesController#terms as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/terms.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Sun Apr 22 19:22:49 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Sun Apr 22 19:22:51 -0700 2012
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (3.1ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered logs/index.html.erb within layouts/application (161.7ms)
+Completed 200 OK in 231ms (Views: 189.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 19:22:55 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.5ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 38ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 19:24:05 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (4.5ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 39ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 19:25:55 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (138.5ms)
+Completed 200 OK in 157ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:50:00 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 176ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:53:21 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (136.1ms)
+Completed 200 OK in 155ms (Views: 143.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:53:35 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 38ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:53:52 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (113.5ms)
+Completed 200 OK in 132ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:54:23 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 41ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:54:34 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (94.8ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (111.0ms)
+Completed 200 OK in 129ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:54:46 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 38ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:57:35 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 92ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 21:59:43 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 42ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 22:00:58 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 93ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 22:34:28 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.8ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (112.1ms)
+Completed 200 OK in 212ms (Views: 200.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 22:41:02 -0700 2012
+  Processing by TopController#index as 
+Rendered layouts/_sidebar.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (2.5ms)
+Rendered top/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 53ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 22:41:47 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered top/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 41ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 22:41:48 -0700 2012
+  Processing by TopController#index as 
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 51ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:01:46 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 102ms
+
+
+Started GET "/facebook/callback?code=AQCSGs4T9loumrJ9ysY3TsDjp7v-wSQmv6htPHbMGZ3ecytKHGtuYadfsn5Y3AMl6evvKjgBMEiKg0vlop1_8cZOp2UvKNUFQWBB0183VukDa_wi7YmZ3L-6Jk7fpQn7zKIc6ELdVNXyETVm5RFQb705aAzi34OPD_3puU29vZe1y_MHadbpvyEXTX4xQG2GJVY" for 127.0.0.1 at Sun Apr 22 23:01:47 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQCSGs4T9loumrJ9ysY3TsDjp7v-wSQmv6htPHbMGZ3ecytKHGtuYadfsn5Y3AMl6evvKjgBMEiKg0vlop1_8cZOp2UvKNUFQWBB0183VukDa_wi7YmZ3L-6Jk7fpQn7zKIc6ELdVNXyETVm5RFQb705aAzi34OPD_3puU29vZe1y_MHadbpvyEXTX4xQG2GJVY"}
+Completed   in 297ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:32:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.9ms)
+
+
+Started GET "/facebook/callback?code=AQCSGs4T9loumrJ9ysY3TsDjp7v-wSQmv6htPHbMGZ3ecytKHGtuYadfsn5Y3AMl6evvKjgBMEiKg0vlop1_8cZOp2UvKNUFQWBB0183VukDa_wi7YmZ3L-6Jk7fpQn7zKIc6ELdVNXyETVm5RFQb705aAzi34OPD_3puU29vZe1y_MHadbpvyEXTX4xQG2GJVY" for 127.0.0.1 at Sun Apr 22 23:01:48 -0700 2012
+  Processing by FacebooksController#create as 
+  Parameters: {"code"=>"AQCSGs4T9loumrJ9ysY3TsDjp7v-wSQmv6htPHbMGZ3ecytKHGtuYadfsn5Y3AMl6evvKjgBMEiKg0vlop1_8cZOp2UvKNUFQWBB0183VukDa_wi7YmZ3L-6Jk7fpQn7zKIc6ELdVNXyETVm5RFQb705aAzi34OPD_3puU29vZe1y_MHadbpvyEXTX4xQG2GJVY"}
+Completed   in 256ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:32:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.9ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:06:10 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 12ms
+
+
+Started GET "/facebook/callback?code=AQCGkzyr6x-VjXg1Ub5FtKi_pCMcV6WiMy68brhXzx0Zaba4bzI9V9ZWBHDBUq0JzJ_SX5OPLHlzCrFzTg7k1Z_WPuDmL2_X0ItQCa9q5VK0-UZsRP_WyycZmzrlPXtwt3qzmtmXstClf9Oa_O_hs0gAblDlDCynG8_q5n0M2k6Q_EFW05gbXo3iKXJNmi8k4tc" for 127.0.0.1 at Sun Apr 22 23:06:11 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQCGkzyr6x-VjXg1Ub5FtKi_pCMcV6WiMy68brhXzx0Zaba4bzI9V9ZWBHDBUq0JzJ_SX5OPLHlzCrFzTg7k1Z_WPuDmL2_X0ItQCa9q5VK0-UZsRP_WyycZmzrlPXtwt3qzmtmXstClf9Oa_O_hs0gAblDlDCynG8_q5n0M2k6Q_EFW05gbXo3iKXJNmi8k4tc"}
+Started Facebook create
+Completed   in 153ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:35:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.1ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 23:07:33 -0700 2012
+Started app
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.7ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered top/index.html.erb within layouts/application (108.2ms)
+Completed 200 OK in 131ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 23:07:50 -0700 2012
+Started app
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 45ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 23:08:27 -0700 2012
+*****Started app
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 138ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 22 23:09:24 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 43ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:09:36 -0700 2012
+  Processing by FacebooksController#new as HTML
+************  FACEBOOK NEW  ****************
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 13ms
+
+
+Started GET "/facebook/callback?code=AQB1BCwceT67ROhQ3Kjwim2XwjCbBtY5F5ur8r5a4AciWBCK1xZUGtMAp-CqAFOW5auViP0l77lerx2YGzFesWPPPNgf3pYwMWc9ttMaLbs6MFnSBYxt7WwPXoaon47gv9abs-IrVOgDVPlJBplq8rZ9KIpbBoKeRZjQd15NWMS1ENeaSw39JQQS_rzd2bHd354" for 127.0.0.1 at Sun Apr 22 23:09:36 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQB1BCwceT67ROhQ3Kjwim2XwjCbBtY5F5ur8r5a4AciWBCK1xZUGtMAp-CqAFOW5auViP0l77lerx2YGzFesWPPPNgf3pYwMWc9ttMaLbs6MFnSBYxt7WwPXoaon47gv9abs-IrVOgDVPlJBplq8rZ9KIpbBoKeRZjQd15NWMS1ENeaSw39JQQS_rzd2bHd354"}
+Completed   in 273ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:38:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
+
+
+Started GET "/facebook/callback?code=AQDsqfPapQShoOLRFnMb5l4KwM1pF825Exd7Hwed8SrAuky3043k7yZw87z0Fgi3tWljinOBb_omblgVuICs0SBJKMhHAhSQ-NmvEzGPeaGLMAKVecCnDL_KeMCeghFekFKg2QEYTslm-6KaKvnVmZbn9-QxwJXfCxRrmHX0tmc9XtchIM_0yzU-rdftoNcCkFE" for 127.0.0.1 at Sun Apr 22 23:11:23 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQDsqfPapQShoOLRFnMb5l4KwM1pF825Exd7Hwed8SrAuky3043k7yZw87z0Fgi3tWljinOBb_omblgVuICs0SBJKMhHAhSQ-NmvEzGPeaGLMAKVecCnDL_KeMCeghFekFKg2QEYTslm-6KaKvnVmZbn9-QxwJXfCxRrmHX0tmc9XtchIM_0yzU-rdftoNcCkFE"}
+Completed   in 522ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:38:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.8ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:17:20 -0700 2012
+  Processing by FacebooksController#new as HTML
+************  FACEBOOK NEW  ****************
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 14ms
+
+
+Started GET "/facebook/callback?code=AQAVnNnC-Pastpz82XsnkN0odukEfzw2V9GqXsoqKbCObxld_u3wDdh2a_45FUfBDFuyQYaILDv890xlTA_WQzT140hykgjdJzuDoQemmBN1K5KVXDbYOL1fd3L3ndMsr_aRvGbi_6XdB26i_DSkzrhkxytv-5RZV2r5l4_Y2o5WUdBHsfYVWAuRj_bgkn6lvfM" for 127.0.0.1 at Sun Apr 22 23:17:21 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQAVnNnC-Pastpz82XsnkN0odukEfzw2V9GqXsoqKbCObxld_u3wDdh2a_45FUfBDFuyQYaILDv890xlTA_WQzT140hykgjdJzuDoQemmBN1K5KVXDbYOL1fd3L3ndMsr_aRvGbi_6XdB26i_DSkzrhkxytv-5RZV2r5l4_Y2o5WUdBHsfYVWAuRj_bgkn6lvfM"}
+Completed   in 231ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:38:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.1ms)
+
+
+Started GET "/facebook/callback?code=AQAVnNnC-Pastpz82XsnkN0odukEfzw2V9GqXsoqKbCObxld_u3wDdh2a_45FUfBDFuyQYaILDv890xlTA_WQzT140hykgjdJzuDoQemmBN1K5KVXDbYOL1fd3L3ndMsr_aRvGbi_6XdB26i_DSkzrhkxytv-5RZV2r5l4_Y2o5WUdBHsfYVWAuRj_bgkn6lvfM" for 127.0.0.1 at Sun Apr 22 23:19:38 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQAVnNnC-Pastpz82XsnkN0odukEfzw2V9GqXsoqKbCObxld_u3wDdh2a_45FUfBDFuyQYaILDv890xlTA_WQzT140hykgjdJzuDoQemmBN1K5KVXDbYOL1fd3L3ndMsr_aRvGbi_6XdB26i_DSkzrhkxytv-5RZV2r5l4_Y2o5WUdBHsfYVWAuRj_bgkn6lvfM"}
+************  FACEBOOK CREATE  ****************
+Completed   in 295ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:35:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.1ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.7ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:21:28 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 12ms
+
+
+Started GET "/facebook/callback?code=AQDrhWnC4iaXhgKvAP6AL5Z6ODC36yuyAmXo4Hl-5Y_mzSJM3g5esuamGBoa_v983tYWi5IJvO_gSxBfZAXBZvlyzt_adh20XZFl7buiG_gqdaMsUD_Rn_grA6c7y47JZ0fBx99QfUjnZ4xIo_p0Pt6vfFU8bhP_4t0J_YvWbn19XwNewtDP29d3QoAKgibHn3M" for 127.0.0.1 at Sun Apr 22 23:21:28 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQDrhWnC4iaXhgKvAP6AL5Z6ODC36yuyAmXo4Hl-5Y_mzSJM3g5esuamGBoa_v983tYWi5IJvO_gSxBfZAXBZvlyzt_adh20XZFl7buiG_gqdaMsUD_Rn_grA6c7y47JZ0fBx99QfUjnZ4xIo_p0Pt6vfFU8bhP_4t0J_YvWbn19XwNewtDP29d3QoAKgibHn3M"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 513ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:37:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:59:08 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 31ms
+
+
+Started GET "/facebook/callback?code=AQDQKeC1SIIlFiXsokhFOPwDECTcZGwkc3GWuGo5ocyp7rXRVl77QxXfeq-pxqF_9neBxrHxkP7BafCFof3_qZ1JrKNMxhOTTbdOlhHGmmD2alXxMW54piEmBOm6XL_6a_t-CUfZFDoM5fBbgJFWHRISYEwoeNu2aPc4KHWelK-gK51ZkYj7EKLW6joYTp6Tlds" for 127.0.0.1 at Sun Apr 22 23:59:08 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQDQKeC1SIIlFiXsokhFOPwDECTcZGwkc3GWuGo5ocyp7rXRVl77QxXfeq-pxqF_9neBxrHxkP7BafCFof3_qZ1JrKNMxhOTTbdOlhHGmmD2alXxMW54piEmBOm6XL_6a_t-CUfZFDoM5fBbgJFWHRISYEwoeNu2aPc4KHWelK-gK51ZkYj7EKLW6joYTp6Tlds"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 10ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103f2dc68>):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started GET "/facebook/callback?code=AQDQKeC1SIIlFiXsokhFOPwDECTcZGwkc3GWuGo5ocyp7rXRVl77QxXfeq-pxqF_9neBxrHxkP7BafCFof3_qZ1JrKNMxhOTTbdOlhHGmmD2alXxMW54piEmBOm6XL_6a_t-CUfZFDoM5fBbgJFWHRISYEwoeNu2aPc4KHWelK-gK51ZkYj7EKLW6joYTp6Tlds" for 127.0.0.1 at Sun Apr 22 23:59:39 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQDQKeC1SIIlFiXsokhFOPwDECTcZGwkc3GWuGo5ocyp7rXRVl77QxXfeq-pxqF_9neBxrHxkP7BafCFof3_qZ1JrKNMxhOTTbdOlhHGmmD2alXxMW54piEmBOm6XL_6a_t-CUfZFDoM5fBbgJFWHRISYEwoeNu2aPc4KHWelK-gK51ZkYj7EKLW6joYTp6Tlds"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 11ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103ce4fd8>):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Sun Apr 22 23:59:44 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 11ms
+
+
+Started GET "/facebook/callback?code=AQAHmHtFjz2ISx5vjndRshoNjrnUl6Rtm1FRY0bX24Y6iJLtHzLitRP96Nmbebmyn6GOSpbtgHmaUoYs2o5n6VSO5-P2uHtJk7siAMtNXtXmMnaleYsyh2LoiHEqnlxW2VMnUgtTpU2EKLRY1zOLuW5DMqjfqU0n1_IB3_9ezRyoBd1ZxScbAFto-PBVQZ-qUis" for 127.0.0.1 at Sun Apr 22 23:59:45 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQAHmHtFjz2ISx5vjndRshoNjrnUl6Rtm1FRY0bX24Y6iJLtHzLitRP96Nmbebmyn6GOSpbtgHmaUoYs2o5n6VSO5-P2uHtJk7siAMtNXtXmMnaleYsyh2LoiHEqnlxW2VMnUgtTpU2EKLRY1zOLuW5DMqjfqU0n1_IB3_9ezRyoBd1ZxScbAFto-PBVQZ-qUis"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 11ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103ee9dd8>):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.7ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Mon Apr 23 00:00:12 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code&scope=user_about_me%2Cuser_activities%2Cuser_birthday%2Cuser_education_history%2Cuser_events%2Cuser_groups%2Cuser_hometown%2Cuser_interests%2Cuser_likes%2Cuser_location%2Cuser_notes%2Cuser_online_presence%2Cuser_photo_video_tags%2Cuser_photos%2Cuser_relationships%2Cuser_relationship_details%2Cuser_religion_politics%2Cuser_status%2Cuser_videos%2Cuser_website%2Cuser_work_history%2Cemail%2Cread_friendlists%2Cread_insights%2Cread_mailbox%2Cread_requests%2Cread_stream%2Cxmpp_login%2Cads_management%2Cuser_checkins%2Cpublish_stream%2Ccreate_event%2Crsvp_event%2Csms%2Coffline_access%2Cpublish_checkins%2Cmanage_pages%2Cfriends_about_me%2Cfriends_activities%2Cfriends_birthday%2Cfriends_education_history%2Cfriends_events%2Cfriends_groups%2Cfriends_hometown%2Cfriends_interests%2Cfriends_likes%2Cfriends_location%2Cfriends_notes%2Cfriends_online_presence%2Cfriends_photo_video_tags%2Cfriends_photos%2Cfriends_relationships%2Cfriends_relationship_details%2Cfriends_religion_politics%2Cfriends_status%2Cfriends_videos%2Cfriends_website%2Cfriends_work_history%2Cmanage_friendlists%2Cfriends_checkins
+Completed 302 Found in 12ms
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:00:12 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 10ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103b6cb88>):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.8ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:02:07 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 11ms
+
+NoMethodError (undefined method `client' for nil:NilClass):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.7ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:14:20 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 11ms
+
+NoMethodError (undefined method `client' for "New token: ":String):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (93.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (106.4ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:14:57 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+Completed   in 9ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103e4b660>):
+  app/controllers/facebooks_controller.rb:36:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:15:47 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+************  FACEBOOK AUTH2  ****************
+Completed   in 179ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:43:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:18:36 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+************  FACEBOOK AUTH2  ****************
+Completed   in 166ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:43:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:19:03 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+Completed   in 10ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103c75318>):
+  app/controllers/facebooks_controller.rb:37:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:19:09 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+Completed   in 98ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103fcdbf0>):
+  app/controllers/facebooks_controller.rb:37:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.7ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:20:43 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+************  FACEBOOK AUTH2  ****************
+Completed   in 273ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:44:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:26:49 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+New token: #<Rack::OAuth2::Client:0x103afcd38>
+************  FACEBOOK AUTH2  ****************
+Completed   in 276ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:41:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.8ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:28:55 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+New token: #<Rack::OAuth2::Client:0x103e13eb8>
+************  FACEBOOK AUTH2  ****************
+Completed   in 251ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:42:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.4ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:29:24 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+New token: AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY
+New token: #<Rack::OAuth2::Client:0x103bade58 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103baac58 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+************  FACEBOOK AUTH2  ****************
+Completed   in 700ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:41:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (97.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (110.8ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:37:48 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+**** #<Rack::OAuth2::Client:0x103e387e0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103e36008 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+**** #<Rack::OAuth2::Client:0x103e387e0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103e36008 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+**** graph.facebook.com
+************  FACEBOOK AUTH2  ****************
+Completed   in 283ms
+
+Rack::OAuth2::Client::Error (Rack::OAuth2::Client::Error):
+  app/controllers/facebooks_controller.rb:44:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.6ms)
+
+
+Started GET "/facebook/callback?code=AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY" for 127.0.0.1 at Mon Apr 23 00:39:43 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY"}
+************  FACEBOOK CREATE  ****************
+************  FACEBOOK AUTH  ****************
+**** #<Rack::OAuth2::Client:0x103bd40d0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103bd2960 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+**** #<Rack::OAuth2::Client:0x103bd40d0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103bd2960 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBQb3WskdHntKt9WyK09kpaeTf2jucei5IIEuvYSUvoLHeRSj8SM5e8tuky65mrNtChyEhUehFjXGSPL6dtrdpdtc1zW_6f_V0V9Bwzo9jFgaWzS_vEM8I9ca0NslXSp5ZR3TrpvoakbgBfMvn-OfFQjgnDnOLUClPAAqseysI29j0oQlk90Wvm4ByhlqmYYwY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+****client.host=*** graph.facebook.com
+Completed   in 11ms
+
+NoMethodError (undefined method `authorization_code' for #<Rack::OAuth2::Client:0x103bd40d0>):
+  app/controllers/facebooks_controller.rb:41:in `create'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (14.4ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Mon Apr 23 00:49:00 -0700 2012
+  Processing by FacebooksController#new as HTML
+Completed   in 10ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/facebooks_controller.rb:20:in `auth'
+  app/controllers/facebooks_controller.rb:20:in `new'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 00:59:17 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 133ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 00:59:36 -0700 2012
+  Processing by FacebooksController#show as HTML
+Completed   in 14ms
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 00:59:37 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered top/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 46ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Mon Apr 23 00:59:40 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code
+Completed 302 Found in 13ms
+
+
+Started GET "/facebook/callback?code=AQCTFvzbTCqtxVc1MwoUF4NKF9km99XfJYDrb_D5kPqRg9odd2EyvFtTEduwU46BFS2B4-tK6r3RUWvGTG0P_8yPqD6zwYrl965Cx2dJxC-yfenDWvQTNJqtJdPWeMkYk0NauvnpxE_iENNcrYd-niwE0B0Wmj_wR6woydmI1raEigoIG3U3O2jrIKSTvT5VpWY" for 127.0.0.1 at Mon Apr 23 00:59:41 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQCTFvzbTCqtxVc1MwoUF4NKF9km99XfJYDrb_D5kPqRg9odd2EyvFtTEduwU46BFS2B4-tK6r3RUWvGTG0P_8yPqD6zwYrl965Cx2dJxC-yfenDWvQTNJqtJdPWeMkYk0NauvnpxE_iENNcrYd-niwE0B0Wmj_wR6woydmI1raEigoIG3U3O2jrIKSTvT5VpWY"}
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mFacebook Load (25.8ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+**** #<Rack::OAuth2::Client:0x103f70ef0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103f70b08 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQCTFvzbTCqtxVc1MwoUF4NKF9km99XfJYDrb_D5kPqRg9odd2EyvFtTEduwU46BFS2B4-tK6r3RUWvGTG0P_8yPqD6zwYrl965Cx2dJxC-yfenDWvQTNJqtJdPWeMkYk0NauvnpxE_iENNcrYd-niwE0B0Wmj_wR6woydmI1raEigoIG3U3O2jrIKSTvT5VpWY">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 583ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 00:59:41 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.3ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (276.9ms)
+Completed 200 OK in 325ms (Views: 300.3ms | ActiveRecord: 26.6ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Mon Apr 23 00:59:48 -0700 2012
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"72EUPgelIe7vTnFE/4sjP5SdqTa46D+dhcrVEXqApo8="}
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 7 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 7[0m
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 76ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 00:59:48 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.9ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 45ms (Views: 31.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 00:59:51 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 131ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook/new" for 127.0.0.1 at Mon Apr 23 00:59:53 -0700 2012
+  Processing by FacebooksController#new as HTML
+Redirected to https://graph.facebook.com/oauth/authorize?client_id=9232b178f28e3689e1a072a634b68791&redirect_uri=http%3A%2F%2Fdivepanda.local%3A3000%2Ffacebook%2Fcallback&response_type=code
+Completed 302 Found in 13ms
+
+
+Started GET "/facebook/callback?code=AQBV0ydsKPe7uVVkFh3vRhXKpTKXn-FJAV4Ek5YuFB4hUkDPdqe62KLOj05Xcx38-IpuRaLeH2nz-ftbT04pfrcXeZOIdJPuCZjfCXf6TWxLOSpe_sPOXq2zhGyLQMMnlTtDl0b1zwXMSuWt16JaP9FKgFQGeG6upPtSBaycqomJL8-GlpG-HhCvcMGN-7r-Pes" for 127.0.0.1 at Mon Apr 23 00:59:54 -0700 2012
+  Processing by FacebooksController#create as HTML
+  Parameters: {"code"=>"AQBV0ydsKPe7uVVkFh3vRhXKpTKXn-FJAV4Ek5YuFB4hUkDPdqe62KLOj05Xcx38-IpuRaLeH2nz-ftbT04pfrcXeZOIdJPuCZjfCXf6TWxLOSpe_sPOXq2zhGyLQMMnlTtDl0b1zwXMSuWt16JaP9FKgFQGeG6upPtSBaycqomJL8-GlpG-HhCvcMGN-7r-Pes"}
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "facebooks" ("identifier", "created_at", "access_token", "updated_at") VALUES ('652920847', '2012-04-23 07:59:54.753081', 'AAACsOsOvAgABANiHSId5na0aXaSFGrNMMJW9XKg9qIfJJJD5j3c6Qj5GDJ4QrKpn8chvSk81O9sSEHojHqnYx63aGZCYZD', '2012-04-23 07:59:54.753081')[0m
+**** #<Rack::OAuth2::Client:0x103b596f0 @grant=#<Rack::OAuth2::Client::Grant::AuthorizationCode:0x103b58bb0 @redirect_uri="http://divepanda.local:3000/facebook/callback", @code="AQBV0ydsKPe7uVVkFh3vRhXKpTKXn-FJAV4Ek5YuFB4hUkDPdqe62KLOj05Xcx38-IpuRaLeH2nz-ftbT04pfrcXeZOIdJPuCZjfCXf6TWxLOSpe_sPOXq2zhGyLQMMnlTtDl0b1zwXMSuWt16JaP9FKgFQGeG6upPtSBaycqomJL8-GlpG-HhCvcMGN-7r-Pes">, @token_endpoint="/oauth/access_token", @redirect_uri="http://divepanda.local:3000/facebook/callback", @identifier="9232b178f28e3689e1a072a634b68791", @authorization_endpoint="/oauth/authorize", @secret="6c7561f89f08dffbb6e557ab0aee3cb8", @scheme=nil, @host="graph.facebook.com", @port=nil>
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 613ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 00:59:54 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 8 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.2ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (282.0ms)
+Completed 200 OK in 314ms (Views: 289.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Mon Apr 23 01:00:32 -0700 2012
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"72EUPgelIe7vTnFE/4sjP5SdqTa46D+dhcrVEXqApo8="}
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 8 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 8 LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "facebooks" WHERE "facebooks"."id" = 8
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 119ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:00:32 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered top/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 42ms (Views: 28.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:01:14 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO "facebooks" ("access_token", "updated_at", "created_at", "identifier") VALUES ('AAACsOsOvAgABALZAE5E0FFDlMPyDhLspibvLZBZBsJLUgyMzAOearHO6nbMt7466AsUztBuZAIAZCNijdQFp2QArLYZAKGmTMZD', '2012-04-23 08:01:14.894269', '2012-04-23 08:01:14.894269', '652920847')
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 288ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:01:14 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.2ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (340.0ms)
+Completed 200 OK in 373ms (Views: 347.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:01:20 -0700 2012
+  Processing by DashboardController#show as 
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.3ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered dashboard/show.html.erb within layouts/application (379.4ms)
+Completed 200 OK in 426ms (Views: 402.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blank.gif" for 127.0.0.1 at Mon Apr 23 01:01:38 -0700 2012
+
+ActionController::RoutingError (No route matches "/blank.gif"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:04:03 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.3ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered dashboard/show.html.erb within layouts/application (433.7ms)
+Completed 200 OK in 485ms (Views: 452.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:04:04 -0700 2012
+  Processing by DashboardController#show as 
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1
+Rendered layouts/_sidebar.html.erb (1.2ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (368.3ms)
+Completed 200 OK in 419ms (Views: 394.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Mon Apr 23 01:04:08 -0700 2012
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"72EUPgelIe7vTnFE/4sjP5SdqTa46D+dhcrVEXqApo8="}
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 9 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 9[0m
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 29ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:04:08 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (4.6ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered top/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 43ms (Views: 27.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:04:09 -0700 2012
+  Processing by TopController#index as 
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 57ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:10:27 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (93.0ms)
+Rendered layouts/_footer.html.erb (2.3ms)
+Rendered top/index.html.erb within layouts/application (113.7ms)
+Completed 200 OK in 137ms (Views: 121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:10:28 -0700 2012
+  Processing by TopController#index as 
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 57ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:11:05 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 43ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:11:06 -0700 2012
+  Processing by TopController#index as 
+Rendered layouts/_sidebar.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (2.8ms)
+Rendered top/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 62ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:14:29 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (2.5ms)
+Rendered top/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 44ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:14:52 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (6.4ms)
+Rendered top/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 45ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:15:58 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 43ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:17:45 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 44ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:18:06 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (114.3ms)
+Completed 200 OK in 136ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:21:35 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.3ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 45ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:22:30 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 133ms (Views: 119.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:25:12 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 42ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:26:10 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 133ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:26:27 -0700 2012
+  Processing by FacebooksController#show as HTML
+Completed   in 13ms
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:26:27 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.9ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 47ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:26:30 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered top/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 42ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:26:36 -0700 2012
+  Processing by FacebooksController#show as HTML
+Completed   in 12ms
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:26:36 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (3.7ms)
+Rendered top/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 48ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:26:47 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (2.1ms)
+Rendered layouts/_footer.html.erb (4.5ms)
+Rendered top/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 44ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:27:05 -0700 2012
+  Processing by FacebooksController#show as HTML
+Completed   in 12ms
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:27:05 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered top/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 134ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:27:33 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_sidebar.html.erb (3.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 44ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:27:44 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1
+  [1m[36mAREL (23.2ms)[0m  [1mINSERT INTO "facebooks" ("updated_at", "identifier", "access_token", "created_at") VALUES ('2012-04-23 08:27:44.504447', '652920847', 'AAACsOsOvAgABAFsbdtgJZAaTtKO0QnjzyHkueyueoHujQSuzgo0EZB3tkIXo5PZBZC3bY9kr50xu4LUP0qO7jxXOXTr5HRFSC91mR1O7hgZDZD', '2012-04-23 08:27:44.504447')[0m
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 408ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:27:44 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (357.6ms)
+Completed 200 OK in 390ms (Views: 364.7ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:30:10 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (3.7ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered dashboard/show.html.erb within layouts/application (306.1ms)
+Completed 200 OK in 424ms (Views: 315.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:31:20 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered dashboard/show.html.erb within layouts/application (282.8ms)
+Completed 200 OK in 313ms (Views: 290.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Mon Apr 23 01:31:28 -0700 2012
+  Processing by ProfilesController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Rendered profiles/show.html.erb within layouts/application (1077.9ms)
+Completed   in 1110ms
+
+ActionView::Template::Error (undefined method `meeting_for' for #<FbGraph::User:0x103d727c0>):
+    51:     <dt>Interested in</dt>
+    52:     <dd><%= current_user.profile.interested_in.join(', ') %></dd>
+    53:     <dt>Meeting for</dt>
+    54:     <dd><%= current_user.profile.meeting_for.join(', ') %></dd>
+    55:     <dt>Relationship Status</dt>
+    56:     <dd><%= current_user.profile.relationship_status %></dd>
+    57:     <dt>Religion</dt>
+  app/views/profiles/show.html.erb:54:in `_app_views_profiles_show_html_erb__37506780_2179756340_0'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.3ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.7ms)
+
+
+Started GET "/timeline" for 127.0.0.1 at Mon Apr 23 01:31:35 -0700 2012
+  Processing by TimelineController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Completed   in 406ms
+  [1m[35mAREL (0.4ms)[0m  DELETE FROM "facebooks" WHERE "facebooks"."id" = 10
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:31:35 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+Rendered layouts/_sidebar.html.erb (2.5ms)
+Rendered layouts/_footer.html.erb (2.7ms)
+Rendered top/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 54ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/subscription" for 127.0.0.1 at Mon Apr 23 01:31:56 -0700 2012
+  Processing by SubscriptionsController#show as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Mon Apr 23 01:32:50 -0700 2012
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (0.9ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered logs/index.html.erb within layouts/application (165.4ms)
+Completed 200 OK in 203ms (Views: 190.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:34:11 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:34:11 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 10 LIMIT 1
+Rendered layouts/_sidebar.html.erb (2.4ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 52ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon Apr 23 01:34:16 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[36mFacebook Load (0.2ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO "facebooks" ("identifier", "access_token", "updated_at", "created_at") VALUES ('652920847', 'AAACsOsOvAgABAFsbdtgJZAaTtKO0QnjzyHkueyueoHujQSuzgo0EZB3tkIXo5PZBZC3bY9kr50xu4LUP0qO7jxXOXTr5HRFSC91mR1O7hgZDZD', '2012-04-23 08:34:16.835331', '2012-04-23 08:34:16.835331')
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 328ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:34:16 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.5ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered dashboard/show.html.erb within layouts/application (248.0ms)
+Completed 200 OK in 283ms (Views: 255.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:35:58 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (3.6ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (611.9ms)
+Completed 200 OK in 644ms (Views: 618.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:36:34 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.5ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (4.1ms)
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered dashboard/show.html.erb within layouts/application (729.4ms)
+Completed 200 OK in 860ms (Views: 736.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/logs" for 127.0.0.1 at Mon Apr 23 01:37:01 -0700 2012
+  Processing by LogsController#index as HTML
+  [1m[36mLog Load (0.9ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (3.9ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered logs/index.html.erb within layouts/application (567.7ms)
+Completed 200 OK in 588ms (Views: 574.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:37:54 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered dashboard/show.html.erb within layouts/application (4.7ms)
+Completed   in 36ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+    20:         <th></th>
+    21:       </tr>
+    22:     
+    23:     <% @logs.each do |log| %>
+    24:       <tr>
+    25:         <td><%= log.date %></td>
+    26:         <td><%= log.name %></td>
+  app/views/dashboard/show.html.erb:23:in `_app_views_dashboard_show_html_erb___356133984_2178943900_0'
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.2ms)
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.9ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:39:15 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mLog Load (1.4ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered dashboard/show.html.erb within layouts/application (554.8ms)
+Completed 200 OK in 600ms (Views: 562.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:40:15 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.8ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mLog Load (0.8ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (4.3ms)
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered dashboard/show.html.erb within layouts/application (564.7ms)
+Completed 200 OK in 611ms (Views: 572.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 23 01:40:52 -0700 2012
+  Processing by LogsController#new as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered logs/new.html.erb within layouts/application (973.8ms)
+Completed 200 OK in 1095ms (Views: 1081.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 23 01:41:57 -0700 2012
+  Processing by LogsController#new as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered logs/new.html.erb within layouts/application (882.7ms)
+Completed 200 OK in 903ms (Views: 890.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logs/new" for 127.0.0.1 at Mon Apr 23 01:43:26 -0700 2012
+  Processing by LogsController#new as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered logs/new.html.erb within layouts/application (889.8ms)
+Completed 200 OK in 990ms (Views: 896.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:43:31 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mLog Load (0.8ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (285.4ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered dashboard/show.html.erb within layouts/application (447.0ms)
+Completed 200 OK in 611ms (Views: 572.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:45:25 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mLog Load (0.7ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (362.6ms)
+Rendered layouts/_footer.html.erb (5.9ms)
+Rendered dashboard/show.html.erb within layouts/application (532.5ms)
+Completed 200 OK in 699ms (Views: 540.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:46:29 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.4ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mLog Load (0.8ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (577.0ms)
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered dashboard/show.html.erb within layouts/application (711.0ms)
+Completed 200 OK in 862ms (Views: 718.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:47:30 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mLog Load (0.7ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (223.2ms)
+Rendered layouts/_footer.html.erb (2.6ms)
+Rendered dashboard/show.html.erb within layouts/application (360.5ms)
+Completed 200 OK in 510ms (Views: 367.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:47:59 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mLog Load (0.7ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (246.2ms)
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered dashboard/show.html.erb within layouts/application (388.6ms)
+Completed 200 OK in 537ms (Views: 395.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:48:21 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mLog Load (4.7ms)[0m  SELECT "logs".* FROM "logs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+Rendered layouts/_sidebar.html.erb (238.6ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered dashboard/show.html.erb within layouts/application (380.1ms)
+Completed 200 OK in 428ms (Views: 387.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon Apr 23 01:49:56 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mLog Load (0.7ms)[0m  [1mSELECT "logs".* FROM "logs"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+Rendered layouts/_sidebar.html.erb (324.3ms)
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered dashboard/show.html.erb within layouts/application (463.9ms)
+Completed 200 OK in 507ms (Views: 472.0ms | ActiveRecord: 1.0ms)

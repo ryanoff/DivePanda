@@ -12053,3 +12053,180 @@ Rendered layouts/_sidebar.html.erb (324.3ms)
 Rendered layouts/_footer.html.erb (1.8ms)
 Rendered dashboard/show.html.erb within layouts/application (463.9ms)
 Completed 200 OK in 507ms (Views: 472.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:58:52 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered top/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 37ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/facebook" for 127.0.0.1 at Mon Apr 23 01:58:58 -0700 2012
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Xri229d/75+eyVL/JzH8SljpaN8APz1EKOuaBnVZb10="}
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 11 LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 11[0m
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 29ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 01:58:58 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered top/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 36ms (Views: 21.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:00:22 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 38ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:01:35 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 37ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:01:42 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 38ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:01:52 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 38ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:02:31 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered top/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 39ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:03:10 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.0ms)
+Rendered top/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 38ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:03:17 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.4ms)
+Rendered top/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 39ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:03:33 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered top/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 39ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Mon Apr 23 02:03:55 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_footer.html.erb (2.1ms)
+Rendered pages/contact.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:03:55 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Mon Apr 23 02:04:05 -0700 2012
+  Processing by PagesController#about as HTML
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/about.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:04:05 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Mon Apr 23 02:04:56 -0700 2012
+  Processing by PagesController#about as HTML
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/about.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:04:56 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Mon Apr 23 02:10:17 -0700 2012
+  Processing by PagesController#about as HTML
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered pages/about.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:10:18 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 23 02:10:40 -0700 2012
+  Processing by TopController#index as HTML
+Rendered layouts/_footer.html.erb (1.8ms)
+Rendered top/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 37ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at Mon Apr 23 02:10:47 -0700 2012
+  Processing by PagesController#contact as HTML
+Rendered layouts/_footer.html.erb (1.9ms)
+Rendered pages/contact.html.erb within layouts/application (119.1ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:10:48 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Mon Apr 23 02:10:49 -0700 2012
+  Processing by PagesController#about as HTML
+Rendered layouts/_footer.html.erb (2.2ms)
+Rendered pages/about.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/pages.css" for 127.0.0.1 at Mon Apr 23 02:10:49 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/pages.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)

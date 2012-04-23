@@ -7,15 +7,17 @@
     	<h1>Your scuba diving log book in the cloud</h1>
     	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
 	</div>
-	
-	<p class="blue">This system is currently in beta with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
-	
-    <p id="fb_login">
-    <% if authenticated? %>
-        <%= link_to "Logout", facebook_path, :method => :delete %>
-    <% else %>
-        <fb:login-button length="long" size="xlarge" onlogin="location.href = '<%= facebook_path %>'" scope="<%= Facebook.config[:scope] %>"></fb:login-button>
-    <% end %>
+
+    	<p class="blue">This system is currently in beta with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
+
+    	<p class="weak center">Login to get started.</p>
+
+    <p id="fb_login">    	
+        <% if authenticated? %>
+            <%= link_to "Logout", facebook_path, :method => :delete %>
+        <% else %>
+            <fb:login-button length="long" size="xlarge" onlogin="location.href = '<%= facebook_path %>'" scope="<%= Facebook.config[:scope] %>"></fb:login-button>
+        <% end %>
     </p>
     
   </article>

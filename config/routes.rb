@@ -1,12 +1,14 @@
 DivePanda::Application.routes.draw do
+
+  resources :items
+  resources :dives
+
   get "pages/home"
   get "pages/contact"
   get "pages/about"
   get "pages/terms"
   get "pages/privacy"
-
-
-  resources :logs
+  
   resource :facebook, :except => :create do
     get :callback, :to => :create
   end

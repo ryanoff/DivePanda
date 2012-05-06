@@ -1,5 +1,6 @@
 class Facebook < ActiveRecord::Base
   has_many :subscriptions
+  has_many :dives
 
   def profile
     @profile ||= FbGraph::User.me(self.access_token).fetch

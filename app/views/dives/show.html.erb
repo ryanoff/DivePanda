@@ -1,0 +1,96 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User Id:</b>
+  <%= @dive.user_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @dive.date %>
+</p>
+
+<p>
+  <b>Dive Location:</b> <%= @dive.name %>
+  <br />
+  <small>In <%= @dive.city %>, <%= @dive.state %>, <%= @dive.country %></small>
+</p>
+
+
+<h3>Dive Stats</h3>
+<p>
+  <b>Start Ttime:</b>
+  <%= @dive.starttime %>
+</p>
+
+<p>
+  <b>End Time:</b>
+  <%= @dive.endtime %>
+</p>
+
+<p>
+  <b>Bottom Time:</b>
+  <%= @dive.bottomtime %>
+</p>
+
+<p>
+  <b>Units:</b>
+  <%= @dive.units %>
+</p>
+
+<p>
+  <b>Depth:</b>
+  <%= @dive.depth %>
+</p>
+
+
+
+
+<h3>Attributes</h3>
+<p>
+  <b>Weather:</b>
+  <%= @dive.weather %>
+</p>
+
+
+
+
+<p>
+  <b>Temperature:</b>
+  <%= @dive.temperature %>
+</p>
+
+<p>
+  <b>Water Temperature:</b>
+  <%= @dive.watertemp %>
+</p>
+
+<p>
+  <b>Equipment:</b>
+  <%= @dive.equipment %>
+</p>
+
+
+<h3>Details</h3>
+<p>
+  <b>Dive Location Description:</b>
+  <%= @dive.description %>
+</p>
+
+<p>
+  <b>Dive Comments:</b>
+  <%= @dive.comments %>
+</p>
+
+<p>
+  <b>Directions to dive location:</b>
+  <%= @dive.directions %>
+</p>
+
+
+	<!-- Add buddy to dive -->
+	<!-- Email this dive to friends or email -->
+
+
+<%= link_to 'Edit Dive', edit_dive_path(@dive) %> |
+<%= link_to 'All Dives', dives_path %>

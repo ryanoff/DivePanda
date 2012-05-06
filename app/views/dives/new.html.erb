@@ -1,8 +1,24 @@
-<h1>Log a new dive</h1>
+<h1>Create a new dive</h1>
 
-<%= form_for @log do |f| %>
+<%= form_for @dive do |f| %>
 
+
+    <%# Set the Facebook identifier to the user_id of the Dive %>
+    <%#= hidden_field_tag 'dive[user_id]', @facebook.identifier.to_i %>
+
+    <fieldset>
+    	<div class="input text">
+			<%= f.label :user_id, "User Id" %>
+			<%= f.text_field :user_id %>
+		</div>
+    </fieldset>
+	
 	<fieldset>
+		<div class="field">
+            <%= f.label :date %><br />
+            <%= f.date_select :date %>
+        </div>
+
 		<div class="input text">
 			<%= f.label :name, "Dive site name" %>
 			<%= f.text_field :name %>
@@ -34,18 +50,17 @@
 
 	<fieldset>
 		<legend>Dive Stats</legend>
-        <div class="field">
-            <%= f.label :date %><br />
-            <%= f.date_select :date %>
-        </div>
+                
         <div class="field">
             <%= f.label :starttime %><br />
             <%= f.time_select :starttime %>
         </div>
+        
         <div class="field">
             <%= f.label :endtime %><br />
             <%= f.time_select :endtime %>
         </div>
+		
 		<div class="input text">
 			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
 			<%= f.text_field :bottomtime %>
@@ -83,11 +98,8 @@
 			<%= f.label :weight, "Weight (e.g. 14 lbs)" %>
 			<%= f.text_field :weight %>
 		</div>
-
-            <%#= #Add weight %>
-            <%#= #Add Log number %>
-
-
+		
+        <%#= #Add Dive number. How many dives have you done with total minutes and hours. %>
             		
 	</fieldset>	
 
@@ -109,11 +121,15 @@
 		</div>
 
 
-	
 		<div class="input text">
 			<%= f.label :rating, "Overall rating" %>
-			<%= f.text_field :rating %>
+			<%= f.select(:rating, [['1',1], ['2',2], ['3',3], ['4',4], ['5',5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]]) %>
 		</div>
+		
+		<div class="weak">
+		  <%= link_to 'Get current location', '#', :id => 'getLocation' %>
+		</div>
+
 		
 			
 		<div class="input text">

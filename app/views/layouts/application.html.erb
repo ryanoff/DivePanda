@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag 'base', 'layout', 'gritter', controller_name %>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
     <%= javascript_include_tag 'rails', 'jquery.gritter' %>
+    <%# Add js for dives here %>
     <%= csrf_meta_tag %>
   </head>
   <body>
@@ -23,15 +24,16 @@
 			<ul>
     			
     			<% if authenticated? %>
-    				<li>Hello <%= current_user.profile.first_name %> <%= current_user.profile.last_name %></li>
+    				<li>Hello <%= link_to current_user.profile.first_name, :controller => "profiles", :action => "show" %></li>
+                    <li><%= link_to 'Dashboard', dashboard_path %></li>
+                    <li><%= link_to 'Dives', dives_path %></li>
+                    <li><%= link_to "Sign out", facebook_path, :method => :delete %></li>	    				
                 <% else %>
                     <li><fb:login-button size="small" onlogin="location.href = '<%= facebook_path %>'" scope="<%= Facebook.config[:scope] %>"></fb:login-button></li>
+                    <li><%= link_to "About", :controller => "pages", :action => "about" %></li>
+                    <li><%= link_to 'Contact', :controller => "pages", :action => "contact" %></li>
     			<% end %>
-    							
-                <% if authenticated? %><li><%= link_to 'Dives', logs_path %></li><% end %>
-    			<li><%= link_to "About", :controller => "pages", :action => "about" %></li>
-    			<li><%= link_to 'Contact', :controller => "pages", :action => "contact" %></li>
-    			<% if authenticated? %><li><%= link_to "Sign out", facebook_path, :method => :delete %></li><% end %>				
+    				
 			</ul>
 		</nav>
 	</header>

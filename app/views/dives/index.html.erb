@@ -1,0 +1,27 @@
+<h1>Dive Entries</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Name</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dives.each do |dive| %>
+  <tr>
+    <td><%= dive.date %></td>
+    <td><%= dive.name %></td>
+    <td><%= dive.city %></td>
+    <td class="action"><%= link_to 'Show', dive %></td>
+    <td class="action"><%= link_to 'Edit', edit_dive_path(dive) %></td>
+    <td class="action"><%= link_to 'Delete', dive, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add a new dive', new_dive_path %>

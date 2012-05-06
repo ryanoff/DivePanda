@@ -3,3 +3,35 @@
 .dashboard article {
   margin: 20px 0;
 }
+
+.dashboard h1 {
+    font-size: 20px;
+}
+
+.dashboard h3#add_new {
+    background: url('../images/icons/16/add.png') no-repeat #72C152 5px 5px;
+    /* background: linear-gradient(45deg, #2E8D11 45px, transparent 45px); */
+    background: -webkit-gradient(linear, center bottom, center top, from(#2E8D11), to(#72C152));
+    background: -moz-linear-gradient(center bottom , #2E8D11 0%, #72C152 70%) repeat scroll 0 0 transparent;
+    border: 1px solid #2E8D11;
+    border-radius: 6px 6px 6px 6px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 60px 0;
+    padding: 3px 0 2px 10px;
+    width: 162px;
+}
+
+.dashboard h3#add_new:hover {
+    background:-moz-linear-gradient(center bottom , #3EA60B 0%, #72C152 70%) repeat scroll 0 0 transparent;
+}
+
+.dashboard h3#add_new a:hover {
+    background: transparent;
+    /* text-decoration: none; */
+} 
+
+.dashboard h3#add_new a {
+    color: #FFFFFF;
+    font-size: 
+}

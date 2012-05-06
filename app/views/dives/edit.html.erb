@@ -1,10 +1,18 @@
-<h1>Edit this Log</h1>
+<h1>Edit this Dive</h1>
 
 
-
-<%= form_for @log do |f| %>
+<%= form_for @dive do |f| %>
 
 	<fieldset>
+        
+        <%# Set the Facebook identifier to the user_id of the Dive %>
+        <%= hidden_field_tag 'dive[user_id]', @facebook.identifier.to_i %>
+        
+        <div class="field">
+            <%= f.label :date %><br />
+            <%= f.date_select :date %>
+        </div>
+
 		<div class="input text">
 			<%= f.label :name, "Dive site name" %>
 			<%= f.text_field :name %>
@@ -36,27 +44,27 @@
 
 	<fieldset>
 		<legend>Dive Stats</legend>
-		<div class="input text">
-			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
-			<%= f.text_field :bottomtime %>
-		</div>	
 		
 		<div class="input text">
 			<%= f.label :depth %>
 			<%= f.text_field :depth %>
 		</div>
-        <div class="field">
-            <%= f.label :date %><br />
-            <%= f.date_select :date %>
-        </div>
+
         <div class="field">
             <%= f.label :starttime %><br />
             <%= f.time_select :starttime %>
         </div>
+
         <div class="field">
             <%= f.label :endtime %><br />
             <%= f.time_select :endtime %>
         </div>
+
+		<div class="input text">
+			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
+			<%= f.text_field :bottomtime %>
+		</div>	
+
 		
 	</fieldset>
 
@@ -82,8 +90,11 @@
 			<%= f.text_field :equipment %>
 		</div>
 
-            <%#= #Add weight %>
-            		
+		<div class="input text">
+			<%= f.label :weight, "Weight (e.g. 14 lbs)" %>
+			<%= f.text_field :weight %>
+		</div>
+		            		
 	</fieldset>	
 
 	<fieldset>
@@ -107,9 +118,12 @@
 	
 		<div class="input text">
 			<%= f.label :rating, "Overall rating" %>
-			<%= f.text_field :rating %>
+			<%= f.select(:rating, [['1',1], ['2',2], ['3',3], ['4',4], ['5',5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]]) %>
 		</div>
 		
+		<div class="weak">
+		  <%= link_to 'Get current location', '#', :id => 'getLocation' %>
+		</div>
 			
 		<div class="input text">
 			<%= f.label :longitude %>
@@ -130,8 +144,8 @@
 
 
 
-<%= link_to 'Show', @log %> |
-<%= link_to 'All Logs', logs_path %>
+<%= link_to 'Show', @dive %> |
+<%= link_to 'All Dives', dives_path %>
 
 
 

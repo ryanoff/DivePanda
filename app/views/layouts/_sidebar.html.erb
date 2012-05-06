@@ -12,13 +12,15 @@
     	    <dd><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></dd>
     	    <dt>Email</dt>
     	    <dd><%= current_user.profile.email %></dd>
+    	    <dt>Current User Id</dt>
+    	    <dd><%= current_user.id %></dd>
+    	    <dt>Facebook identifier:</dt>
+    	    <dd><%= @facebook.identifier %></dd>
     	</dl>
-        <p><%= link_to 'See your full profile details', profile_path %></p>
-        <p><%= link_to 'See your facebook timeline', timeline_path %></p>
-        <p><%= link_to 'See your App Request', '#', :id => :app_request %></p>
-        <p><%= link_to 'See your Subscriptions', subscription_path %></p>
-    
-        <p><%= link_to "Logout", facebook_path, :method => :delete %></p>
+        <p><%= link_to 'See your profile', profile_path %></p>
+        <p><%= link_to 'See your Facebook timeline', timeline_path %></p>
+        <p><%= link_to 'See your Facebook App Request', '#', :id => :app_request %></p>
+        <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>
     
     <% else %>
         <p><%= link_to "You need to re-login", root_path %></p>

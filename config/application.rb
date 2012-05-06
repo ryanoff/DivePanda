@@ -38,5 +38,9 @@ module DivePanda
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # For information on jQuery see: http://bit.ly/cpjD7m and http://bit.ly/ecjur0
+    
+    
   end
 end

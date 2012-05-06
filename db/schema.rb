@@ -10,23 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120326052206) do
+ActiveRecord::Schema.define(:version => 20120505073307) do
 
-  create_table "facebooks", :force => true do |t|
-    t.string   "identifier",   :limit => 20
-    t.string   "access_token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "logs", :force => true do |t|
+  create_table "dives", :force => true do |t|
+    t.integer  "user_id"
     t.string   "name"
     t.text     "description"
     t.text     "comments"
     t.text     "directions"
     t.string   "city"
+    t.decimal  "longitude"
+    t.decimal  "latitude"
     t.string   "weather"
     t.string   "equipment"
+    t.string   "weight"
     t.date     "date"
     t.time     "starttime"
     t.time     "endtime"
@@ -35,14 +32,32 @@ ActiveRecord::Schema.define(:version => 20120326052206) do
     t.integer  "depth"
     t.string   "temperature"
     t.string   "watertemp"
+    t.string   "country"
+    t.decimal  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "country"
     t.string   "state"
-    t.decimal  "rating"
-    t.decimal  "longitude"
-    t.decimal  "latitude"
-    t.string   "weight"
+  end
+
+  create_table "facebooks", :force => true do |t|
+    t.string   "identifier",   :limit => 20
+    t.string   "access_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fish", :force => true do |t|
+    t.string   "name"
+    t.string   "family"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.string   "family"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -1,7 +1,20 @@
 <section class="profile">
-  <h2>User Profile</h2>
+  <h2>Your Profile</h2>
   
-  <h3>Details from Facebook</h3>
+  <h3>DivePanda Details</h3>
+  <dl>
+    <dt>User Id</dt>
+    <dd><%= @user.id %></dd>
+    <dt>Email</dt>
+    <dd><%= @user.email %></dd>
+    <dt>Number of Dives</dt>
+    <dd><%= @dive_count %></dd>
+    <dt>Total bottom time from all dives</dt>
+    <dd><%= @dive_time %></dd>
+    <%#= #Add a way to include dives not entered in DP. Such as a starting point in the user profile. %>
+  </dl>
+
+  <h3>Information Obtained from Facebook</h3>
   <dl>
     <dt>Name</dt>
     <dd><%= current_user.profile.name %></dd>
@@ -38,11 +51,8 @@
     <dt>Third Party ID</dt>
     <dd><%= current_user.profile.third_party_id %></dd>
   </dl>
-  
-  <h3>DivePanda Details</h3>
-  <dl>
-    <dt>Number of Dives</dt>
-    <dd></dd>
-  </dl>
+
+    <p><%= link_to 'See your Facebook timeline', timeline_path %></p>
+    <p><%= link_to 'See your Facebook App Request', '#', :id => :app_request %></p>
   
 </section>

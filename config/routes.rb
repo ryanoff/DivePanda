@@ -1,5 +1,7 @@
 DivePanda::Application.routes.draw do
 
+  resources :users
+
   resources :items
   resources :dives
 

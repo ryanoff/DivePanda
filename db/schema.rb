@@ -10,10 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120505073307) do
+ActiveRecord::Schema.define(:version => 20120507002654) do
 
   create_table "dives", :force => true do |t|
-    t.integer  "user_id"
     t.string   "name"
     t.text     "description"
     t.text     "comments"
@@ -37,7 +36,10 @@ ActiveRecord::Schema.define(:version => 20120505073307) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "state"
+    t.integer  "user_id"
   end
+
+  add_index "dives", ["user_id"], :name => "index_dives_on_user_id"
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -46,16 +48,16 @@ ActiveRecord::Schema.define(:version => 20120505073307) do
     t.datetime "updated_at"
   end
 
-  create_table "fish", :force => true do |t|
+  create_table "items", :force => true do |t|
     t.string   "name"
     t.string   "family"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "items", :force => true do |t|
-    t.string   "name"
-    t.string   "family"
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.integer  "facebook_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

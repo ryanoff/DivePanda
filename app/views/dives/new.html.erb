@@ -3,16 +3,9 @@
 <%= form_for @dive do |f| %>
 
 
-    <%# Set the Facebook identifier to the user_id of the Dive %>
-    <%#= hidden_field_tag 'dive[user_id]', @facebook.identifier.to_i %>
+    <%# Set the User ID to that of the current Facebook identifier of that Dive %>
+    <%= hidden_field_tag 'dive[user_id]', @user.id %>
 
-    <fieldset>
-    	<div class="input text">
-			<%= f.label :user_id, "User Id" %>
-			<%= f.text_field :user_id %>
-		</div>
-    </fieldset>
-	
 	<fieldset>
 		<div class="field">
             <%= f.label :date %><br />

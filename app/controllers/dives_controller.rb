@@ -2,8 +2,8 @@ class DivesController < ApplicationController
   # GET /dives
   # GET /dives.xml
   def index
-    #@dives = Dive.all
-    @dives = Dive.where(:user_id => current_user.identifier) 
+    @user = User.where(:facebook_id => current_user.identifier).first
+    @dives = Dive.where(:user_id => @user.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -27,8 +27,8 @@ class DivesController < ApplicationController
   def new
     @dive = Dive.new
     
-    @facebook = Facebook.find(:first, :conditions => [ "id", current_user.id])
-
+    @user = User.where(:facebook_id => current_user.identifier).first
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @dive }
@@ -37,14 +37,19 @@ class DivesController < ApplicationController
 
   # GET /dives/1/edit
   def edit
-    @facebook = Facebook.find(:first, :conditions => [ "id", current_user.id])
+    @user = User.where(:facebook_id => current_user.identifier).first
+    #@user = User.find_by_facebook_id(current_user.identifier)
     @dive = Dive.find(params[:id])
   end
 
   # POST /dives
   # POST /dives.xml
   def create
-    @dive = Dive.new(params[:dive])
+  
+    @user = User.where(:facebook_id => current_user.identifier) 
+    @dive = @user.dives.create(params[:dive])
+    
+    #@dive = Dive.new(params[:dive])
 
     respond_to do |format|
       if @dive.save

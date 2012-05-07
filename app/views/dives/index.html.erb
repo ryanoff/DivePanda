@@ -1,10 +1,12 @@
-<h1>Dive Entries</h1>
+<h1>All Your Dives</h1>
 
 <table>
   <tr>
     <th>Date</th>
     <th>Name</th>
     <th>City</th>
+    <th>State</th>
+    <th>Country</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +17,8 @@
     <td><%= dive.date %></td>
     <td><%= dive.name %></td>
     <td><%= dive.city %></td>
+    <td><%= dive.state %></td>
+    <td><%= dive.country %></td>
     <td class="action"><%= link_to 'Show', dive %></td>
     <td class="action"><%= link_to 'Edit', edit_dive_path(dive) %></td>
     <td class="action"><%= link_to 'Delete', dive, :confirm => 'Are you sure?', :method => :delete %></td>

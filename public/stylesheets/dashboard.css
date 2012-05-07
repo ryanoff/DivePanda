@@ -19,7 +19,7 @@
     font-weight: normal;
     margin: 60px 0;
     padding: 3px 0 2px 10px;
-    width: 162px;
+    width: 140px;
 }
 
 .dashboard h3#add_new:hover {
@@ -35,3 +35,15 @@
     color: #FFFFFF;
     font-size: 
 }
+
+
+/* Sidebar */
+.sidebar dl dt {
+    margin: 0;
+    padding-right: 5px;
+    width: 120px;
+}
+.sidebar dl dd {
+    margin: 0;
+}
+

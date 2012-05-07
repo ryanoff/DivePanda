@@ -2,8 +2,6 @@
 
     <% if authenticated? %>
     
-        <h3>Your profile</h3>
-    	
         <div class="avatar">
     		<fb:profile-pic uid="<%= current_user.try(:identifier) %>" size="small" facebook-logo="true"></fb:profile-pic>
     	</div>
@@ -11,15 +9,17 @@
     	    <dt>Name</dt>
     	    <dd><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></dd>
     	    <dt>Email</dt>
-    	    <dd><%= current_user.profile.email %></dd>
+    	    <dd><%= @user.email %></dd>
     	    <dt>Current User Id</dt>
     	    <dd><%= current_user.id %></dd>
     	    <dt>Facebook identifier:</dt>
-    	    <dd><%= @facebook.identifier %></dd>
+    	    <dd><%= current_user.identifier %></dd>
+            <dt>Number of Dives</dt>
+            <dd><%= @dive_count %></dd>
+            <dt>Total bottom time</dt>
+            <dd><%= @dive_time %></dd>
     	</dl>
-        <p><%= link_to 'See your profile', profile_path %></p>
-        <p><%= link_to 'See your Facebook timeline', timeline_path %></p>
-        <p><%= link_to 'See your Facebook App Request', '#', :id => :app_request %></p>
+        <p><%= link_to 'View your full profile', profile_path %></p>
         <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>
     
     <% else %>

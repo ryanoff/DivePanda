@@ -3,29 +3,33 @@ class DashboardController < ApplicationController
 
   def show
 
-# Find all examples
-#@dives = Dive.all
-#Person.all # returns an array of objects for all the rows fetched by SELECT * FROM people
-#Person.where(["category IN (?)", categories]).limit(50).all
-#Person.where({ :friends => ["Bob", "Steve", "Fred"] }).all
-#Person.offset(10).limit(10).all
-#Person.includes([:account, :friends]).all
-#Person.group("category").all
+    @user = User.where(:facebook_id => current_user.identifier).first
 
-    @dives = Dive.where(:user_id => current_user.identifier) 
+    #raise @user.id.inspect
+    #@dives = Dive.all
+    @dives = Dive.where(:user_id => @user.id)
+    @dive_count = Dive.where(:user_id => @user.id).count
 
-    @facebook = Facebook.find(:first, :conditions => [ "identifier", current_user.identifier])    
-    #not really working, should be using Facebook.where as with dives. Need to update profile and dives controller
-    #@facebook = Facebook.where('identifier', current_user.identifier)
-  
-# Debugging Example  
+    total_minutes = Dive.where(:user_id => @user.id).sum(:bottomtime)
+    @dive_time = Time.at(total_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
 
+
+
+# Debugging Examples
 # @test = current_user.identifier  
 # raise @dives.inspect    
 # raise @facebook.inspect    
 # logger.debug "****"
 # logger.debug "@facebook is: #{@facebook}"
 # http://bit.ly/JyHeUp
+
+# Find all examples
+# Person.all # returns an array of objects for all the rows fetched by SELECT * FROM people
+# Person.where(["category IN (?)", categories]).limit(50).all
+# Person.where({ :friends => ["Bob", "Steve", "Fred"] }).all
+# Person.offset(10).limit(10).all
+# Person.includes([:account, :friends]).all
+# Person.group("category").all
 
 
     respond_to do |format|

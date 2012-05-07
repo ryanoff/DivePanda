@@ -26657,3 +26657,430 @@ ActionController::RoutingError (No route matches "/javascripts/rails.js"):
   
 
 Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 12:47:25 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mSQL (2.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mFacebook Load (21.5ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 14 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 14 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 14 LIMIT 1
+Rendered layouts/_footer.html.erb (3.7ms)
+Rendered top/index.html.erb within layouts/application (126.2ms)
+Completed 200 OK in 755ms (Views: 296.6ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:47:31 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon May 07 12:47:51 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[36mFacebook Load (113.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mAREL (31.8ms)[0m  UPDATE "facebooks" SET "updated_at" = '2012-05-07 19:47:54.536115', "access_token" = 'AAACsOsOvAgABAGHPfjod1PWqkijJ7V2A1shHeD9DWvYftGnmEAvXoZAMSKQNHn1kwFuZAhCrQWhxeJjYFafIUqIj5TuNAooAsav9U8SQZDZD' WHERE "facebooks"."id" = 26
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 2189ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 12:47:54 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (16.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (1.0ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (881.6ms)
+Rendered layouts/_footer.html.erb (6.9ms)
+Rendered dashboard/show.html.erb within layouts/application (1440.6ms)
+Completed 200 OK in 1967ms (Views: 1533.2ms | ActiveRecord: 163.8ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:47:57 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/dives/1" for 127.0.0.1 at Mon May 07 12:48:49 -0700 2012
+  Processing by DivesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mDive Load (22.9ms)[0m  [1mSELECT "dives".* FROM "dives" WHERE "dives"."id" = 1 LIMIT 1[0m
+  [1m[35mFacebook Load (31.8ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+Rendered layouts/_footer.html.erb (4.9ms)
+Rendered dives/show.html.erb within layouts/application (1913.3ms)
+Completed 200 OK in 2041ms (Views: 1942.8ms | ActiveRecord: 54.7ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:48:53 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/dives/1/edit" for 127.0.0.1 at Mon May 07 12:49:02 -0700 2012
+  Processing by DivesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFacebook Load (16.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mUser Load (3.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1
+  [1m[36mDive Load (9.2ms)[0m  [1mSELECT "dives".* FROM "dives" WHERE "dives"."id" = 1 LIMIT 1[0m
+Rendered layouts/_footer.html.erb (5.9ms)
+Rendered dives/edit.html.erb within layouts/application (1275.2ms)
+Completed 200 OK in 1814ms (Views: 1316.5ms | ActiveRecord: 28.1ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:49:06 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/dives/new" for 127.0.0.1 at Mon May 07 12:50:24 -0700 2012
+  Processing by DivesController#new as HTML
+  [1m[35mFacebook Load (21.1ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+Rendered layouts/_footer.html.erb (3.5ms)
+Rendered dives/new.html.erb within layouts/application (1226.4ms)
+Completed 200 OK in 1564ms (Views: 1354.0ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:50:26 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/dives/1" for 127.0.0.1 at Mon May 07 12:56:19 -0700 2012
+  Processing by DivesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDive Load (17.1ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."id" = 1 LIMIT 1
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+Rendered layouts/_footer.html.erb (8.6ms)
+Rendered dives/show.html.erb within layouts/application (1142.7ms)
+Completed 200 OK in 1246ms (Views: 1200.7ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:56:20 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 12:56:37 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 27ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 12:56:37 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (22.4ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (1.0ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (296.1ms)
+Rendered layouts/_footer.html.erb (6.7ms)
+Rendered dashboard/show.html.erb within layouts/application (559.5ms)
+Completed 200 OK in 941ms (Views: 597.7ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 12:56:39 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 13:03:56 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (32.1ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (3.3ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (2247.4ms)
+Rendered layouts/_footer.html.erb (4.8ms)
+Rendered dashboard/show.html.erb within layouts/application (2516.2ms)
+Completed 200 OK in 2662ms (Views: 2526.8ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 13:03:59 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.2ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 13:09:51 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (17.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (0.6ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (693.5ms)
+Rendered layouts/_footer.html.erb (3.5ms)
+Rendered dashboard/show.html.erb within layouts/application (845.0ms)
+Completed 200 OK in 1080ms (Views: 853.1ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 13:09:52 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Mon May 07 13:09:57 -0700 2012
+  Processing by ProfilesController#show as HTML
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_footer.html.erb (3.1ms)
+Rendered profiles/show.html.erb within layouts/application (798.2ms)
+Completed 200 OK in 1024ms (Views: 805.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 13:09:58 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/stylesheets/profiles.css" for 127.0.0.1 at Mon May 07 13:09:59 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/profiles.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at Mon May 07 13:10:09 -0700 2012
+  Processing by ProfilesController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mFacebook Load (0.4ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_footer.html.erb (3.0ms)
+Rendered profiles/show.html.erb within layouts/application (299.3ms)
+Completed 200 OK in 527ms (Views: 306.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 13:10:10 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/stylesheets/profiles.css" for 127.0.0.1 at Mon May 07 13:10:10 -0700 2012
+
+ActionController::RoutingError (No route matches "/stylesheets/profiles.css"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 13:10:43 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 24ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 13:10:44 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mDive Load (0.6ms)[0m  [1mSELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1[0m
+Rendered layouts/_sidebar.html.erb (252.3ms)
+Rendered layouts/_footer.html.erb (3.2ms)
+Rendered dashboard/show.html.erb within layouts/application (410.4ms)
+Completed 200 OK in 593ms (Views: 521.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 13:10:44 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 14:51:51 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 251ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 14:51:53 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (1.3ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (0.6ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (570.4ms)
+Rendered dashboard/show.html.erb within layouts/application (823.3ms)
+Completed   in 1113ms
+  [1m[36mAREL (0.5ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 26[0m
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 14:51:54 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.3ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 26 LIMIT 1
+Rendered layouts/_footer.html.erb (4.0ms)
+Rendered top/index.html.erb within layouts/application (79.1ms)
+Completed 200 OK in 118ms (Views: 89.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 14:51:54 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon May 07 14:52:13 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO "facebooks" ("identifier", "created_at", "access_token", "updated_at") VALUES ('652920847', '2012-05-07 21:52:13.682704', 'AAACsOsOvAgABAA0sf9JHpT17m3g1acEwiEKVEM6pxtunl0SPViz56wBsMNZB931YVyiMoIMojUxGZBsZBxW2yrLmCTLDQx2p6pooUGa3gZDZD', '2012-05-07 21:52:13.682704')
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 402ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 14:52:13 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (0.8ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (3.6ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (276.1ms)
+Rendered layouts/_footer.html.erb (3.8ms)
+Rendered dashboard/show.html.erb within layouts/application (528.7ms)
+Completed 200 OK in 773ms (Views: 534.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 14:52:15 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/facebook" for 127.0.0.1 at Mon May 07 14:52:24 -0700 2012
+  Processing by FacebooksController#show as HTML
+  [1m[36mFacebook Load (0.3ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."identifier" = '652920847' LIMIT 1[0m
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 359ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 14:52:25 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[35mFacebook Load (0.8ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mDive Load (0.6ms)[0m  [1mSELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1[0m
+Rendered layouts/_sidebar.html.erb (526.6ms)
+Rendered layouts/_footer.html.erb (3.6ms)
+Rendered dashboard/show.html.erb within layouts/application (1136.1ms)
+Completed 200 OK in 1222ms (Views: 1144.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 14:52:26 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 14:53:39 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.5ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+Redirected to http://divepanda.local:3000/dashboard
+Completed 302 Found in 76ms
+
+
+Started GET "/dashboard" for 127.0.0.1 at Mon May 07 14:53:39 -0700 2012
+  Processing by DashboardController#show as HTML
+  [1m[36mFacebook Load (17.8ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."facebook_id" = 652920847 LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM "dives" WHERE "dives"."user_id" = 1
+  [1m[36mSQL (3.7ms)[0m  [1mSELECT SUM("dives"."bottomtime") AS sum_id FROM "dives" WHERE "dives"."user_id" = 1[0m
+  [1m[35mDive Load (0.9ms)[0m  SELECT "dives".* FROM "dives" WHERE "dives"."user_id" = 1
+Rendered layouts/_sidebar.html.erb (825.8ms)
+Rendered dashboard/show.html.erb within layouts/application (1309.4ms)
+Completed   in 1662ms
+  [1m[36mAREL (0.3ms)[0m  [1mDELETE FROM "facebooks" WHERE "facebooks"."id" = 27[0m
+Redirected to http://divepanda.local:3000/
+
+
+Started GET "/" for 127.0.0.1 at Mon May 07 14:53:41 -0700 2012
+  Processing by TopController#index as HTML
+  [1m[35mFacebook Load (0.2ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = 27 LIMIT 1
+Rendered layouts/_footer.html.erb (3.4ms)
+Rendered top/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 82ms (Views: 58.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/javascripts/rails.js" for 127.0.0.1 at Mon May 07 14:53:41 -0700 2012
+
+ActionController::RoutingError (No route matches "/javascripts/rails.js"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.8/gems/actionpack-3.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)

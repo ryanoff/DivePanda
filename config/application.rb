@@ -41,6 +41,8 @@ module DivePanda
     
     # For information on jQuery see: http://bit.ly/cpjD7m and http://bit.ly/ecjur0
     
+    # See competition http://www.divelogin.com/. They have some good ideas
+    
     
   end
 end

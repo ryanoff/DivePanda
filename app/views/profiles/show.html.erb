@@ -1,58 +1,63 @@
 <section class="profile">
-  <h2>Your Profile</h2>
-  
-  <h3>DivePanda Details</h3>
-  <dl>
-    <dt>User Id</dt>
-    <dd><%= @user.id %></dd>
-    <dt>Email</dt>
-    <dd><%= @user.email %></dd>
-    <dt>Number of Dives</dt>
-    <dd><%= @dive_count %></dd>
-    <dt>Total bottom time from all dives</dt>
-    <dd><%= @dive_time %></dd>
-    <%#= #Add a way to include dives not entered in DP. Such as a starting point in the user profile. %>
-  </dl>
+  <% if authenticated? %>
 
-  <h3>Information Obtained from Facebook</h3>
-  <dl>
-    <dt>Name</dt>
-    <dd><%= current_user.profile.name %></dd>
-    <dt>First Name</dt>
-    <dd><%= current_user.profile.first_name %></dd>
-    <dt>Last Name</dt>
-    <dd><%= current_user.profile.last_name %></dd>
-    <dt>Identifier (ID)</dt>
-    <dd><%= @facebook.identifier %></dd>
-    <dt>Gender</dt>
-    <dd><%= current_user.profile.gender %></dd>
-    <dt>Link</dt>
-    <dd><%= link_to current_user.profile.link, current_user.profile.link %></dd>
-    <dt>Email</dt>
-    <dd><%= current_user.profile.email %></dd>
-    <dt>About</dt>
-    <dd><%= current_user.profile.about %></dd>
-    <dt>Birthday</dt>
-    <dd><%= current_user.profile.birthday %></dd>
-    <dt>Website</dt>
-    <dd><%= simple_format auto_link current_user.profile.website %></dd>
-    <dt>Hometown</dt>
-    <dd><%= current_user.profile.hometown.try(:name) %></dd>
-    <dt>Location</dt>
-    <dd><%= current_user.profile.location.try(:name) %></dd>
-    <dt>Verified</dt>
-    <dd><%= current_user.profile.verified %></dd>
-    <dt>Timezone</dt>
-    <dd><%= current_user.profile.timezone %></dd>
-    <dt>Locale</dt>
-    <dd><%= current_user.profile.locale %></dd>
-    <dt>Update Time</dt>
-    <dd><%= current_user.profile.updated_time %></dd>
-    <dt>Third Party ID</dt>
-    <dd><%= current_user.profile.third_party_id %></dd>
-  </dl>
-
-    <p><%= link_to 'See your Facebook timeline', timeline_path %></p>
-    <p><%= link_to 'See your Facebook App Request', '#', :id => :app_request %></p>
-  
+      <h2>Your Profile</h2>
+      
+      <h3>DivePanda Details</h3>
+      <dl>
+        <dt>User Id</dt>
+        <dd><%= @user.id %></dd>
+        <dt>Email</dt>
+        <dd><%= @user.email %></dd>
+        <dt>Number of Dives</dt>
+        <dd><%= @dive_count %></dd>
+        <dt>Total bottom time from all dives</dt>
+        <dd><%= @dive_time %></dd>
+        <%#= #Add a way to include dives not entered in DP. Such as a starting point in the user profile. %>
+      </dl>
+    
+      <h3>Information obtained from Facebook</h3>
+      <dl>
+        <div class="avatar">
+            <fb:profile-pic uid="<%= current_user.try(:identifier) %>" size="small" facebook-logo="true"></fb:profile-pic>
+        </div>
+        <dt>Name</dt>
+        <dd><%= current_user.profile.name %></dd>
+        <dt>First Name</dt>
+        <dd><%= current_user.profile.first_name %></dd>
+        <dt>Last Name</dt>
+        <dd><%= current_user.profile.last_name %></dd>
+        <dt>Identifier (ID)</dt>
+        <dd><%= @facebook.identifier %></dd>
+        <dt>Gender</dt>
+        <dd><%= current_user.profile.gender %></dd>
+        <dt>Link</dt>
+        <dd><%= link_to current_user.profile.link, current_user.profile.link %></dd>
+        <dt>Email</dt>
+        <dd><%= current_user.profile.email %></dd>
+        <dt>About</dt>
+        <dd><%= current_user.profile.about %></dd>
+        <dt>Birthday</dt>
+        <dd><%= current_user.profile.birthday %></dd>
+        <dt>Website</dt>
+        <dd><%= simple_format auto_link current_user.profile.website %></dd>
+        <dt>Hometown</dt>
+        <dd><%= current_user.profile.hometown.try(:name) %></dd>
+        <dt>Location</dt>
+        <dd><%= current_user.profile.location.try(:name) %></dd>
+        <dt>Verified</dt>
+        <dd><%= current_user.profile.verified %></dd>
+        <dt>Timezone</dt>
+        <dd><%= current_user.profile.timezone %></dd>
+        <dt>Locale</dt>
+        <dd><%= current_user.profile.locale %></dd>
+        <dt>Update Time</dt>
+        <dd><%= current_user.profile.updated_time %></dd>
+        <dt>Third Party ID</dt>
+        <dd><%= current_user.profile.third_party_id %></dd>
+      </dl>
+    
+        <p><%= link_to 'See your Facebook timeline', timeline_path %></p>
+        <p><%= link_to 'See your Facebook App Request', '#', :id => :app_request %></p>
+    <% end %>  
 </section>

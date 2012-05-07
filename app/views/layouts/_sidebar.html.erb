@@ -2,15 +2,10 @@
 
     <% if authenticated? %>
     
-        <div class="avatar">
-    		<fb:profile-pic uid="<%= current_user.try(:identifier) %>" size="small" facebook-logo="true"></fb:profile-pic>
-    	</div>
         <dl>
     	    <dt>Name</dt>
     	    <dd><%= current_user.profile.first_name %> <%= current_user.profile.last_name %></dd>
-    	    <dt>Email</dt>
-    	    <dd><%= @user.email %></dd>
-    	    <dt>Current User Id</dt>
+    	    <dt>CurrentUser Id</dt>
     	    <dd><%= current_user.id %></dd>
     	    <dt>Facebook identifier:</dt>
     	    <dd><%= current_user.identifier %></dd>

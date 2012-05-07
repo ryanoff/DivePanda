@@ -1,9 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+# gem 'rails', '3.0.6'
+gem 'rails'
+# gem 'rake', '0.9.2.2'
+gem 'rake'
+
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'fb_graph'
-gem 'rake', '0.9.2.2'
 gem "jquery-rails"
 gem 'ruby-debug'
 
@@ -11,7 +14,6 @@ gem 'ruby-debug'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
 
 # Alternative fbGraph
 # gem 'fb_graph', '>=1.6.2'

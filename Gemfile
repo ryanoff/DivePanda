@@ -7,8 +7,8 @@ gem 'rake'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'fb_graph'
-gem "jquery-rails"
-gem 'ruby-debug'
+# gem "jquery-rails"
+# gem 'ruby-debug'
 
 # gem "rdoc", '3.12'
 

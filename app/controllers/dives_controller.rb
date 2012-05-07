@@ -47,7 +47,7 @@ class DivesController < ApplicationController
   def create
   
     @user = User.where(:facebook_id => current_user.identifier) 
-    @dive = @user.dives.create(params[:dive])
+    #@dive = @user.dives.create(params[:dive])
     
     #@dive = Dive.new(params[:dive])
 

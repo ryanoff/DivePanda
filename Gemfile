@@ -5,9 +5,17 @@ gem 'rails'
 # gem 'rake', '0.9.2.2'
 gem 'rake'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+group :development do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
+
 gem 'fb_graph'
-# gem "jquery-rails"
+gem "jquery-rails"
 # gem 'ruby-debug'
 
 # gem "rdoc", '3.12'
@@ -17,3 +25,6 @@ gem 'fb_graph'
 
 # Alternative fbGraph
 # gem 'fb_graph', '>=1.6.2'
+
+#not sure if I need these
+# gem 'prototype-rails'

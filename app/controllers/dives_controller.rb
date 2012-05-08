@@ -45,7 +45,10 @@ class DivesController < ApplicationController
   # POST /dives
   # POST /dives.xml
   def create
-  
+#@user = User.where(:facebook_id => current_user.identifier) 
+#@dive = @user.dives.create(params[:dive])
+#@dive = Dive.new(params[:dive])
+
     respond_to do |format|
       if @dive.save
         format.html { redirect_to(@dive, :notice => 'Your Dive was successfully created.') }

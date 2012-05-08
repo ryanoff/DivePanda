@@ -1,7 +1,5 @@
 class CreateDives < ActiveRecord::Migration
   def self.up
-    drop_table :logs
-
     create_table :dives do |t|
       
       t.integer :facebook_id
@@ -32,6 +30,5 @@ class CreateDives < ActiveRecord::Migration
 
   def self.down
     drop_table :dives
-    create_table :logs
   end
 end

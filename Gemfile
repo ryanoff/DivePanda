@@ -4,27 +4,20 @@ source 'http://rubygems.org'
 gem 'rails'
 # gem 'rake', '0.9.2.2'
 gem 'rake'
+gem 'fb_graph'
+gem 'jquery-rails'
+gem 'magic_encoding'
 
 group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'ruby-debug'
 end
 
 group :production do
-  gem 'pg'
+#  gem 'pg'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'thin'
 end
-
-
-gem 'fb_graph'
-gem "jquery-rails"
-# gem 'ruby-debug'
-
-# gem "rdoc", '3.12'
 
 # Deploy with Capistrano
 # gem 'capistrano'
-
-# Alternative fbGraph
-# gem 'fb_graph', '>=1.6.2'
-
-#not sure if I need these
-# gem 'prototype-rails'

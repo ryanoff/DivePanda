@@ -122,6 +122,12 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 
+td.action {
+  font-size:14px;
+  padding-right:5px;
+  vertical-align:bottom;
+}
+
 #logo a.logo {
     color: #222222;
     float: left;
@@ -179,6 +185,24 @@ div.field, div.actions {
 
 .blue {
 	background-color: #D5E9F6;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.grey_background {
+    background-color: #f6f6f6;
 }
 
 /* Header */

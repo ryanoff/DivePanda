@@ -14,7 +14,6 @@ class DashboardController < ApplicationController
     @dive_time = Time.at(total_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
 
 
-
 # Debugging Examples
 # @test = current_user.identifier  
 # raise @dives.inspect    

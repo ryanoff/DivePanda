@@ -1,9 +1,6 @@
 <section class='dashboard with_sidebar'>
-  <h1>Aloha <fb:name uid='<%= current_user.identifier %>' useyou='false'></fb:name>!</h1>
   <article>
-    
-	<h3 id="add_new" class="button"><%= link_to '+ Add a new dive', new_dive_path %></h3>
-	
+    <h3 id="add_new" class="button"><%= link_to '+ Add a new dive', new_dive_path %></h3>
   </article>
   
   <article>
@@ -14,8 +11,9 @@
         <th>Date</th>
         <th>Name</th>
         <th>City</th>
-        <th>State</th>
         <th>Country</th>
+        <th>Depth</th>
+        <th>Time</th>
         <th>User_id</th>
         <th></th>
         <th></th>
@@ -24,11 +22,12 @@
     
     <% @dives.each do |dive| %>
       <tr>
-        <td><%= dive.date %></td>
+        <td><%= l dive.date %></td>
         <td><%= dive.name %></td>
         <td><%= dive.city %></td>
-        <td><%= dive.state %></td>
         <td><%= dive.country %></td>
+        <td><%= dive.depth %></td>
+        <td><%= dive.bottomtime %></td>
         <td><%= dive.user_id %></td>
         <td class="action"><%= link_to 'Show', dive %></td>
         <td class="action"><%= link_to 'Edit', edit_dive_path(dive) %></td>

@@ -30,7 +30,13 @@ class FacebooksController < ApplicationController
     access_token = client.access_token! :client_auth_body
     user = FbGraph::User.me(access_token).fetch
     authenticate Facebook.identify(user)
-#TODO: check for an existing user. If none exist, create a new user
+    
+    #TODO: check for an existing user. If one exists and has a facebook_id continue.
+    # If one exists with no facebook_id, add facebook_id to user. 
+    # If one does not exist, create a new user with Facebook email and facebook_id.
+    User.find_or_create_by_email_and_facebook_id(facebook_values[:email], facebook_values[:facebook_id])
+
+    
 
     redirect_to dashboard_url
 

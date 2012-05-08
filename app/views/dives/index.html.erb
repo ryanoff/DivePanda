@@ -5,8 +5,10 @@
     <th>Date</th>
     <th>Name</th>
     <th>City</th>
-    <th>State</th>
     <th>Country</th>
+    <th>Depth</th>
+    <th>Time</th>
+    <th>User_id</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,8 +19,10 @@
     <td><%= dive.date %></td>
     <td><%= dive.name %></td>
     <td><%= dive.city %></td>
-    <td><%= dive.state %></td>
     <td><%= dive.country %></td>
+    <td><%= dive.depth %></td>
+    <td><%= dive.bottomtime %></td>
+    <td><%= dive.user_id %></td>
     <td class="action"><%= link_to 'Show', dive %></td>
     <td class="action"><%= link_to 'Edit', edit_dive_path(dive) %></td>
     <td class="action"><%= link_to 'Delete', dive, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -42,6 +42,8 @@ module DivePanda
     # For information on jQuery see: http://bit.ly/cpjD7m and http://bit.ly/ecjur0
     
     # See competition http://www.divelogin.com/. They have some good ideas
+    # Let's start over with a brand new app using Devise, Omniauth, Rails Admin and formtastic
+    # I imagine it won't take too long to get back to where I am
     
     
   end

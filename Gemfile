@@ -7,6 +7,8 @@ gem 'rake'
 gem 'fb_graph'
 gem 'jquery-rails'
 gem 'magic_encoding'
+# gem 'rails_admin'
+
 
 group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'

@@ -1,99 +1,59 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = @dive.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
 
-<p>
-  <b>User Id:</b>
-  <%= @dive.user_id %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @dive.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
+  <dd><%= @dive.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:comments) %>:</strong></dt>
+  <dd><%= @dive.comments %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:directions) %>:</strong></dt>
+  <dd><%= @dive.directions %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:city) %>:</strong></dt>
+  <dd><%= @dive.city %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:state) %>:</strong></dt>
+  <dd><%= @dive.state %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:country) %>:</strong></dt>
+  <dd><%= @dive.country %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:longitude) %>:</strong></dt>
+  <dd><%= @dive.longitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:latitude) %>:</strong></dt>
+  <dd><%= @dive.latitude %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:weather) %>:</strong></dt>
+  <dd><%= @dive.weather %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:equipment) %>:</strong></dt>
+  <dd><%= @dive.equipment %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:weight) %>:</strong></dt>
+  <dd><%= @dive.weight %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:date) %>:</strong></dt>
+  <dd><%= @dive.date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:starttime) %>:</strong></dt>
+  <dd><%= @dive.starttime %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:endtime) %>:</strong></dt>
+  <dd><%= @dive.endtime %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:bottomtime) %>:</strong></dt>
+  <dd><%= @dive.bottomtime %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:units) %>:</strong></dt>
+  <dd><%= @dive.units %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:depth) %>:</strong></dt>
+  <dd><%= @dive.depth %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:temperature) %>:</strong></dt>
+  <dd><%= @dive.temperature %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:watertemp) %>:</strong></dt>
+  <dd><%= @dive.watertemp %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:rating) %>:</strong></dt>
+  <dd><%= @dive.rating %></dd>
+</dl>
 
-<p>
-  <b>Date:</b>
-  <%= @dive.date %>
-</p>
-
-<p>
-  <b>Dive Location:</b> <%= @dive.name %>
-  <br />
-  <small>In <%= @dive.city %>, <%= @dive.state %>, <%= @dive.country %></small>
-</p>
-
-
-<h3>Dive Stats</h3>
-<p>
-  <b>Start Ttime:</b>
-  <%= @dive.starttime %>
-</p>
-
-<p>
-  <b>End Time:</b>
-  <%= @dive.endtime %>
-</p>
-
-<p>
-  <b>Bottom Time:</b>
-  <%= @dive.bottomtime %>
-</p>
-
-<p>
-  <b>Units:</b>
-  <%= @dive.units %>
-</p>
-
-<p>
-  <b>Depth:</b>
-  <%= @dive.depth %>
-</p>
-
-
-
-
-<h3>Attributes</h3>
-<p>
-  <b>Weather:</b>
-  <%= @dive.weather %>
-</p>
-
-<p>
-  <b>Temperature:</b>
-  <%= @dive.temperature %>
-</p>
-
-<p>
-  <b>Water Temperature:</b>
-  <%= @dive.watertemp %>
-</p>
-
-<p>
-  <b>Equipment:</b>
-  <%= @dive.equipment %>
-</p>
-
-<p>
-  <b>Weight:</b>
-  <%= @dive.weight %>
-</p>
-
-
-
-<h3>Details</h3>
-<p>
-  <b>Dive Location Description:</b>
-  <%= @dive.description %>
-</p>
-
-<p>
-  <b>Dive Comments:</b>
-  <%= @dive.comments %>
-</p>
-
-<p>
-  <b>Directions to dive location:</b>
-  <%= @dive.directions %>
-</p>
-
-
-	<!-- Add buddy to dive -->
-	<!-- Email this dive to friends or email -->
-
-
-<%= link_to 'Edit Dive', edit_dive_path(@dive) %> |
-<%= link_to 'All Dives', dives_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              dives_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_dive_path(@dive), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              dive_path(@dive),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

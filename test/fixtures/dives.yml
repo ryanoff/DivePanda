@@ -1,4 +1,4 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
   name: MyString
@@ -6,16 +6,22 @@ one:
   comments: MyText
   directions: MyText
   city: MyString
+  state: MyString
+  country: MyString
+  longitude: 9.99
+  latitude: 9.99
   weather: MyString
   equipment: MyString
-  date: 2011-04-06
-  starttime: 2011-04-06 17:27:02
-  endtime: 2011-04-06 17:27:02
+  weight: MyString
+  date: 2012-05-08
+  starttime: 2012-05-08 22:49:03
+  endtime: 2012-05-08 22:49:03
   bottomtime: 1
   units: MyString
   depth: 1
   temperature: MyString
   watertemp: MyString
+  rating: 9.99
 
 two:
   name: MyString
@@ -23,13 +29,19 @@ two:
   comments: MyText
   directions: MyText
   city: MyString
+  state: MyString
+  country: MyString
+  longitude: 9.99
+  latitude: 9.99
   weather: MyString
   equipment: MyString
-  date: 2011-04-06
-  starttime: 2011-04-06 17:27:02
-  endtime: 2011-04-06 17:27:02
+  weight: MyString
+  date: 2012-05-08
+  starttime: 2012-05-08 22:49:03
+  endtime: 2012-05-08 22:49:03
   bottomtime: 1
   units: MyString
   depth: 1
   temperature: MyString
   watertemp: MyString
+  rating: 9.99

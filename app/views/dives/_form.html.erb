@@ -1,76 +1,134 @@
-<%= form_for(@dive) do |f| %>
-  <% if @dive.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@dive.errors.count, "error") %> prohibited this dive from being saved:</h2>
-      <ul>
-      <% @dive.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @dive, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :comments, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :comments, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :directions, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :directions, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :city, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :city, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :state, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :state, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :country, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :country, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :longitude, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :longitude, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :latitude, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :latitude, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :weather, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :weather, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :equipment, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :equipment, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :weight, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :weight, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.date_select :date, :class => 'date_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :starttime, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.time_select :starttime, :class => 'time_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :endtime, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.time_select :endtime, :class => 'time_select' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :bottomtime, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :bottomtime, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :units, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :units, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :depth, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :depth, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :temperature, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :temperature, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :watertemp, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :watertemp, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :rating, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :rating, :class => 'text_field' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :comments %><br />
-    <%= f.text_area :comments %>
-  </div>
-  <div class="field">
-    <%= f.label :directions %><br />
-    <%= f.text_area :directions %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :weather %><br />
-    <%= f.text_field :weather %>
-  </div>
-  <div class="field">
-    <%= f.label :equipment %><br />
-    <%= f.text_field :equipment %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :starttime %><br />
-    <%= f.time_select :starttime %>
-  </div>
-  <div class="field">
-    <%= f.label :endtime %><br />
-    <%= f.time_select :endtime %>
-  </div>
-  <div class="field">
-    <%= f.label :bottomtime %><br />
-    <%= f.text_field :bottomtime %>
-  </div>
-  <div class="field">
-    <%= f.label :units %><br />
-    <%= f.text_field :units %>
-  </div>
-  <div class="field">
-    <%= f.label :depth %><br />
-    <%= f.text_field :depth %>
-  </div>
-  <div class="field">
-    <%= f.label :temperature %><br />
-    <%= f.text_field :temperature %>
-  </div>
-  <div class="field">
-    <%= f.label :watertemp %><br />
-    <%= f.text_field :watertemp %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                dives_path, :class => 'btn' %>
   </div>
 <% end %>

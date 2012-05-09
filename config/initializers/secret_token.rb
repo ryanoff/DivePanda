@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DivePanda::Application.config.secret_token = '2f9b48d028a423b32901a3a560237ffa9141f57630e803daf98d161e96273e38d4f4b7656993e3d15a05db02b5e1db1909e5d2cd9090023a38b54175d00be921'
+DivePanda::Application.config.secret_token = 'df4be0bc35a10cc6025946c43c429d6b74fa284cdf41228e0838390e5bbafa818a3d15ecc2380718a21369632d9929d1be7dab83e262f9d0dac726c020eaa8a4'

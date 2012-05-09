@@ -1,25 +1,33 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-# gem 'rails', '3.0.6'
-gem 'rails'
-# gem 'rake', '0.9.2.2'
-gem 'rake'
-gem 'fb_graph'
+gem 'rails', '3.2.3'
+gem 'sqlite3'
+gem 'json'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  # gem 'therubyracer', :platform => :ruby
+  gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+end
+
 gem 'jquery-rails'
-gem 'magic_encoding'
-# gem 'rails_admin'
 
+gem 'rails_admin'
+gem 'devise'
+gem "omniauth-facebook"
 
-group :development do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem 'ruby-debug'
-end
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
 
-group :production do
-  gem 'pg'
-#  gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem 'thin'
-end
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
 
 # Deploy with Capistrano
 # gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug'

@@ -1,3 +1,50 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.home {
+    margin: auto;
+    width: 600px;
+}
+
+p, ol, ul, td {
+    font-family: georgia,arial,helvetica,sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 140%;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-right: 10px;
+}
+
+
+.home h1 {
+  background: url("/assets/cloud_app.png") no-repeat scroll 0 0 transparent;
+  margin: 0;
+  padding-left: 135px;
+  font-size: 3em;
+  line-height: 1.25em;
+  margin: 20px 0;
+}
+
+.home #intro p.weak {
+    padding-left: 135px;
+}
+
+.home p.weak {
+    color: #999999;
+    margin-top: 0;
+}
+
+.home p.blue {
+    padding: 10px;
+}
+
+.home #fb_login {
+    text-align: center;
+}
+
+.home #intro {
+    margin-bottom: 60px;
+    margin-top: 60px;
+}

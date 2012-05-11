@@ -15,7 +15,10 @@
  *= require bootstrap_and_overrides
  */
 
-/* Your stylesheets goes here... */
+body {
+  padding-top: 80px !important;
+}
+
 .blue {
 	background-color: #D5E9F6;
 }
@@ -38,4 +41,82 @@
 
 .grey_background {
     background-color: #f6f6f6;
+}
+
+.navbar .brand {
+    background-repeat: no-repeat;
+    background-image: url(/assets/logo/logo-icon-sm.png);
+    background-position: 5px 9px;
+    text-indent: 5px;
+    margin-left: 5px !important;
+    color: #333333 !important;
+    font-size: 30px !important;
+    padding: 1px 20px 12px !important;
+}
+
+.navbar-inner {
+    background: none repeat scroll 0 0 #F8F8F8 !important;
+    border-bottom: 3px solid #DADADA;
+    box-shadow: none !important;
+    border-top: 2px solid #333333;
+    height: 60px !important;
+}
+
+.navbar .container {
+    margin-top: 10px;
+}
+
+.navbar .nav {
+    float: right !important;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.navbar .nav > li > a {
+  text-shadow: none !important;
+  color: #333333 !important;
+  font-family: "helvetica neue",helvetica,arial,sans-serif;
+  font-size: 20px;
+}
+
+/* Footer */
+body > footer a {
+  color: #A7A9AA;
+}
+
+body > footer a:visited { 
+	color: #A7A9AA;
+}
+
+
+body > footer, body > footer small {
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+}
+
+body > footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer {
+    color: #A7A9AA;
+    margin: 20px auto 0;
+    width: 960px;
+}
+
+footer p, footer ul, footer ol {
+    font: 14px/22px "helvetica neue",helvetica,arial,sans-serif;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer ul li {
+	float: left;
+	padding-right: 30px;
+    font: 14px/22px "helvetica neue",helvetica,arial,sans-serif;
 }

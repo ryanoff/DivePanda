@@ -2,21 +2,26 @@
 
     <%# if authenticated? %>
     
-        <h4>Aloha <fb:name uid='<%# current_user.identifier %>' useyou='false'></fb:name>!</h4>
+        <h4>Aloha <%= current_user.email %>!</h4>
         <br />
 
-        <dl>
+        <dl class="dl-horizontal">
             <dt>Total Dives</dt>
             <dd><%# @dive_count %></dd>
+            
             <dt>Total bottom time</dt>
             <dd><%# @dive_time %></dd>
-
-    	    <dt class="weak">CurrentUser Id</dt>
-    	    <dd class="weak"><%# current_user.id %></dd>
-    	    <dt class="weak">Facebook identifier:</dt>
-    	    <dd class="weak"><%# current_user.identifier %></dd>
-
-    	</dl>
+  
+      	    <dt class="weak">User Id</dt>
+      	    <dd class="weak"><%= current_user.id %></dd>
+      	    
+      	    <dt class="weak">Email</dt>
+      	    <dd class="weak"><%= current_user.email %></dd>
+      	    
+      	    <dt class="weak">Facebook identifier</dt>
+      	    <dd class="weak"><%# current_user.identifier %></dd>
+  
+      	</dl>
         <p><%# link_to 'View your full profile', profile_path %></p>
         <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>
     

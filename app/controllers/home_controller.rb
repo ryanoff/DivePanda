@@ -6,7 +6,9 @@ class HomeController < ApplicationController
   
     #@user = User.where(:facebook_id => current_user.identifier).first
     #raise @user.id.inspect
-    @dives = Dive.all
+    #@dives = Dive.all
+    @dives = Dive.find(:all, :order => "id desc", :limit => 5).reverse!
+    
     #@dives = Dive.where(:user_id => @user.id)
     #@dive_count = Dive.where(:user_id => @user.id).count
 

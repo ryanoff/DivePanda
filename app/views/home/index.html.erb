@@ -9,20 +9,16 @@
     	<p class="blue">This app is in a very early alpha stage with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
 
 			<% if user_signed_in? %>
-      	<p class="weak center">You are logged in.</p>
+			
+  	    <h3 class="btn"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></h3>
+
       <% else %>
+      
       	<p class="weak center">Login to get started.</p>
+  	    <h3 id="sign_in" class="btn btn-primary"><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></h3>
+      
       <% end %>
 
-    <!-- 
-    <p id="fb_login">    	
-        <%# if authenticated? %>
-            <%#= link_to "Logout", facebook_path, :method => :delete %>
-        <%# else %>
-            <fb:login-button length="long" size="xlarge" onlogin="location.href = '<%#= facebook_path %>'" scope="<%#= Facebook.config[:scope] %>"></fb:login-button>
-        <%# end %>
-    </p>
-    -->
     
   </article>
 

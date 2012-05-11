@@ -1,5 +1,5 @@
 @import "twitter/bootstrap/bootstrap";
-body { padding-top: 60px; }
+body { padding-top: 0px; }
 
 @import "twitter/bootstrap/responsive";
 
@@ -27,3 +27,67 @@ body { padding-top: 60px; }
 //
 // Example:
 // @linkColor: #ff0000;
+
+// Navbar
+@navbarBackground: @grayLighter;
+@navbarBackgroundHighlight: @grayLighter;
+@navbarText: @grayDarker;
+@navbarLinkColor: @grayDarker; 
+@navbarLinkColorHover: @linkColor;
+
+
+.navbar .brand {
+    background-repeat: no-repeat;
+    background-image: url(/assets/logo/logo-icon-sm.png);
+    background-position: 5px 9px;
+    text-indent: 5px;
+    margin-left: 5px;
+    font-size: 30px;
+    padding: 1px 20px 12px;
+}
+
+.navbar .container {
+    margin-top: 8px;
+}
+
+.navbar-inner {
+    background: none repeat scroll 0 0 #F8F8F8 !important;
+    border-bottom: 3px solid #DADADA;
+    box-shadow: none;
+    border-top: 2px solid #333333;
+    height: 60px;
+}
+
+.navbar .nav {
+    float: right;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.navbar .nav li {
+    color: #333333;
+    font-family: "helvetica neue",helvetica,arial,sans-serif;
+    font-size: 20px;
+    text-shadow: none;
+    line-height: 19px;
+    padding: 5px 10px 11px;
+}
+
+.navbar .nav > li > a {
+  text-shadow: none;
+  font-family: @sansFontFamily;
+  font-size: 20px;
+  padding: 5px 5px;
+}
+
+.navbar .nav > li > a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary a {
+  color: @white;
+}
+
+
+

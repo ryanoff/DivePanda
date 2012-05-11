@@ -4,28 +4,12 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th><%= model_class.human_attribute_name(:comments) %></th>
-      <th><%= model_class.human_attribute_name(:directions) %></th>
-      <th><%= model_class.human_attribute_name(:city) %></th>
-      <th><%= model_class.human_attribute_name(:state) %></th>
-      <th><%= model_class.human_attribute_name(:country) %></th>
-      <th><%= model_class.human_attribute_name(:longitude) %></th>
-      <th><%= model_class.human_attribute_name(:latitude) %></th>
-      <th><%= model_class.human_attribute_name(:weather) %></th>
-      <th><%= model_class.human_attribute_name(:equipment) %></th>
-      <th><%= model_class.human_attribute_name(:weight) %></th>
       <th><%= model_class.human_attribute_name(:date) %></th>
-      <th><%= model_class.human_attribute_name(:starttime) %></th>
-      <th><%= model_class.human_attribute_name(:endtime) %></th>
-      <th><%= model_class.human_attribute_name(:bottomtime) %></th>
-      <th><%= model_class.human_attribute_name(:units) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:city) %></th>
+      <th><%= model_class.human_attribute_name(:country) %></th>
+      <th><%#= model_class.human_attribute_name(:bottomtime) %>Time</th>
       <th><%= model_class.human_attribute_name(:depth) %></th>
-      <th><%= model_class.human_attribute_name(:temperature) %></th>
-      <th><%= model_class.human_attribute_name(:watertemp) %></th>
-      <th><%= model_class.human_attribute_name(:rating) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -33,28 +17,12 @@
     <% @dives.each do |dive| %>
       <tr>
         <td><%= link_to dive.id, dive_path(dive) %></td>
-        <td><%= dive.name %></td>
-        <td><%= dive.description %></td>
-        <td><%= dive.comments %></td>
-        <td><%= dive.directions %></td>
-        <td><%= dive.city %></td>
-        <td><%= dive.state %></td>
-        <td><%= dive.country %></td>
-        <td><%= dive.longitude %></td>
-        <td><%= dive.latitude %></td>
-        <td><%= dive.weather %></td>
-        <td><%= dive.equipment %></td>
-        <td><%= dive.weight %></td>
         <td><%= dive.date %></td>
-        <td><%= dive.starttime %></td>
-        <td><%= dive.endtime %></td>
+        <td><%= dive.name %></td>
+        <td><%= dive.city %></td>
+        <td><%= dive.country %></td>
         <td><%= dive.bottomtime %></td>
-        <td><%= dive.units %></td>
         <td><%= dive.depth %></td>
-        <td><%= dive.temperature %></td>
-        <td><%= dive.watertemp %></td>
-        <td><%= dive.rating %></td>
-        <td><%=l dive.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_dive_path(dive), :class => 'btn btn-mini' %>

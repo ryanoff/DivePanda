@@ -1,2 +1,27 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<section class="home">
+  <article>
+	
+    <%# link_to image_tag("cloud_app.png", :border => 0), root_path, {:class => 'logo-icon'} %>
+	
+	<div id="intro">
+    	<h1>Your scuba diving log book in the cloud</h1>
+    	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
+	</div>
+
+    	<p class="alert alert-info blue">This app is in a very early alpha stage with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
+
+    	<p class="weak center">Login to get started.</p>
+
+    <!-- 
+    <p id="fb_login">    	
+        <%# if authenticated? %>
+            <%#= link_to "Logout", facebook_path, :method => :delete %>
+        <%# else %>
+            <fb:login-button length="long" size="xlarge" onlogin="location.href = '<%#= facebook_path %>'" scope="<%#= Facebook.config[:scope] %>"></fb:login-button>
+        <%# end %>
+    </p>
+    -->
+    
+  </article>
+
+</section>

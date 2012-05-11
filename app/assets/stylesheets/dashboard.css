@@ -1,0 +1,30 @@
+/*-----------------]: dashboard :[---------------------*/
+
+.dashboard article {
+  margin: 20px 0;
+}
+
+.dashboard h1 {
+    font-size: 20px;
+}
+
+.dashboard h3#add_new {
+    margin: 60px 0;
+}
+
+.dashboard h3#add_new a {
+    color: #FFFFFF;
+    font-size: 
+}
+
+
+/* Sidebar */
+.sidebar dl dt {
+    margin: 0;
+    padding-right: 5px;
+    width: 120px;
+}
+.sidebar dl dd {
+    margin: 0;
+}
+

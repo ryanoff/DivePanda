@@ -213,6 +213,8 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   require "omniauth-facebook"
   config.omniauth :facebook, "189368391107072", "6c7561f89f08dffbb6e557ab0aee3cb8"
+      {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
+
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

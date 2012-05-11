@@ -1,0 +1,54 @@
+<section class='dashboard with_sidebar'>
+  <article>
+    <h3 id="add_new" class="btn btn-primary"><%= link_to '+ Add a new dive', new_dive_path %></h3>
+  </article>
+  
+  <article>
+    <h3>Your recent dives</h3>
+
+	<table>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Depth</th>
+        <th>Time</th>
+        <%# <th>User_id</th> %>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    
+    <% @dives.each do |dive| %>
+      <tr>
+        <td><%= l dive.date %></td>
+        <td><%= dive.name %></td>
+        <td><%= dive.city %></td>
+        <td><%= dive.country %></td>
+        <td><%= dive.depth %></td>
+        <td><%= dive.bottomtime %></td>
+        <td><%#= dive.user_id %></td>
+        <td class="action"><%= link_to 'Show', dive %></td>
+        <td class="action"><%= link_to 'Edit', edit_dive_path(dive) %></td>
+        <td class="action"><%= link_to 'Delete', dive, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
+	
+    <p><%= link_to 'View all dive dives', dives_path %></p>	
+	
+  </article>
+
+  <!--
+  <article>
+    <h3>Your friends recent dives</h3>
+	<p></p>
+  </article>
+  -->
+
+</section>
+
+<aside class="sidebar">
+    <%#= render :partial => 'layouts/sidebar' %>
+</aside>

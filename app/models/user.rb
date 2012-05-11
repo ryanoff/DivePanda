@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
- devise :omniauthable
+  devise :omniauthable
 
 
   # Setup accessible (or protected) attributes for your model
@@ -19,6 +19,15 @@ class User < ActiveRecord::Base
       self.create!(:email => data.email, :password => Devise.friendly_token[0,20]) 
     end
   end
+  
+  def self.new_with_session(params, session)
+    super.tap do |user|
+      if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
+        user.email = data["email"]
+      end
+    end
+  end
+  
   
 end
 

@@ -2,15 +2,23 @@ DivePanda::Application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
-  root :to => "home#index"
+  # simple home page
+  #root :to => "home#index"
 
-  get "home/index"
+  #authenticated home page
+  authenticated :user do
+    root :to => 'home#dashboard'
+  end
+  root :to => 'home#index'
+
 
   resources :dives
 
   devise_for :users
-  
-  #get "pages/home"
+
+  get "home/index"  
+  get "home/dashboard"  
+
   get "pages/contact"
   get "pages/about"
   get "pages/terms"
@@ -21,11 +29,7 @@ DivePanda::Application.routes.draw do
   end
 
   resource :dashboard, :only => :show
-  resource :canvas, :only => [:show, :create]
   resource :profile, :only => :show
-  resource :timeline, :only => [:show, :create]
-  resource :subscription, :only => [:show, :create]
-
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

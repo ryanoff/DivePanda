@@ -16,3 +16,26 @@
  */
 
 /* Your stylesheets goes here... */
+.blue {
+	background-color: #D5E9F6;
+}
+
+.weak {
+	color: #CCC;
+}
+
+.highlight {
+	background-color: #F4DDA6;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.grey_background {
+    background-color: #f6f6f6;
+}

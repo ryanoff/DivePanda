@@ -32862,3 +32862,1805 @@ Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
 
 Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-14 19:16:40 -0700
 Served asset /cloud_app.png - 200 OK (0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-14 19:17:23 -0700
+
+
+Started GET "/users/auth/facebook/callback?code=AQChCzJr1yB_J6FVSHEKd6JMDdWNc7cRyxED95474LNf63fg4ieeNN59Be8e-c9Wh3dXjUSPw2g4nZF2XJFnx2rXdos39lMwbXSEukvopScjj_NcZs5rktExle-xDaN8KjiYggpBsAA11x3PPoVigOLCeTIsckFQB0SuvrSB6CJGGdPfPer9GuGKlwKhzQZM-4Q" for 127.0.0.1 at 2012-05-14 19:17:23 -0700
+
+AbstractController::ActionNotFound (The action 'facebook' could not be found for Devise::OmniauthCallbacksController):
+  actionpack (3.2.3) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  rack-pjax (0.5.9) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/builder.rb:48:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.2) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__1524693033152956033__call__1823042191725092162__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:01:35 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Compiled registrations.css  (106ms)  (pid 24020)
+Compiled application.css  (429ms)  (pid 24020)
+Compiled registrations.js  (147ms)  (pid 24020)
+Compiled application.js  (918ms)  (pid 24020)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 2374ms (Views: 2373.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /authentications.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /scaffolds.css - 200 OK (22ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (43ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /dashboard.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:37 -0700
+Served asset /registrations.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /jquery_ujs.js - 200 OK (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (21ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (101ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /twitter/bootstrap.js - 200 OK (29ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /dives.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /home.js - 200 OK (4ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /authentications.js - 200 OK (1ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /registrations.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /application.js - 200 OK (24ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (88ms)
+
+
+Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-15 00:01:38 -0700
+Served asset /cloud_app.png - 200 OK (23ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-05-15 00:05:48 -0700
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDives (20120509054903)
+Migrating to DeviseCreateUsers (20120509082350)
+Migrating to CreateRailsAdminHistoriesTable (20120509082808)
+Migrating to CreateAuthentications (20120515014342)
+Migrating to AddTokenToAuthentications (20120515071242)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (18.4ms)[0m  ALTER TABLE "authentications" ADD "token" varchar(255)
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120515071242')[0m
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("authentications")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("dives")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("rails_admin_histories")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_rails_admin_histories')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_reset_password_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 361ms (Views: 360.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /authentications.css - 200 OK (1ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /registrations.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (5ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /dashboard.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:07 -0700
+Served asset /jquery_ujs.js - 200 OK (101ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (9ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (8ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /dives.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (53ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /twitter/bootstrap.js - 200 OK (21ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /authentications.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /application.js - 200 OK (26ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /registrations.js - 200 OK (1ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (25ms)
+
+
+Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-15 00:19:08 -0700
+Served asset /cloud_app.png - 200 OK (10ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-15 00:19:18 -0700
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-15 00:20:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /dives.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-15 00:20:26 -0700
+Served asset /cloud_app.png - 200 OK (0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-15 00:20:28 -0700
+
+
+Started GET "/users/auth/facebook/callback?code=AQBlZcGpgY4v4B3mD1aAJmuu1faTKw-j1J6otSB5gZRP3MIeaLFLsFGlfubgIz_1NoxsGLtUnBWzEFrN2XSx4rwGq2ZCClKEVHxy4EegLb6SP3XFwo73DSUXqorZFf_2EPREqgJj2n0pWuKeGOEr3jIVOKYrC08IA7f1O426I1j3allc0BgVEvWJ5cl3PPPuSUc" for 127.0.0.1 at 2012-05-15 00:20:40 -0700
+
+AbstractController::ActionNotFound (The action 'facebook' could not be found for Devise::OmniauthCallbacksController):
+  actionpack (3.2.3) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  rack-pjax (0.5.9) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/builder.rb:48:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.2) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__3661904531254686353__call__3414277287647007321__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/facebook/callback?code=AQBlZcGpgY4v4B3mD1aAJmuu1faTKw-j1J6otSB5gZRP3MIeaLFLsFGlfubgIz_1NoxsGLtUnBWzEFrN2XSx4rwGq2ZCClKEVHxy4EegLb6SP3XFwo73DSUXqorZFf_2EPREqgJj2n0pWuKeGOEr3jIVOKYrC08IA7f1O426I1j3allc0BgVEvWJ5cl3PPPuSUc" for 127.0.0.1 at 2012-05-15 00:27:15 -0700
+Processing by AuthenticationsController#create as HTML
+  Parameters: {"code"=>"AQBlZcGpgY4v4B3mD1aAJmuu1faTKw-j1J6otSB5gZRP3MIeaLFLsFGlfubgIz_1NoxsGLtUnBWzEFrN2XSx4rwGq2ZCClKEVHxy4EegLb6SP3XFwo73DSUXqorZFf_2EPREqgJj2n0pWuKeGOEr3jIVOKYrC08IA7f1O426I1j3allc0BgVEvWJ5cl3PPPuSUc", "provider"=>"facebook"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/authentications_controller.rb:8:in `create'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.6ms)
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 114ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /dives.js - 200 OK (2ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-15 00:27:28 -0700
+Served asset /cloud_app.png - 200 OK (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-05-15 00:27:34 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/_links.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (62.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 230ms (Views: 130.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:27:35 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/assets/cloud_app.png" for 127.0.0.1 at 2012-05-15 00:45:33 -0700
+Served asset /cloud_app.png - 200 OK (0ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-15 00:45:36 -0700
+
+
+Started GET "/users/auth/facebook/callback?code=AQAK0MDvZT0CvwKRDa79edZ63UW8d-V8JEFzygs0Kg7adFou06R1LJPzReepmfwe--ga2ygRM_vwujIacb6os-5mgQmrT1WlMwuBkTfTdfAEWq-NV5mzCtAilnpiJInvNDPKB1AmU9NlbR9Nb8SspBJFyp-zW84IBsZk_4t3f8hs13eELie9o4xNArZTfDaQ5xs" for 127.0.0.1 at 2012-05-15 00:45:37 -0700
+
+AbstractController::ActionNotFound (The action 'facebook' could not be found for Devise::OmniauthCallbacksController):
+  actionpack (3.2.3) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  rack-pjax (0.5.9) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/builder.rb:48:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.2) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__3661904531254686353__call__3414277287647007321__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 47ms (Views: 27.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:44 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:45:45 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2012-05-15 00:45:47 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6I8Mn8t/nK2vDfPBSWWaeJKEfaU/uggdNUPIZmhqsJE=", "user"=>{"email"=>"ryan@ryanoff.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ryan@ryanoff.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2012-05-15 01:43:28.148402', "current_sign_in_at" = '2012-05-15 07:45:48.203472', "sign_in_count" = 11, "updated_at" = '2012-05-15 07:45:48.204801' WHERE "users"."id" = 1[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+Redirected to http://divepanda.local:3000/
+Completed 302 Found in 403ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Processing by HomeController#dashboard as HTML
+  [1m[35mDive Load (0.2ms)[0m  SELECT "dives".* FROM "dives" ORDER BY id desc LIMIT 5
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered home/dashboard.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 160ms (Views: 57.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:45:48 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-05-15 00:46:13 -0700
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://divepanda.local:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-15 00:46:13 -0700
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Processing by HomeController#dashboard as HTML
+  [1m[36mDive Load (0.2ms)[0m  [1mSELECT "dives".* FROM "dives" ORDER BY id desc LIMIT 5[0m
+  Rendered layouts/_sidebar.html.erb (0.2ms)
+  Rendered home/dashboard.html.erb within layouts/application (52.2ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /twitter/bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:46:14 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/auth" for 127.0.0.1 at 2012-05-15 00:46:19 -0700
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/authentications" for 127.0.0.1 at 2012-05-15 00:46:46 -0700
+Processing by AuthenticationsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "authentications" WHERE "authentications"."user_id" = 1[0m
+  Rendered authentications/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:46 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/authentications.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /authentications.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /bootstrap_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /dashboard.css - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /registrations.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /home.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/authentications.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /authentications.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /home.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /bootstrap.js - 200 OK (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/facebook_64.png" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /facebook_64.png - 200 OK (81ms)
+
+
+Started GET "/assets/dives.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /dives.js - 200 OK (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /registrations.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter_64.png" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /twitter_64.png - 200 OK (22ms)
+
+
+Started GET "/assets/logo/logo-icon-sm.png" for 127.0.0.1 at 2012-05-15 00:46:47 -0700
+Served asset /logo/logo-icon-sm.png - 200 OK (0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2012-05-15 00:46:50 -0700
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2012-05-15 00:46:59 -0700
+
+
+Started GET "/users/auth/facebook/callback?code=AQAUwjhvb2X7ZYo3ZIfVrn3BRrQYKhpds0nOhE8W_NzO5b3-NL1tS50Vmo8ojEWsP98xP8zaMlIleY6JQ_IF8SK5CrBm18oL5dlZ49njasPoI6xRNdPqrK3vX-wwUiNyymvGquGySQby8gVUtBwx4PeVUDrhly043nHeDDuGGiW7rucZ3ZjJ7h55FgVZyw8IYO4" for 127.0.0.1 at 2012-05-15 00:47:00 -0700
+
+AbstractController::ActionNotFound (The action 'facebook' could not be found for Devise::OmniauthCallbacksController):
+  actionpack (3.2.3) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.3) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.3) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.3) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/mapper.rb:40:in `call'
+  journey (1.0.3) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.3) lib/journey/router.rb:56:in `each'
+  journey (1.0.3) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.3) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  rack-pjax (0.5.9) lib/rack/pjax.rb:12:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:392:in `call_app!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:354:in `callback_phase'
+  omniauth-oauth2 (1.0.2) lib/omniauth/strategies/oauth2.rb:65:in `callback_phase'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:219:in `callback_call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:175:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:177:in `call!'
+  omniauth (1.1.0) lib/omniauth/strategy.rb:157:in `call'
+  omniauth (1.1.0) lib/omniauth/builder.rb:48:in `call'
+  warden (1.1.1) lib/warden/manager.rb:35:in `block in call'
+  warden (1.1.1) lib/warden/manager.rb:34:in `catch'
+  warden (1.1.1) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/head.rb:14:in `call'
+  remotipart (1.0.2) lib/remotipart/middleware.rb:30:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/cookies.rb:338:in `call'
+  activerecord (3.2.3) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:467:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `_run__3661904531254686353__call__3414277287647007321__callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.3) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2012-05-15 00:47:05 -0700
+
+ActionController::RoutingError (No route matches [GET] "/auth/twitter"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users/auth/twitter" for 127.0.0.1 at 2012-05-15 00:47:10 -0700
+
+
+Started GET "/users/auth/twitter/callback?oauth_token=BS2pZzmzuFxajL1XbYkfqF1OkYMIExXDvR4f05yoXqo&oauth_verifier=rCDLKDR8HiaBlHDdYQ4Gg3UEZvtBUQiIVfvDb4Qt61g" for 127.0.0.1 at 2012-05-15 00:47:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users/auth/twitter/callback"):
+  actionpack (3.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.3) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.3) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.3) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.3) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.3) lib/rails/engine.rb:479:in `call'
+  railties (3.2.3) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.3) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/ryanoff/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/auth/twitter/callback?oauth_token=BS2pZzmzuFxajL1XbYkfqF1OkYMIExXDvR4f05yoXqo&oauth_verifier=rCDLKDR8HiaBlHDdYQ4Gg3UEZvtBUQiIVfvDb4Qt61g" for 127.0.0.1 at 2012-05-15 00:47:33 -0700
+Processing by AuthenticationsController#create as HTML
+  Parameters: {"oauth_token"=>"BS2pZzmzuFxajL1XbYkfqF1OkYMIExXDvR4f05yoXqo", "oauth_verifier"=>"rCDLKDR8HiaBlHDdYQ4Gg3UEZvtBUQiIVfvDb4Qt61g", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/authentications_controller.rb:8:in `create'
+
+
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/ryanoff/.rvm/gems/ruby-1.9.3-p194@global/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)

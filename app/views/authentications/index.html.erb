@@ -29,3 +29,11 @@
   Facebook
 </a>
 <div class="clear"></div>
+
+<% unless user_signed_in? %>
+  <p>
+    <strong>Don't use these services?</strong>
+    <%= link_to "Sign up", new_user_registration_path %> or
+    <%= link_to "sign in", new_user_session_path %> with a password.
+  </p>
+<% end %>

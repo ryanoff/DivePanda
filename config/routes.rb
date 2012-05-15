@@ -4,19 +4,16 @@ DivePanda::Application.routes.draw do
   resources :dives
   
   match '/auth/:provider/callback' => 'authentications#create'
+  
+  devise_for :users, :controllers => {:registrations => 'registrations'}
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-
-  # simple home page
-  #root :to => "home#index"
 
   #authenticated home page
   authenticated :user do
     root :to => 'home#dashboard'
   end
   root :to => 'home#index'
-
-  devise_for :users
 
   get "home/index"  
   get "home/dashboard"
@@ -86,7 +83,6 @@ DivePanda::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   
-  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   
 end

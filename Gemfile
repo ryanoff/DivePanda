@@ -17,11 +17,14 @@ end
 gem 'jquery-rails'
 
 gem 'rails_admin'
+
 gem 'devise'
-gem 'omniauth'
+# gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+# gem 'omniauth-twitter'
 gem 'authbuttons-rails'
+
+gem 'mongrel', '1.2.0.pre2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

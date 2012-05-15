@@ -29,9 +29,10 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    authbuttons-rails (0.1.2)
     bbenezech-nested_form (0.0.6)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (2.0.2)
+    bootstrap-sass (2.0.3)
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -39,7 +40,7 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.3.1)
+    coffee-script-source (1.3.2)
     commonjs (0.2.6)
     devise (2.0.4)
       bcrypt-ruby (~> 3.0)
@@ -64,7 +65,7 @@ GEM
     jquery-ui-rails (0.2.2)
       jquery-rails
       railties (>= 3.1.0)
-    json (1.7.1)
+    json (1.7.3)
     kaminari (0.13.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -80,8 +81,9 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.18)
-    multi_json (1.3.4)
+    multi_json (1.3.5)
     multipart-post (1.1.5)
+    oauth (0.4.6)
     oauth2 (0.6.1)
       faraday (~> 0.7)
       httpauth (~> 0.1)
@@ -91,9 +93,15 @@ GEM
       rack
     omniauth-facebook (1.3.0)
       omniauth-oauth2 (~> 1.0.2)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     omniauth-oauth2 (1.0.2)
       oauth2 (~> 0.6.0)
       omniauth (~> 1.0)
+    omniauth-twitter (0.0.11)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
     orm_adapter (0.0.7)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -138,7 +146,7 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     remotipart (1.0.2)
-    sass (3.1.17)
+    sass (3.1.18)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -171,11 +179,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authbuttons-rails
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
   json
+  omniauth
   omniauth-facebook
+  omniauth-twitter
   rails (= 3.2.3)
   rails_admin
   sass-rails (~> 3.2.3)

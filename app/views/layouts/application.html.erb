@@ -29,12 +29,9 @@
 
   				<% if user_signed_in? %>
 
-    				<li>Hello <%= current_user.email %> <%#= link_to current_user.email, :controller => "home", :action => "dashboard" %></li>              
-                
-            <li><%# link_to 'Dashboard', dashboard_path %></li>
+    				<li><%= link_to "Hello " + current_user.email, :controller => "home", :action => "dashboard" %></li>              
             <li><%= link_to 'Dives', dives_path %></li>
-            <li><%# link_to "Profile" %></li>
-            <li><%# link_to "Sign out", facebook_path, :method => :delete %></li>	    
+            <li><%= link_to "Profile" %></li>
             <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
                       
 

@@ -1,7 +1,5 @@
 DivePanda::Application.routes.draw do
 
-  resources :posts
-
   resources :authentications
   resources :dives
   

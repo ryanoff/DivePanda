@@ -7,20 +7,17 @@
 
         <dl class="dl-horizontal">
             <dt>Total Dives</dt>
-            <dd><%# @dive_count %></dd>
+            <dd><%= @dive_count %></dd>
             
-            <dt>Total bottom time</dt>
-            <dd><%# @dive_time %></dd>
+            <dt>Total dive time</dt>
+            <dd><%= @dive_time %></dd>
   
       	    <dt class="weak">User Id</dt>
-      	    <dd class="weak"><%= current_user.id %></dd>
+      	    <dd class="weak"><%= @user.id %></dd>
       	    
       	    <dt class="weak">Email</dt>
-      	    <dd class="weak"><%= current_user.email %></dd>
+      	    <dd class="weak"><%= @user.email %></dd>
       	    
-      	    <dt class="weak">Facebook identifier</dt>
-      	    <dd class="weak"><%# current_user.identifier %></dd>
-  
       	</dl>
         <p><%# link_to 'View your full profile', profile_path %></p>
         <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>

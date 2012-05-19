@@ -1,2 +1,3 @@
-class Dive < ActiveRecord::Base 
+class Dive < ActiveRecord::Base
+  attr_accessible :name
 end

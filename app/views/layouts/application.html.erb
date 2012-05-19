@@ -41,8 +41,8 @@
           <% else %>    
               
             <%# Add if not authenticated %>
-            <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %></li>
-            <li><%= link_to('Login', new_user_session_path)  %></li>
+            <li><%= link_to content_tag(:span, 'Log In'), user_omniauth_authorize_path(:facebook), :class => "btn-facebook-small" %></li>
+            <li><%#= link_to('Sign In', new_user_session_path)  %></li>
             <li><%= link_to "About", :controller => "pages", :action => "about" %></li>
             <li><%= link_to 'Contact', :controller => "pages", :action => "contact" %></li>
 

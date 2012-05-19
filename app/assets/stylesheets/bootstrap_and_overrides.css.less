@@ -34,6 +34,8 @@ body { padding-top: 0px; }
 @navbarText: @grayDarker;
 @navbarLinkColor: @grayDarker; 
 @navbarLinkColorHover: @linkColor;
+@dropdownBackground: @grayDarker; 
+@dropdownLinkColor: #bd362f;
 
 
 .navbar .brand {
@@ -56,6 +58,7 @@ body { padding-top: 0px; }
     box-shadow: none;
     border-top: 2px solid #333333;
     height: 60px;
+    border-radius: 0px;
 }
 
 .navbar .nav {
@@ -70,7 +73,7 @@ body { padding-top: 0px; }
     font-size: 20px;
     text-shadow: none;
     line-height: 19px;
-    padding: 5px 10px 11px;
+    padding: 5px 6px 11px;
 }
 
 .navbar .nav > li > a {
@@ -84,9 +87,90 @@ body { padding-top: 0px; }
   text-decoration: underline;
 }
 
+.nav-collapse .nav {
+  /*
+  background: #333;
+  float: left;
+  */
+}
+
 /* Buttons */
+
+.btn-primary:visited, .btn-warning:visited, .btn-danger:visited, .btn-success:visited, .btn-info:hover, .btn-inverse:hover {
+    color: #FFFFFF;
+}
+
 .btn-primary a {
   color: @white;
+}
+
+/* Facebook */
+.navbar .nav > li > a.btn-facebook-small {
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") no-repeat scroll 0 -232px #29447E;
+    color: #FFFFFF;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 0 0 0 3px;
+    text-decoration: none;
+      font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-weight: bold;
+      cursor: pointer;
+    display: inline-block;
+    outline: medium none;
+    padding: 0 0 0 1px;
+
+}
+
+.navbar .nav > li > a.btn-facebook-small span {
+    margin-left: 17px;
+    padding: 2px 6px 3px;
+    background: url("http://static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") repeat scroll 0 0 #5F78AB;
+    border-bottom: 1px solid #1A356E;
+    border-top: 1px solid #879AC0;
+    color: #FFFFFF;
+    display: block;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-weight: bold;
+    margin: 1px 1px 0 17px;
+    padding: 2px 6px 3px;
+    text-shadow: none;
+}
+
+.facebook.center {
+  margin: 0 auto;
+  width: 315px;
+}
+
+.btn-facebook-large {
+  background: url("http://static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") no-repeat scroll 0 -60px #29447E;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  outline: medium none;
+  padding: 0 0 0 1px;
+  text-decoration: none;
+  /* background-position: left -60px;*/
+}
+
+.btn-facebook-large span {
+  background: url("http://static.ak.fbcdn.net/rsrc.php/v1/yL/r/FGFbc80dUKj.png") repeat scroll 0 0 #5F78AB;
+  border-bottom: 1px solid #1A356E;
+  border-top: 1px solid #879AC0;
+  color: #FFFFFF;
+  display: block;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-weight: bold;
+  /* margin: 1px 1px 0 21px; */
+  margin: 1px 1px 0px 38px;
+  padding: 2px 6px 4px;
+  text-shadow: none;
+    font-size: 24px;
+  line-height: 30px;
+}
+
+.btn-facebook-large a {
+  color: #FFFFFF !important;
 }
 
 

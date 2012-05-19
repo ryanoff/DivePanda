@@ -9,16 +9,6 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
     
-  
-  def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
-    data = access_token.extra.raw_info
-    if user = self.find_by_email(data.email)
-      user
-    else # Create a user with a stub password. 
-      self.create!(:email => data.email, :password => Devise.friendly_token[0,20]) 
-    end
-  end
-  
   def self.new_with_session(params, session)
     super.tap do |user|
       if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
@@ -27,9 +17,17 @@ class User < ActiveRecord::Base
     end
   end
   
-    
-  def apply_omniauth(omniauth)
+  def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
+    data = access_token.extra.raw_info
+    if user = self.find_by_email(data.email)
+      user
+    else # Create a user with a stub password. 
+      self.create(:email => data.email, :password => Devise.friendly_token[0,20]) 
+    end
+  end
   
+  # Do we need the following?  
+  def apply_omniauth(omniauth)  
     case omniauth['provider']
     when 'facebook'
       self.apply_facebook(omniauth)

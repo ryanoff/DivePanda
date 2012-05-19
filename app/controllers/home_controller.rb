@@ -4,17 +4,20 @@ class HomeController < ApplicationController
   
   def dashboard
   
-    #@user = User.where(:facebook_id => current_user.identifier).first
+    @user = User.where(:id => current_user.id).first
     #raise @user.id.inspect
     #@dives = Dive.all
-    @dives = Dive.find(:all, :order => "id desc", :limit => 5).reverse!
+    #@dives = Dive.find(:all, :order => "id desc", :limit => 5).reverse!
     
-    #@dives = Dive.where(:user_id => @user.id)
+    #raise @user.inspect
+    
+    @dives = Dive.where(:id => @user.id)
     #@dive_count = Dive.where(:user_id => @user.id).count
 
     #total_minutes = Dive.where(:user_id => @user.id).sum(:bottomtime)
     #@dive_time = Time.at(total_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
 
+# raise current_user.inspect
     # Debugging Examples
     # @test = current_user.identifier  
     # raise @dives.inspect    

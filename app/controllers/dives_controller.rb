@@ -1,15 +1,14 @@
 class DivesController < ApplicationController
   before_filter :authenticate_user!
 
-
   # GET /dives
   # GET /dives.json
   def index
-    @dives = Dive.all
-
+    #@dives = Dive.all
     #@user = User.where(:facebook_id => current_user.identifier).first
     #@dives = Dive.where(:user_id => @user.id)
-
+    @user = User.where(:id => current_user.id).first
+    @dives = Dive.where(:id => @user.id)
 
     respond_to do |format|
       format.html # index.html.erb

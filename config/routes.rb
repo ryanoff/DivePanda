@@ -1,12 +1,20 @@
 DivePanda::Application.routes.draw do
 
+  resources :posts
+
   resources :authentications
   resources :dives
   
-  match '/auth/:provider/callback' => 'authentications#create'
+#  match '/auth/:provider/callback' => 'authentications#create'
   
-  devise_for :users, :controllers => {:registrations => 'registrations'}
+#  devise_for :users, :controllers => {:registrations => 'registrations'}
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
+  
+  devise_scope :user do
+    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+  end
+  
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   #authenticated home page

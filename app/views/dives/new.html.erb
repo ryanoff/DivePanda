@@ -1,4 +1,148 @@
-<%- model_class = @dive.class -%>
-<h1><%=t '.title', :default => t('helpers.titles.new', :model => model_class.model_name.human,
-                               :default => "New #{model_class.model_name.human}") %></h1>
-<%= render :partial => 'form' %>
+<h1>Create a new dive</h1>
+
+<%= form_for @dive do |f| %>
+
+
+    <%# Set the User ID to that of the current Facebook identifier of that Dive %>
+    <%= hidden_field_tag 'dive[user_id]', current_user.id %>
+
+	<fieldset>
+		<div class="field">
+            <%= f.label :date %><br />
+            <%= f.date_select :date %>
+        </div>
+
+		<div class="input text">
+			<%= f.label :name, "Dive site name" %>
+			<%= f.text_field :name %>
+		</div>
+	
+		<div class="input text">
+			<%= f.label :city %>
+			<%= f.text_field :city %>
+		</div>
+
+		<div class="input text">
+			<%= f.label :state %>
+			<%= f.text_field :state %>
+		</div>
+
+		<div class="input text">
+			<%= f.label :country %>
+			<%= f.text_field :country %>
+		</div>
+						
+		<div class="input text">
+			<%= f.label :units %>
+			<%= 
+				@units = {'Metric (C, m)' => 'C', 'Imperial (F, ft)' => 'F'}		
+				select_tag "units", options_for_select(@units)
+			%>
+		</div>	
+	</fieldset>
+
+	<fieldset>
+		<legend>Dive Stats</legend>
+                
+        <div class="field">
+            <%= f.label :starttime %><br />
+            <%= f.time_select :starttime %>
+        </div>
+        
+        <div class="field">
+            <%= f.label :endtime %><br />
+            <%= f.time_select :endtime %>
+        </div>
+		
+		<div class="input text">
+			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
+			<%= f.text_field :bottomtime %>
+		</div>	
+		
+		<div class="input text">
+			<%= f.label :depth %>
+			<%= f.text_field :depth %>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Attributes</legend>
+		<div class="input text">
+			<%= f.label :weather %>
+			<%= f.text_field :weather %>
+		</div>
+		
+		<div class="input text">
+			<%= f.label :temperature, "Outside Temperature" %>
+			<%= f.text_field :temperature %>
+		</div>
+		
+		<div class="input text">
+			<%= f.label :watertemp, "Water Temperature" %>
+			<%= f.text_field :watertemp %>
+		</div>
+	
+		<div class="input text">
+			<%= f.label :equipment, "Equipment (e.g. wetsuit, hood)" %>
+			<%= f.text_field :equipment %>
+		</div>
+
+		<div class="input text">
+			<%= f.label :weight, "Weight (e.g. 14 lbs)" %>
+			<%= f.text_field :weight %>
+		</div>
+		
+        <%#= #Add Dive number. How many dives have you done with total minutes and hours. %>
+            		
+	</fieldset>	
+
+	<fieldset>
+		<legend>Details</legend>	
+		<div class="input textarea">
+			<%= f.label :description, "Dive Location Description (public)"%>
+			<%= f.text_area :description %>
+		</div>
+	
+		<div class="input textarea">
+			<%= f.label :comments, "Dive Comments (private)" %>
+			<%= f.text_area :comments %>
+		</div>
+		
+		<div class="input textarea">
+			<%= f.label :directions, "Directions to dive location (how to get there)" %>
+			<%= f.text_area :directions %>
+		</div>
+
+
+		<div class="input text">
+			<%= f.label :rating, "Overall rating" %>
+			<%= f.select(:rating, [['1',1], ['2',2], ['3',3], ['4',4], ['5',5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]]) %>
+		</div>
+		
+		<div class="weak">
+		  <%= link_to 'Get current location', '#', :id => 'getLocation' %>
+		</div>
+
+		
+			
+		<div class="input text">
+			<%= f.label :longitude %>
+			<%= f.text_field :longitude %>
+		</div>
+		
+			
+		<div class="input text">
+			<%= f.label :latitude %>
+			<%= f.text_field :latitude %>
+		</div>
+
+	</fieldset>
+	
+	<!-- Add fish -->
+	<!-- Add WYSIWYG comments -->
+	<!-- Add drawings -->
+	<!-- Add upload photos & videos -->
+		
+	<%= f.submit %>
+	
+<% end %>

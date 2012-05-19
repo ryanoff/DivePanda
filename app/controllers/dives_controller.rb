@@ -6,7 +6,7 @@ class DivesController < ApplicationController
   def index
     #@dives = Dive.all
     @user = User.where(:id => current_user.id).first
-    @dives = Dive.where(:id => @user.id)
+    @dives = Dive.where(:user_id => @user.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,6 +42,8 @@ class DivesController < ApplicationController
   # GET /dives/1/edit
   def edit
     @dive = Dive.find(params[:id])
+    @user = User.where(:id => current_user.id).first
+
     #@user = User.where(:facebook_id => current_user.identifier).first
   end
 

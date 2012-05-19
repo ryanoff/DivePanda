@@ -144,3 +144,8 @@ footer ul li {
   text-align: center;
   margin-bottom: 10px;
 }
+
+/* Sidebar */
+.sidebar .weak {
+  font-size: 10px;
+}

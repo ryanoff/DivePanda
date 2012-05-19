@@ -28,6 +28,11 @@ body { padding-top: 0px; }
 // Example:
 // @linkColor: #ff0000;
 
+//Body
+body {
+  /* background: url("/assets/texture.png") repeat scroll 0 0 transparent; */
+}
+
 // Navbar
 @navbarBackground: @grayLighter;
 @navbarBackgroundHighlight: @grayLighter;
@@ -50,11 +55,15 @@ body { padding-top: 0px; }
 
 .navbar .container {
     margin-top: 8px;
+    padding: 0px;
+    border-radius: 0px;
+    background: transparent;
 }
 
 .navbar-inner {
     background: none repeat scroll 0 0 #F8F8F8 !important;
-    border-bottom: 3px solid #DADADA;
+    border-bottom: 1px solid #E0E0E0;
+    /* border-top: 3px solid #EBEBEB; */
     box-shadow: none;
     border-top: 2px solid #333333;
     height: 60px;
@@ -92,6 +101,15 @@ body { padding-top: 0px; }
   background: #333;
   float: left;
   */
+}
+
+/* Container */
+.container {
+    /* Only needed when using body background
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 10px 30px 10px;
+    */
 }
 
 /* Buttons */
@@ -150,6 +168,7 @@ body { padding-top: 0px; }
   outline: medium none;
   padding: 0 0 0 1px;
   text-decoration: none;
+  margin-bottom: 50px;
   /* background-position: left -60px;*/
 }
 

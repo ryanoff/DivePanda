@@ -17,7 +17,6 @@ p, ol, ul, td {
     padding-right: 10px;
 }
 
-
 .home h1 {
   background: url("/assets/cloud_app.png") no-repeat scroll 0 0 transparent;
   margin: 0;
@@ -47,4 +46,27 @@ p, ol, ul, td {
 .home #intro {
     margin-bottom: 60px;
     margin-top: 60px;
+}
+
+/* Recent Dives */
+.recentDives { 
+  margin-top: 30px;
+  ul {
+    font-size: 13px;
+    list-style: none outside none;
+    margin: 0;
+    li {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
+
+/* Dashboard */
+.dashboard {
+  #recent-dives {
+    td {
+      font-size: 13px;
+    }
+  }
+
 }

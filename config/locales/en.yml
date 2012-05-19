@@ -14,3 +14,8 @@ en:
         user_subject: 'Hello User! Please confirm your email'
       reset_password_instructions:
         subject: 'Reset instructions'
+  date:
+    formats:
+      default: "%m-%d-%Y"
+      short: "%b %d"
+      long: "%d %b %Y"

@@ -1,15 +1,47 @@
-<section class='dashboard span9'>
-  <article>
+<section class='dashboard span12'>
+  <article class="span8">
     <h3 id="add_new" class="btn btn-primary"><%= link_to '+ Add a new dive', new_dive_path %></h3>
   </article>
   
-  <article>
+  <aside class="span4">    
+        <%# if authenticated? %>
+        
+            <h4>Aloha <%= current_user.email %>!</h4>
+            <br />
+    
+            <dl class="dl-horizontal">
+                <dt>Total Dives</dt>
+                <dd><%= @dive_count %></dd>
+                
+                <dt>Total dive time</dt>
+                <dd><%= @dive_time %></dd>
+      
+          	    <dt class="weak">User Id</dt>
+          	    <dd class="weak"><%= @user.id %></dd>
+          	    
+          	    <dt class="weak">Email</dt>
+          	    <dd class="weak"><%= @user.email %></dd>
+          	    
+          	</dl>
+            <p><%# link_to 'View your full profile', profile_path %></p>
+            <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>
+        
+        <%# else %>
+            <p><%# link_to "You need to re-login", root_path %></p>
+        <%# end %>
+    
+  </aside>
+    
+  <article id="recent-dives" class="span12">
     <h3>Your recent dives</h3>
     <%- model_class = Dive.new.class -%>
     
   	<table class="table table-condensed">
       <thead>
         <tr>
+        
+        <%#= l trip.truckleft, :format => :long %>
+        
           <th><%= model_class.human_attribute_name(:date) %></th>
           <th><%= model_class.human_attribute_name(:name) %></th>
           <th><%= model_class.human_attribute_name(:city) %></th>
@@ -22,7 +54,7 @@
       <tbody>
         <% @dives.each do |dive| %>
           <tr>
-            <td><%= dive.date %></td>
+            <td><%#= dive.date.strftime("%d %b %Y") %><%= l dive.date, :format => :long %></td>
             <td><%= link_to dive.name, dive_path(dive) %></td>
             <td><%= dive.city %></td>
             <td><%= dive.country %></td>
@@ -49,7 +81,7 @@
 	
 	
 	
-    <p><%= link_to 'View all dive dives', dives_path %></p>	
+    <p><%= link_to 'View all dives', dives_path %></p>	
 	
   </article>
 
@@ -62,6 +94,8 @@
 
 </section>
 
+<!--
 <aside class="sidebar span3">
-    <%= render :partial => 'layouts/sidebar' %>
-</aside>
+    <%#= render :partial => 'layouts/sidebar' %>
+</aside> 
+-->

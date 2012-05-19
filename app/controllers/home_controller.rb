@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
-  def index
+
+  def home
+    @recent_dives = Dive.find(:all, :order => "created_at desc", :limit => 5).reverse!
   end
   
   def dashboard
@@ -12,7 +14,9 @@ class HomeController < ApplicationController
     total_minutes = Dive.where(:user_id => current_user.id).sum(:bottomtime)
     @dive_time = Time.at(total_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
 
-#raise @user.inspect
+
+# raise request.env["omniauth.auth"].inspect
+# raise session["devise.facebook_data"].inspect
 
     #@dives = Dive.all
     #@dives = Dive.find(:all, :order => "id desc", :limit => 5).reverse!

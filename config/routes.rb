@@ -19,7 +19,7 @@ DivePanda::Application.routes.draw do
   authenticated :user do
     root :to => 'home#dashboard'
   end
-  root :to => 'home#index'
+  root :to => 'home#home'
 
   get "home/index"  
   get "home/dashboard"

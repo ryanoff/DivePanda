@@ -1,0 +1,20 @@
+<h1>Edit Your profile</h1>
+
+<%= form_for @user do |f| %>
+
+	<fieldset>
+
+    <div class="field">
+        <%= f.label :unrecorded_dives, "Additional dives not recorded in DivePanda dives" %><br />
+        <%= f.date_select :unrecorded_dives %>
+    </div>
+
+		<div class="input text">
+			<%= f.label :unrecorded_time, "Additional time not recorded in DivePanda dives" %><br />
+			<%= f.text_field :unrecorded_time %>
+		</div>
+	
+	</fieldset>
+	<%= f.submit "Update your profile", :class => 'btn btn-primary' %>
+	
+<% end %>

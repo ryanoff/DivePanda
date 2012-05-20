@@ -43,6 +43,17 @@
     background-color: #f6f6f6;
 }
 
+.ajax-loader {
+    background: url("/assets/ajax/loader-3.gif") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 16px;
+    margin-left: 10px;
+    overflow: visible;
+    text-indent: 22px;
+    width: 16px;
+}
+
 /* Footer */
 body > footer a {
   color: #A7A9AA;

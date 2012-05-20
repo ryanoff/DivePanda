@@ -4,7 +4,7 @@
   </article>
   
   <aside class="span4">    
-        <%# if authenticated? %>
+        <% #if authenticated? %>
         
             <h4>Aloha <%= current_user.email %>!</h4>
             <br />
@@ -26,9 +26,9 @@
             <p><%# link_to 'View your full profile', profile_path %></p>
             <p><%#= link_to "Logout", facebook_path, :method => :delete %></p>
         
-        <%# else %>
+        <% #else %>
             <p><%# link_to "You need to re-login", root_path %></p>
-        <%# end %>
+        <% #end %>
     
   </aside>
     
@@ -74,13 +74,7 @@
       </tbody>
     </table>
 
-	
-	
-	
-	
-	
-	
-	
+		
     <p><%= link_to 'View all dives', dives_path %></p>	
 	
   </article>

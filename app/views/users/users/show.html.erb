@@ -1,0 +1,45 @@
+<%- model_class = @user.class -%>
+<h1>Your profile</h1>
+
+<dl class="dl-horizontal">
+  <dt><strong>User ID</strong></dt>
+  <dd><%= @user.id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @user.email %></dd>
+</dl>
+
+<dl class="dl-horizontal">  
+  <dt><strong><%= model_class.human_attribute_name(:unrecorded_dives) %>:</strong></dt>
+  <dd><%= @user.unrecorded_dives %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:unrecorded_time) %>:</strong></dt>
+  <dd><%= @user.unrecorded_time %></dd>
+</dl> 
+
+<%= form_for @user, :remote => true, :html => { :id => "unrecorded_dives" } do |f| %>
+  <%= f.label :unrecorded_dives, "Additional dives" %><br />
+  <p class="weak">Do you have any additional dives not recorded in DivePana?</p>
+  <%= f.text_field :unrecorded_dives, :class => 'submittable' %> 
+  <%= f.submit "Update", :class => 'btn' %>
+  <div id="unrecorded_dives" class="ajax-loader">Updating…</div>
+<% end %>  
+  
+<%= form_for @user, :remote => true do |f| %>
+  <%= f.label :unrecorded_time, "Additional dive time" %><br />
+  <p class="weak">Do you have any time not recorded in DivePanda?</p>
+  <%= f.text_field :unrecorded_time, :class => 'submittable', :width => '3' %>
+  <%= f.submit "Update", :class => 'btn' %>
+  <div id="unrecorded_dives" class="loading"></div> 
+<% end %>  
+
+  
+  
+  
+<dl class="dl-horizontal">
+
+  <dt>Total Dives</dt>
+  <dd><%= @dive_count %></dd>
+  
+  <dt>Total dive time</dt>
+  <dd><%= @dive_time %></dd>
+  
+</dl>

@@ -26,4 +26,11 @@
   dl {
   clear: both;
   }
+  form.hidden {
+    background: none repeat scroll 0 0 #F4F4F4;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 10px;
+    width: 400px;
+  }
 }

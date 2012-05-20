@@ -13,6 +13,14 @@ class Users::UsersController < ApplicationController
   def update
     @user = User.where(:id => current_user.id).first
     @user.update_attributes params[:user]
+  
+    flash[:notice] = "Your profile has been updated"
+
+    respond_to do |format|
+      format.html # update.html.erb
+      format.json { render :json => @user }
+    end
+  
   end
 
   

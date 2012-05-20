@@ -6,31 +6,8 @@
     	<p class="weak">Log and share your dives. Simple, accessible, secure.</p>
 	</div>
 
-			<% if user_signed_in? %>
-			
-  	    <div class="btn-facebook-large"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>
 
-      <% else %>
-      
-      	<%# <p class="weak center">Login to get started.</p> %>
-      	<div class="center facebook">
-    	    <div id="sign_in" class="btn-facebook-large"><span><%= link_to "Log in with Facebook", user_omniauth_authorize_path(:facebook) %></span></div>
-        </div>
-      <% end %>
-
-    	<p class="blue">This app is in a very early alpha stage with limited availability, unfinished pieces and plenty of bugs. Use at your own risk.</p>
+    	<p class="blue">Scuba Pana is coming soon. Enter your email to hear more about our amazing new app coming soon.</p>
     
   </article>
-
-  <aside>
-    <div class="weak recentDives span6 offset4">
-      <h5>Recently added dives</h5>
-    	<ul>
-        <% @recent_dives.each do |recent_dive| %>
-          <li><%= l recent_dive.date, :format => :long %> <%= recent_dive.name %>, <%= recent_dive.city %>, <%= recent_dive.state %>,  <%= recent_dive.country %></li>
-        <% end %>
-        </ul>      
-    </div>
-  </aside>
-
 </section>

@@ -39,11 +39,16 @@
     float: left;
 }
 
+.clear {
+  clear: both;
+}
+
 .grey_background {
     background-color: #f6f6f6;
 }
 
-.ajax-loader {
+
+.loading {
     background: url("/assets/ajax/loader-3.gif") no-repeat scroll 0 0 transparent;
     display: none;
     float: left;
@@ -52,7 +57,18 @@
     margin-top: 4px;
     overflow: visible;
     text-indent: 22px;
-    width: 16px;
+}
+
+.height50 {
+  height: 50px;
+}
+
+.height100 {
+  height: 100px;
+}
+
+.height200 {
+  height: 200px;
 }
 
 /* Footer */

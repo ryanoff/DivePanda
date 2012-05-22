@@ -1,4 +1,6 @@
-<div  class="dives">
+<%= javascript_include_tag "libs/jquery.ui.stars.min.js" %>
+
+<div  class="dives span8">
   <h1>Create a new dive</h1>
   
   <%= form_for @dive, :html => { :class => "form-horizontal" } do |f| %>
@@ -10,7 +12,8 @@
   		<div class="field control-group">
         <%= f.label :date, :class => 'control-label' %><br />
         <div  class="controls">
-          <%= f.date_select :date, :class => 'control' %>
+          <%= f.text_field :date, :class => 'control' %>
+          <%#= f.date_select :date, :class => 'control' %>
         </div>
       </div>
   
@@ -153,9 +156,20 @@
   
   		<div class="input text control-group">
   			<%= f.label :rating, "Overall rating", :class => 'control-label' %>			
-        <div  class="controls">
-          <%= f.select(:rating, [['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]], {}, :class => "span1") %>
-        </div>
+            <div  class="controls">
+              <%#= f.select(:rating, [['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]], {}, :class => "span1") %>
+                <%= f.radio_button :rating, "1", :class => "star" %>
+                <%= f.radio_button :rating, "2", :class => "star" %>
+                <%= f.radio_button :rating, "3", :class => "star" %>
+                <%= f.radio_button :rating, "4", :class => "star" %>
+                <%= f.radio_button :rating, "5", :class => "star" %>
+                <%= f.radio_button :rating, "6", :class => "star" %>
+                <%= f.radio_button :rating, "7", :class => "star" %>
+                <%= f.radio_button :rating, "8", :class => "star" %>
+                <%= f.radio_button :rating, "9", :class => "star" %>
+                <%= f.radio_button :rating, "10", :class => "star" %>
+            </div>
+
   		</div>
   		
   

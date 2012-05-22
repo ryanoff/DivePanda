@@ -24,6 +24,8 @@ gem 'omniauth-facebook'
 # gem 'omniauth-twitter'
 gem 'authbuttons-rails'
 
+gem 'jquery-star-rating-rails'
+
 gem 'mongrel', '1.2.0.pre2'
 
 # To use ActiveModel has_secure_password

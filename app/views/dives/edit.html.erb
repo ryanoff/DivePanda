@@ -1,151 +1,222 @@
-<h1>Edit this Dive</h1>
+<%= javascript_include_tag "libs/jquery.ui.stars.min.js" %>
 
-
-<%= form_for @dive do |f| %>
-
-	<fieldset>
-
-    <%# Set the User ID to that of the current Facebook identifier of that Dive %>
-    <%= hidden_field_tag 'dive[user_id]', @user.id %>
-
-		<div class="input text">
-			<%= f.label :user_id, "User ID" %>
-			<%= f.text_field :user_id %>
-		</div>
-
-    <div class="field">
-        <%= f.label :date %><br />
-        <%= f.date_select :date %>
-    </div>
-
-		<div class="input text">
-			<%= f.label :name, "Dive site name" %>
-			<%= f.text_field :name %>
-		</div>
-	
-		<div class="input text">
-			<%= f.label :city %>
-			<%= f.text_field :city %>
-		</div>
-
-		<div class="input text">
-			<%= f.label :state %>
-			<%= f.text_field :state %>
-		</div>
-
-		<div class="input text">
-			<%= f.label :country %>
-			<%= f.text_field :country %>
-		</div>
-						
-		<div class="input text">
-			<%= f.label :units %>
-			<%= 
-				@units = {'Metric (C, m)' => 'C', 'Imperial (F, ft)' => 'F'}		
-				select_tag "units", options_for_select(@units)
-			%>
-		</div>	
-	</fieldset>
-
-	<fieldset>
-		<legend>Dive Stats</legend>
-		
-		<div class="input text">
-			<%= f.label :depth %>
-			<%= f.text_field :depth %>
-		</div>
-
-        <div class="field">
-            <%= f.label :starttime %><br />
-            <%= f.time_select :starttime %>
+<div  class="dives span8">
+  <h1>Edit this new dive</h1>
+  <%= form_for @dive, :html => { :class => "form-horizontal" } do |f| %>
+  
+      <%# Set the User ID to that of the current Facebook identifier of that Dive %>
+      <%= hidden_field_tag 'dive[user_id]', current_user.id %>
+  
+  	<fieldset>
+  		<div class="field control-group">
+        <%= f.label :date, :class => 'control-label' %>
+        <div  class="controls">
+          <%= f.text_field :date, :class => 'span2 control' %>
+          <%#= f.date_select :date, :class => 'control' %>
         </div>
-
-        <div class="field">
-            <%= f.label :endtime %><br />
-            <%= f.time_select :endtime %>
+      </div>
+  
+  		<div class="input text control-group">
+  			<%= f.label :name, "Dive site name", :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_field :name, :class => 'control span4' %>
+  			</div>
+  		</div>
+  	
+  		<div class="input text control-group">
+  			<%= f.label :city, :class => 'control-label' %>
+        <div  class="controls">
+          <%= f.text_field :city, :class => 'span3' %>
         </div>
+  		</div>
+  
+  		<div class="input text control-group">
+  			<%= f.label :state, :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_field :state, :class => 'span1'%>
+  			</div>
+  		</div>
+  
+  		<div class="input text control-group">
+  			<%= f.label :country, :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_field :country, :class => 'span3' %>
+  			</div>
+  		</div>
+  						
+  		<div class="input text control-group">
+  			<%= f.label :units, :class => 'control-label' %>
+  			<div class="controls">
+    			<%= 
+    				 @units = {'Feet, °F, Lbs' => 'F', 'Meters, °C, Kgs' => 'M'}		
+    				 select_tag "units", options_for_select(@units), :class => 'span2'
+    			%>
+  			</div>
+  		</div>	
+  	</fieldset>
+  
+  	<fieldset>
+  		<legend>Dive Stats</legend>
+                  
+      <div class="field control-group">
+          <%= f.label :starttime, :class => 'control-label' %>
+          <div  class="controls hasTimepicker">
+            <%= f.text_field :starttime, :class => 'span2' %>
+        </div>
+      </div>
+          
+      <div class="field control-group">
+        <%= f.label :endtime, :class => 'control-label' %>
+        <div  class="controls hasTimepicker">
+          <%= f.text_field :endtime, :class => 'span2' %>
+        </div>
+      </div>
+  		
+  		<div class="input text control-group">
+  			<%= f.label :bottomtime, "Bottom Time", :class => 'control-label' %>
+        <div  class="controls">
+          <div class="input-append">
+      			<%= f.text_field :bottomtime, :class => 'span1' %><span class="bottomtime add-on">min</span>
+          </div>
+        </div>
+  		</div>	
+  		
+  		
+  		<div class="input text control-group">
+  			<%= f.label :depth, :class => 'control-label' %>
+        <div  class="controls">
+          <div class="input-append">
+      			<%= f.text_field :depth, :class => 'span1' %><span class="depth add-on">Feet</span>
+          </div>
+        </div>
+  
+  		</div>
+  	</fieldset>
+  
+  	<fieldset>
+  		<legend>Attributes</legend>
+  		<div class="input text control-group">
+  			<%= f.label :weather, :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_field :weather %>
+        </div>
+  		</div>
+  		
+  		<div class="input text control-group">
+  			<%= f.label :temperature, "Outside Temperature", :class => 'control-label' %>
+        <div  class="controls">
+          <div class="input-append">
+            <%= f.text_field :temperature, :class => 'span1' %><span class="temperature add-on">&deg;F</span>
+          </div>
+        </div>
+  		</div>
+  		
+  		<div class="input text control-group">
+  			<%= f.label :watertemp, "Water Temperature", :class => 'control-label' %>
+        <div  class="controls">
+          <div class="input-append">
+            <%= f.text_field :watertemp, :class => 'span1' %><span class="temperature add-on">&deg;F</span>
+          </div>
+        </div>
+  		</div>
+  	
+  		<div class="input text control-group">
+  			<%= f.label :equipment, "Equipment (e.g. wetsuit, hood)", :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_field :equipment, :class => 'span4' %>
+        </div>
+  		</div>
+  
+  		<div class="input text control-group">
+  			<%= f.label :weight, "Added weight", :class => 'control-label' %>
+        <div  class="controls">
+          <div class="input-append">
+            <%= f.text_field :weight, :class => 'span1' %><span class="weight add-on">Pounds</span>
+          </div>
+        </div>
+  		</div>
+  		
+          <%#= #Add Dive number. How many dives have you done with total minutes and hours. %>
+              		
+  	</fieldset>	
+  
+  	<fieldset>
+  		<legend>Details</legend>	
+  		<div class="input textarea control-group">
+  			<%= f.label :description, "Dive Location Description (public)", :class => 'control-label' %>
+        <div  class="controls">
+        			<%= f.text_area :description, :class => 'span7 height100' %>
+        </div>
+  		</div>
+  	
+  		<div class="input textarea control-group">
+  			<%= f.label :comments, "Dive Comments (private)", :class => 'control-label' %>
+        <div  class="controls">
+        			<%= f.text_area :comments, :class => 'span7 height100' %>
+        </div>
+  		</div>
+  		
+  		<div class="input textarea control-group">
+  			<%= f.label :directions, "Directions to dive location (how to get there)", :class => 'control-label' %>
+        <div  class="controls">
+    			<%= f.text_area :directions, :class => 'span7 height100' %>
+        </div>
+  		</div>
+  
+  
+  		<div class="input text control-group">
+  			<%= f.label :rating, "Overall rating", :class => 'control-label' %>			
+            <div  class="controls">
+              <%#= f.select(:rating, [['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]], {}, :class => "span1") %>
+                <%= f.radio_button :rating, "1", :class => "star" %>
+                <%= f.radio_button :rating, "2", :class => "star" %>
+                <%= f.radio_button :rating, "3", :class => "star" %>
+                <%= f.radio_button :rating, "4", :class => "star" %>
+                <%= f.radio_button :rating, "5", :class => "star" %>
+                <%= f.radio_button :rating, "6", :class => "star" %>
+                <%= f.radio_button :rating, "7", :class => "star" %>
+                <%= f.radio_button :rating, "8", :class => "star" %>
+                <%= f.radio_button :rating, "9", :class => "star" %>
+                <%= f.radio_button :rating, "10", :class => "star" %>
+            </div>
 
-		<div class="input text">
-			<%= f.label :bottomtime, "Bottom Time (minutes)" %>
-			<%= f.text_field :bottomtime %>
-		</div>	
-
-		
-	</fieldset>
-
-	<fieldset>
-		<legend>Attributes</legend>
-		<div class="input text">
-			<%= f.label :weather %>
-			<%= f.text_field :weather %>
-		</div>
-		
-		<div class="input text">
-			<%= f.label :temperature, "Outside Temperature" %>
-			<%= f.text_field :temperature %>
-		</div>
-		
-		<div class="input text">
-			<%= f.label :watertemp, "Water Temperature" %>
-			<%= f.text_field :watertemp %>
-		</div>
-	
-		<div class="input text">
-			<%= f.label :equipment, "Equipment (e.g. wetsuit, hood)" %>
-			<%= f.text_field :equipment %>
-		</div>
-
-		<div class="input text">
-			<%= f.label :weight, "Weight (e.g. 14 lbs)" %>
-			<%= f.text_field :weight %>
-		</div>
-		            		
-	</fieldset>	
-
-	<fieldset>
-		<legend>Details</legend>	
-		<div class="input textarea">
-			<%= f.label :description, "Dive Location Description (public)"%>
-			<%= f.text_area :description %>
-		</div>
-	
-		<div class="input textarea">
-			<%= f.label :comments, "Dive Comments (private)" %>
-			<%= f.text_area :comments %>
-		</div>
-		
-		<div class="input textarea">
-			<%= f.label :directions, "Directions (how to get there)" %>
-			<%= f.text_area :directions %>
-		</div>
-	
-		<div class="input text">
-			<%= f.label :rating, "Overall rating" %>
-			<%= f.select(:rating, [['1',1], ['2',2], ['3',3], ['4',4], ['5',5], ['6',6], ['7',7], ['8',8], ['9',9], ['10',10]]) %>
-		</div>
-		
-		<div class="weak">
-		  <%= link_to 'Get current location', '#', :id => 'getLocation' %>
-		</div>
-			
-		<div class="input text">
-			<%= f.label :longitude %>
-			<%= f.text_field :longitude %>
-		</div>
-		
-			
-		<div class="input text">
-			<%= f.label :latitude %>
-			<%= f.text_field :latitude %>
-		</div>
-
-	</fieldset>
-		
-	<%= f.submit %>
-	
-<% end %>
-
-
+  		</div>
+  		
+  
+  		<div class="geolocation">
+    		<div class="weak controls">
+    		  <i class="icon-map-marker left"><%= link_to 'Get your current location', '#', :id => 'getLocation' %></i>
+    			<div id="location-loading" class="loading hidden">Finding your location...</div>
+    		</div>
+  		
+    		<div class="input text clear control-group">
+    			<%= f.label :longitude, :class => 'control-label' %>
+          <div  class="controls">
+      			<%= f.text_field :longitude, :class => 'span2' %>
+          </div>
+    		</div>
+    		
+    			
+    		<div class="input text control-group">
+    			<%= f.label :latitude, :class => 'control-label' %>
+          <div  class="controls">
+      			<%= f.text_field :latitude, :class => 'span2' %>
+          </div>
+    		</div>
+  		</div>
+  
+  
+  	</fieldset>
+  	
+  	<!-- Add fish -->
+  	<!-- Add WYSIWYG comments -->
+  	<!-- Add drawings -->
+  	<!-- Add upload photos & videos -->
+    <%= f.submit "Update Dive", :class => 'btn btn-primary' %>
+  	
+  <% end %>
 
 <%= link_to 'Show', @dive %> |
 <%= link_to 'All Dives', dives_path %>
+
+</div>

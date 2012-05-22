@@ -2,17 +2,16 @@
 
 <div  class="dives span8">
   <h1>Create a new dive</h1>
-  
   <%= form_for @dive, :html => { :class => "form-horizontal" } do |f| %>
   
       <%# Set the User ID to that of the current Facebook identifier of that Dive %>
       <%= hidden_field_tag 'dive[user_id]', current_user.id %>
   
-  	<fieldset class="control-group">
+  	<fieldset>
   		<div class="field control-group">
-        <%= f.label :date, :class => 'control-label' %><br />
+        <%= f.label :date, :class => 'control-label' %>
         <div  class="controls">
-          <%= f.text_field :date, :class => 'control' %>
+          <%= f.text_field :date, :class => 'span2 control' %>
           <%#= f.date_select :date, :class => 'control' %>
         </div>
       </div>
@@ -49,8 +48,8 @@
   			<%= f.label :units, :class => 'control-label' %>
   			<div class="controls">
     			<%= 
-    				@units = {'Metric (C, m)' => 'C', 'Imperial (F, ft)' => 'F'}		
-    				select_tag "units", options_for_select(@units), :class => 'span2'
+    				 @units = {'Feet, °F, Lbs' => 'F', 'Meters, °C, Kgs' => 'M'}		
+    				 select_tag "units", options_for_select(@units), :class => 'span2'
     			%>
   			</div>
   		</div>	
@@ -60,37 +59,42 @@
   		<legend>Dive Stats</legend>
                   
       <div class="field control-group">
-          <%= f.label :starttime, :class => 'control-label' %><br />
-          <div  class="controls">
-            <%= f.time_select :starttime %>
+          <%= f.label :starttime, :class => 'control-label' %>
+          <div  class="controls hasTimepicker">
+            <%= f.text_field :starttime, :class => 'span2' %>
         </div>
       </div>
           
       <div class="field control-group">
-        <%= f.label :endtime, :class => 'control-label' %><br />
-        <div  class="controls">
-          <%= f.time_select :endtime %>
+        <%= f.label :endtime, :class => 'control-label' %>
+        <div  class="controls hasTimepicker">
+          <%= f.text_field :endtime, :class => 'span2' %>
         </div>
       </div>
   		
   		<div class="input text control-group">
-  			<%= f.label :bottomtime, "Bottom Time (minutes)", :class => 'control-label' %>
+  			<%= f.label :bottomtime, "Bottom Time", :class => 'control-label' %>
         <div  class="controls">
-    			<%= f.text_field :bottomtime, :class => 'span1' %>
+          <div class="input-append">
+      			<%= f.text_field :bottomtime, :class => 'span1' %><span class="bottomtime add-on">min</span>
+          </div>
         </div>
   		</div>	
+  		
   		
   		<div class="input text control-group">
   			<%= f.label :depth, :class => 'control-label' %>
         <div  class="controls">
-    			<%= f.text_field :depth, :class => 'span1' %>
+          <div class="input-append">
+      			<%= f.text_field :depth, :class => 'span1' %><span class="depth add-on">Feet</span>
+          </div>
         </div>
   
   		</div>
   	</fieldset>
   
   	<fieldset>
-  		<legend>Attributes</legend>
+  		<legend>Dive Attributes</legend>
   		<div class="input text control-group">
   			<%= f.label :weather, :class => 'control-label' %>
         <div  class="controls">
@@ -101,14 +105,18 @@
   		<div class="input text control-group">
   			<%= f.label :temperature, "Outside Temperature", :class => 'control-label' %>
         <div  class="controls">
-    			<%= f.text_field :temperature, :class => 'span1' %>
+          <div class="input-append">
+            <%= f.text_field :temperature, :class => 'span1' %><span class="temperature add-on">&deg;F</span>
+          </div>
         </div>
   		</div>
   		
   		<div class="input text control-group">
   			<%= f.label :watertemp, "Water Temperature", :class => 'control-label' %>
         <div  class="controls">
-          <%= f.text_field :watertemp, :class => 'span1' %>
+          <div class="input-append">
+            <%= f.text_field :watertemp, :class => 'span1' %><span class="temperature add-on">&deg;F</span>
+          </div>
         </div>
   		</div>
   	
@@ -120,9 +128,11 @@
   		</div>
   
   		<div class="input text control-group">
-  			<%= f.label :weight, "Weight (e.g. 14 lbs)", :class => 'control-label' %>
+  			<%= f.label :weight, "Added weight", :class => 'control-label' %>
         <div  class="controls">
-          <%= f.text_field :weight, :class => 'span1' %>
+          <div class="input-append">
+            <%= f.text_field :weight, :class => 'span1' %><span class="weight add-on">Pounds</span>
+          </div>
         </div>
   		</div>
   		
@@ -182,7 +192,7 @@
     		<div class="input text clear control-group">
     			<%= f.label :longitude, :class => 'control-label' %>
           <div  class="controls">
-      			<%= f.text_field :longitude %>
+      			<%= f.text_field :longitude, :class => 'span2' %>
           </div>
     		</div>
     		
@@ -190,7 +200,7 @@
     		<div class="input text control-group">
     			<%= f.label :latitude, :class => 'control-label' %>
           <div  class="controls">
-      			<%= f.text_field :latitude %>
+      			<%= f.text_field :latitude, :class => 'span2' %>
           </div>
     		</div>
   		</div>

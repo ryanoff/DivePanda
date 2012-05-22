@@ -1,5 +1,6 @@
 //= require jquery-star-rating
 //= require jquery-ui.min
+//= require jquery.timepicker.min
 
 
 jQuery ->
@@ -17,3 +18,18 @@ jQuery ->
     $('#location-loading').hide()
     
   $('#dive_date').datepicker()
+  $('#dive_starttime').timepicker({step: '10'})
+  $('#dive_endtime').timepicker()
+
+      
+  $('#units').live 'change', () ->
+    units = $('select#units option:selected').val();
+    if units is "M" 
+      $('.depth.add-on').text("Meters") 
+      $('.temperature.add-on').text("°C")
+      $('.weight.add-on').text("Kilograms")
+    else 
+      $('.depth.add-on').text("Feet")
+      $('.temperature.add-on').text("°F")
+      $('.weight.add-on').text("Pounds")
+    

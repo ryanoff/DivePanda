@@ -6,12 +6,24 @@
  *= require_tree ../../../vendor/assets/stylesheets
  */
 
+
 .dives {
   #getLocation {
     margin: 5px 0px 10px 5px;
   }
   .hasDatepicker {
-    
+    background: url("/assets/icons/12/calendar.png") no-repeat scroll 92px 7px transparent;
+    width: 100px;
   }
+  .hasTimepicker input {
+    width: 115px;
+  }
+  .ui-timepicker-list { overflow-y: auto; height: 150px; width: 6.5em; background: #fff; border: 1px solid #ddd; margin: 0; padding: 0; list-style: none; }
+  .ui-timepicker-list.ui-timepicker-with-duration { width: 11em; }
+  .ui-timepicker-duration { margin-left: 5px; color: #888; }
+  .ui-timepicker-list:hover .ui-timepicker-duration { color: #888; }
+  .ui-timepicker-list li { color: #333333; cursor: pointer; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 15px; line-height: 16px; list-style: none outside none; margin: 0; padding: 2px 0 2px 5px; white-space: nowrap; }.ui-timepicker-list:hover .ui-timepicker-selected { background: #fff; color: #000; }
+  li.ui-timepicker-selected, .ui-timepicker-list li:hover, .ui-timepicker-list:hover .ui-timepicker-selected:hover { background: #1980EC; color: #fff; }
+  li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover .ui-timepicker-duration { color: #ccc; }
 
 }

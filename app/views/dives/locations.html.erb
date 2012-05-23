@@ -1,0 +1,28 @@
+<div  class="dives span8">
+
+<h1>Dive Locations</h1>
+
+
+<div class="alert alert-info">
+  <button class="close" data-dismiss="alert">×</button>
+  <strong>Coming soon!</strong> Coming soon will be a Google map showing all dive locations. For now, a list will have to work.
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= Dive.human_attribute_name(:country) %></th>
+      <th><%= Dive.human_attribute_name(:city) %></th>
+      <th><%= Dive.human_attribute_name(:name) %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @dives.each do |dive| %>
+      <tr>
+        <td><%= dive.country %></td>
+        <td><%= dive.city %></td>
+        <td><%= link_to dive.name, dive_path(dive) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

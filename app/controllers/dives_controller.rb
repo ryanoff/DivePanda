@@ -29,9 +29,7 @@ class DivesController < ApplicationController
   # GET /dives/new.json
   def new
     @dive = Dive.new
-
-    #@user = User.where(:facebook_id => current_user.identifier).first
-
+    @user = User.where(:id => current_user.id).first
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,15 +41,19 @@ class DivesController < ApplicationController
   def edit
     @dive = Dive.find(params[:id])
     @user = User.where(:id => current_user.id).first
+  end
 
-    #@user = User.where(:facebook_id => current_user.identifier).first
+  # GET /dives/locations
+  def locations
+    @dives = Dive.all
+    @user = User.where(:id => current_user.id).first
   end
 
   # POST /dives
   # POST /dives.json
   def create
     @dive = Dive.new(params[:dive])
-    #@user = User.where(:facebook_id => current_user.identifier) 
+    @user = User.where(:id => current_user.id).first
 
     respond_to do |format|
       if @dive.save

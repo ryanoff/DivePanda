@@ -1,6 +1,6 @@
-<%- model_class = @dive.class -%>
-<%#= This will be later be changed to show_private for showing dives owned by you =>
+<%#= This will be for showing dives not owned by you =>
 
+<%- model_class = @dive.class -%>
 <h1><%=t '.title', :default => model_class.model_name.human %></h1>
 
 <dl class="dl-horizontal">

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120519215516) do
+ActiveRecord::Schema.define(:version => 20120523005306) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(:version => 20120519215516) do
     t.integer  "depth"
     t.string   "temperature"
     t.string   "watertemp"
-    t.decimal  "rating"
+    t.integer  "rating"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.integer  "user_id"

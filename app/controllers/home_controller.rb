@@ -4,6 +4,11 @@ class HomeController < ApplicationController
     @recent_dives = Dive.find(:all, :order => "created_at desc", :limit => 5).reverse!
   end
   
+  def home2
+    @recent_dives = Dive.find(:all, :order => "created_at desc", :limit => 5).reverse!
+  end
+
+  
   def dashboard
   
     @user = User.where(:id => current_user.id).first
@@ -39,5 +44,6 @@ class HomeController < ApplicationController
     # Person.includes([:account, :friends]).all
     # Person.group("category").all
   end
+  
   
 end

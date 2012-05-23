@@ -21,16 +21,21 @@ DivePanda::Application.routes.draw do
   end
   root :to => 'home#home'
 
-  match 'profile' => 'users/users#show', :as => :profile
-  match '/users/:id', :to => 'users#show', :as => :user
-
-  get "home/index"  
   get "home/dashboard"
+  get "home/home2"
+
   get "pages/contact"
   get "pages/about"
   get "pages/terms"
   get "pages/privacy"
-  
+
+
+  match 'profile' => 'users/users#show', :as => :profile
+  match '/users/:id', :to => 'users#show', :as => :user
+  match '/login' => 'home#home2'
+  match '/dashboard' => 'home#dashboard'
+  match '/dive_locations' => 'dives#locations'
+
   resource :facebook, :except => :create do
     get :callback, :to => :create
   end

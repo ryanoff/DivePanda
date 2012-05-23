@@ -1,0 +1,18 @@
+Tue, 22 May 2012 18:55:32 -0700
+doc/README_FOR_APP	Thu, 10 May 2012 18:41:35 -0700
+app/controllers/application_controller.rb	Thu, 10 May 2012 18:41:35 -0700
+app/controllers/authentications_controller.rb	Tue, 15 May 2012 15:20:42 -0700
+app/controllers/dives_controller.rb	Tue, 22 May 2012 18:26:49 -0700
+app/controllers/home_controller.rb	Tue, 22 May 2012 17:44:44 -0700
+app/controllers/pages_controller.rb	Tue, 15 May 2012 15:20:42 -0700
+app/controllers/registrations_controller.rb	Tue, 15 May 2012 15:20:42 -0700
+app/controllers/users/omniauth_callbacks_controller.rb	Mon, 21 May 2012 16:39:23 -0700
+app/controllers/users/users_controller.rb	Mon, 21 May 2012 16:39:23 -0700
+app/helpers/application_helper.rb	Thu, 10 May 2012 18:41:35 -0700
+app/helpers/authentications_helper.rb	Tue, 15 May 2012 15:20:42 -0700
+app/helpers/dives_helper.rb	Thu, 10 May 2012 18:41:35 -0700
+app/helpers/home_helper.rb	Thu, 10 May 2012 18:41:35 -0700
+app/helpers/registrations_helper.rb	Tue, 15 May 2012 15:20:42 -0700
+app/models/authentication.rb	Mon, 21 May 2012 16:39:23 -0700
+app/models/dive.rb	Mon, 21 May 2012 16:39:23 -0700
+app/models/user.rb	Mon, 21 May 2012 16:39:23 -0700

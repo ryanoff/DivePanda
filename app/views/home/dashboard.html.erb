@@ -1,3 +1,5 @@
+<%# TODO: move this to users view folder %>
+
 <section class='dashboard span12'>
   <article class="span8">
     <h3 id="add_new" class="btn btn-primary"><%= link_to '+ Add a new dive', new_dive_path %></h3>
@@ -75,7 +77,7 @@
     </table>
 
 		
-    <p><%= link_to 'View all dives', dives_path %></p>	
+    <p><%= link_to 'View all dives', dives_path, :class => "btn" %></p>	
 	
   </article>
 

@@ -24,28 +24,23 @@
       <div class="nav-collapse">
         <ul class="nav">
         
-          <%# Add if authenticated %>
-          
+         <% if user_signed_in? %>
 
-  				<% if user_signed_in? %>
-
-    				<li><%= link_to "Hello " + current_user.email, :controller => "home", :action => "dashboard" %></li>              
-    				<li><%= link_to "Dashboard", :controller => "home", :action => "dashboard" %></li>              
+            <li><span class="label label-info"><%= link_to "Howdy, " + current_user.email, dashboard_path %></span></li>              
+        		<li><%= link_to "Dashboard", dashboard_path %></li>              
             <li><%= link_to 'Dives', dives_path %></li>
+            <li><%= link_to 'Dive locations', dive_locations_path %></li>
             <li><%= link_to "Profile", profile_path %></li>
             <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
-                      
 
           <% else %>    
               
-            <%# Add if not authenticated %>
-            <li><%= link_to content_tag(:span, 'Log In'), user_omniauth_authorize_path(:facebook), :class => "btn-facebook-small" %></li>
+            <li><%#= link_to content_tag(:span, 'Log In'), user_omniauth_authorize_path(:facebook), :class => "btn-facebook-small" %></li>
             <li><%#= link_to('Sign In', new_user_session_path)  %></li>
             <li><%= link_to "About", :controller => "pages", :action => "about" %></li>
             <li><%= link_to 'Contact', :controller => "pages", :action => "contact" %></li>
 
           <% end %>
-
 
         </ul>
       </div>

@@ -1,3 +1,7 @@
 == Dive Panda Dive Log App
 
-Dive Panda, a rails app for scuba divers to log and share their dives.
+Dive Panda, a rails 3 app for scuba divers to log and share their dives. 
+
+===Technology
+
+This app uses rails_admin, devise, omniauth, query ui, and twitter bootstrap for one powerful and simple to use package.

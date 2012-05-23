@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class User - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/user.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-find_for_facebook_oauth">::find_for_facebook_oauth</a>
+    
+    <li><a href="#method-c-new_with_session">::new_with_session</a>
+    
+    <li><a href="#method-i-apply_facebook">#apply_facebook</a>
+    
+    <li><a href="#method-i-apply_omniauth">#apply_omniauth</a>
+    
+    <li><a href="#method-i-facebook">#facebook</a>
+    
+    <li><a href="#method-i-password_required-3F">#password_required?</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Users.html">Users</a>
+  
+    <li><a href="./Users/OmniauthCallbacksController.html">Users::OmniauthCallbacksController</a>
+  
+    <li><a href="./Users/UsersController.html">Users::UsersController</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Authentication.html">Authentication</a>
+  
+    <li><a href="./AuthenticationsController.html">AuthenticationsController</a>
+  
+    <li><a href="./AuthenticationsHelper.html">AuthenticationsHelper</a>
+  
+    <li><a href="./Dive.html">Dive</a>
+  
+    <li><a href="./DivesController.html">DivesController</a>
+  
+    <li><a href="./DivesHelper.html">DivesHelper</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeHelper.html">HomeHelper</a>
+  
+    <li><a href="./PagesController.html">PagesController</a>
+  
+    <li><a href="./RegistrationsController.html">RegistrationsController</a>
+  
+    <li><a href="./RegistrationsHelper.html">RegistrationsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class User</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-find_for_facebook_oauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find_for_facebook_oauth</span><span
+            class="method-args">(access_token, signed_in_resource=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="find_for_facebook_oauth-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find_for_facebook_oauth</span>(<span class="ruby-identifier">access_token</span>, <span class="ruby-identifier">signed_in_resource</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">data</span> = <span class="ruby-identifier">access_token</span>.<span class="ruby-identifier">extra</span>.<span class="ruby-identifier">raw_info</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">find_by_email</span>(<span class="ruby-identifier">data</span>.<span class="ruby-identifier">email</span>)
+    <span class="ruby-identifier">user</span>
+  <span class="ruby-keyword">else</span> <span class="ruby-comment"># Create a user with a stub password. </span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">create</span>(<span class="ruby-value">:email</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">email</span>, <span class="ruby-value">:password</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Devise</span>.<span class="ruby-identifier">friendly_token</span>[<span class="ruby-value">0</span>,<span class="ruby-value">20</span>]) 
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- find_for_facebook_oauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- find_for_facebook_oauth-method -->
+
+    
+      <div id="method-c-new_with_session" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new_with_session</span><span
+            class="method-args">(params, session)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new_with_session-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">new_with_session</span>(<span class="ruby-identifier">params</span>, <span class="ruby-identifier">session</span>)
+  <span class="ruby-keyword">super</span>.<span class="ruby-identifier">tap</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">user</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">data</span> = <span class="ruby-identifier">session</span>[<span class="ruby-string">&quot;devise.facebook_data&quot;</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">session</span>[<span class="ruby-string">&quot;devise.facebook_data&quot;</span>][<span class="ruby-string">&quot;extra&quot;</span>][<span class="ruby-string">&quot;raw_info&quot;</span>]
+      <span class="ruby-identifier">user</span>.<span class="ruby-identifier">email</span> = <span class="ruby-identifier">data</span>[<span class="ruby-string">&quot;email&quot;</span>]
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new_with_session-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new_with_session-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-apply_omniauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">apply_omniauth</span><span
+            class="method-args">(omniauth)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Do we need the following?</p>
+          
+
+          
+          <div class="method-source-code" id="apply_omniauth-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">apply_omniauth</span>(<span class="ruby-identifier">omniauth</span>)  
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'provider'</span>]
+  <span class="ruby-keyword">when</span> <span class="ruby-string">'facebook'</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">apply_facebook</span>(<span class="ruby-identifier">omniauth</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">email</span> = <span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'user_info'</span>][<span class="ruby-string">'email'</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">email</span>.<span class="ruby-identifier">blank?</span>
+  <span class="ruby-identifier">authentications</span>.<span class="ruby-identifier">build</span>(<span class="ruby-value">:provider</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'provider'</span>], <span class="ruby-value">:uid</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'uid'</span>], <span class="ruby-value">:token</span> =<span class="ruby-operator">&gt;</span>(<span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'credentials'</span>][<span class="ruby-string">'token'</span>] <span class="ruby-keyword">rescue</span> <span class="ruby-keyword">nil</span>))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- apply_omniauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- apply_omniauth-method -->
+
+    
+      <div id="method-i-facebook" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">facebook</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="facebook-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 45</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">facebook</span>
+  <span class="ruby-ivar">@fb_user</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">FbGraph</span><span class="ruby-operator">::</span><span class="ruby-constant">User</span>.<span class="ruby-identifier">me</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">authentications</span>.<span class="ruby-identifier">find_by_provider</span>(<span class="ruby-string">'facebook'</span>).<span class="ruby-identifier">token</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- facebook-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- facebook-method -->
+
+    
+      <div id="method-i-password_required-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">password_required?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="password_required-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">password_required?</span>
+  (<span class="ruby-identifier">authentications</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">||</span> <span class="ruby-operator">!</span><span class="ruby-identifier">password</span>.<span class="ruby-identifier">blank?</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">super</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- password_required-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- password_required-3F-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Protected Instance Methods</h3>
+
+    
+      <div id="method-i-apply_facebook" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">apply_facebook</span><span
+            class="method-args">(omniauth)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="apply_facebook-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">apply_facebook</span>(<span class="ruby-identifier">omniauth</span>)
+  <span class="ruby-keyword">if</span> (<span class="ruby-identifier">extra</span> = <span class="ruby-identifier">omniauth</span>[<span class="ruby-string">'extra'</span>][<span class="ruby-string">'user_hash'</span>] <span class="ruby-keyword">rescue</span> <span class="ruby-keyword">false</span>)
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">email</span> = (<span class="ruby-identifier">extra</span>[<span class="ruby-string">'email'</span>] <span class="ruby-keyword">rescue</span> <span class="ruby-string">''</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- apply_facebook-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- apply_facebook-method -->
+
+    
+    </section><!-- protected-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

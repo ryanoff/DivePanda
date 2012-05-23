@@ -1,7 +1,7 @@
 <%= javascript_include_tag "libs/jquery.ui.stars.min.js" %>
 
 <div  class="dives span8">
-  <h1>Edit this new dive</h1>
+  <h1>Edit this dive</h1>
   <%= form_for @dive, :html => { :class => "form-horizontal" } do |f| %>
   
       <%# Set the User ID to that of the current Facebook identifier of that Dive %>
@@ -208,15 +208,10 @@
   
   	</fieldset>
   	
-  	<!-- Add fish -->
-  	<!-- Add WYSIWYG comments -->
-  	<!-- Add drawings -->
-  	<!-- Add upload photos & videos -->
-    <%= f.submit "Update Dive", :class => 'btn btn-primary' %>
+    <div class="form-actions">
+      <%= f.submit "Update this dive", :class => 'btn btn-primary' %> <%= link_to 'Show this dive', @dive, :class => "btn"  %> <%= link_to 'Cancel', dives_path, :class => "btn" %>
+  	</div>
   	
   <% end %>
-
-<%= link_to 'Show', @dive %> |
-<%= link_to 'All Dives', dives_path %>
 
 </div>

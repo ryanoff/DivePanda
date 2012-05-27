@@ -48,12 +48,6 @@
     <dt>Total dive time</dt>
     <dd><%= @dive_time %></dd>
 
-    <dt>Dives this year</dt>
-    <dd><%= @dives_this_year %></dd>
-    
-    <dt>Dive time this year</dt>
-    <dd><%#= @dive_time_this_year %></dd>
-
     <dt>Average dive depth</dt>
     <dd><%#= @average_dive_depth %></dd>
 
@@ -63,7 +57,16 @@
     <dt>Average air consumption <%# can we make this per minute or compare to average and provide tips for how to improve %></dt>
     <dd><%#= @average_dive_time %></dd>
     
+  </dl>
+
+  <dl>
     
+    <dt>Dives this year</dt>
+    <dd><%= @dives_this_year %></dd>
+    
+    <dt>Dive time this year</dt>
+    <dd><%= @dive_time_this_year %></dd>
+        
   </dl>
   
   

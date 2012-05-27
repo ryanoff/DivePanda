@@ -8,16 +8,13 @@ class Users::UsersController < ApplicationController
     total_minutes = Dive.where(:user_id => current_user.id).sum(:bottomtime)
     @dive_time = Time.at(total_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
     
-#@temp = Time.zone.now
-#raise @temp
-
-#@dives_this_year = Dive.where(:date >= ?, Time.now.year)
-#@dives_this_year = Dive.where(:date.to_date.year => Time.now.year)
-
-#where(:created_at => params[:date].to_date.beginning_of_month..params[:date].to_date.end_of_month).
+    # This year
+    @dives_this_year = Dive.where("date >= ?", Time.now.at_beginning_of_year).count
+    #@dives_this_year = Dive.where(year(:date) = ?, '#{DateTime.now.year}')
+    this_year_minutes = Dive.where("date >= ?", Time.now.at_beginning_of_year).sum(:bottomtime)
+    @dive_time_this_year = Time.at(this_year_minutes*60).utc.strftime("%H:%M") #=> "01:00:00"
 
 
-raise @dives_this_year.inspect 
 
   end
   

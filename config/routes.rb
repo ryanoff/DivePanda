@@ -30,8 +30,8 @@ DivePanda::Application.routes.draw do
   get "pages/privacy"
 
 
-  match 'profile' => 'users/users#show', :as => :profile
-  match '/users/:id', :to => 'users#show', :as => :user
+  match 'profile' => 'users/users#profile', :as => :profile
+  match '/users/:id', :to => 'users#profile', :as => :user
   match '/login' => 'home#home2'
   match '/dashboard' => 'home#dashboard'
   match '/dive_locations' => 'dives#locations'

@@ -1,7 +1,5 @@
 <%- model_class = @user.class -%>
 
-<%# TODO: rename this file to profile.html.erb %>
-
 <div  class="profile">
   <h1>Your profile</h1>
   
@@ -47,17 +45,25 @@
     <dt>Total dive time</dt>
     <dd><%= @dive_time %></dd>
 
-    <dt>Average dive depth</dt>
-    <dd><%#= @average_dive_depth %></dd>
-
-    <dt>Average dive time</dt>
-    <dd><%#= @average_dive_time %></dd>
-
-    <dt>Average air consumption <%# can we make this per minute or compare to average and provide tips for how to improve %></dt>
-    <dd><%#= @average_dive_time %></dd>
-    
   </dl>
 
+  <dl class="dl-horizontal">
+
+    <dt>Average dive depth</dt>
+    <dd><%= @average_dive_depth %></dd>
+
+    <dt>Average dive time</dt>
+    <dd><%= @average_dive_time %></dd>
+
+    <dt>Average air consumption <%# can we make this per minute or compare to average and provide tips for how to improve %></dt>
+    <dd><%#= @average_air_consumption %></dd>
+    
+  </dl>
+  
+  <br />
+
+
+  <h4>This Year <small class="weak">(<%= Time.now.year %>)</small></h4>
   <dl class="dl-horizontal">
     
     <dt>Dives this year</dt>
@@ -66,16 +72,6 @@
     <dt>Dive time this year</dt>
     <dd><%= @dive_time_this_year %></dd>
         
-  </dl>
-  
-  
-  <br />
-  
-  <dl class="dl-horizontal">
-  
-    <dt><strong>User ID</strong></dt>
-    <dd><%= @user.id %></dd>
-  
   </dl>
   
 </div>

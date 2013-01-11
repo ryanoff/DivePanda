@@ -14,7 +14,7 @@ group :assets do
 end
 
 #gem 'libv8', '~> 3.11.8.3'
-gem 'libv8', '3.3.10.4'
+#gem 'libv8', '3.3.10.4'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'jquery-rails'

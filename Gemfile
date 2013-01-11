@@ -11,14 +11,20 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # gem 'therubyracer', :platform => :ruby
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
 end
 
+#gem 'libv8', '~> 3.11.8.3'
+gem 'libv8', '3.3.10.4'
+gem 'therubyracer'
+gem 'less-rails'
 gem 'jquery-rails'
-
 gem 'rails_admin'
-
 gem 'devise'
+gem 'yaml_db'
+# gem 'twitter'
+gem 'gmaps4rails'
+gem 'twitter-bootstrap-rails'
+
 # gem 'omniauth'
 gem 'omniauth-facebook'
 # gem 'omniauth-twitter'
@@ -35,7 +41,8 @@ gem 'mongrel', '1.2.0.pre2'
 # gem 'jbuilder'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'ruby-debug'

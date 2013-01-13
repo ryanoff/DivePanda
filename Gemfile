@@ -17,7 +17,7 @@ group :development do
   gem "capistrano"
 end
 
-#gem 'libv8', '~> 3.11.8.3'
+gem 'libv8', '~> 3.11.8.3'
 #gem 'libv8', '3.3.10.4'
 gem 'therubyracer'
 gem 'less-rails'
@@ -36,8 +36,8 @@ gem 'omniauth-facebook'
 gem 'authbuttons-rails'
 
 
-#gem 'mongrel', '1.2.0.pre2'
-gem "unicorn"
+gem 'mongrel', '1.2.0.pre2'
+#gem "unicorn"
 
 # To use debugger
 # gem 'ruby-debug'
